@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94ebc54e4f78b13459abbd28ecc7701c, type: 3}
+  m_Name: Gold_pickaxe
+  m_EditorClassIdentifier: 
+  itemName: Gold_pickaxe
+  icon: {fileID: -3569232777630780389, guid: 9d513da89e7243340a5963782754ea53, type: 3}
+  prefabs: {fileID: 5414770641835457126, guid: e030fc77a49b7164a94bf9518a1d5a8a, type: 3}
+  isStackable: 0
+  maxStack: 99
+  damage: 12
+  speed: 0.4
+  tier: 3
+  description: 

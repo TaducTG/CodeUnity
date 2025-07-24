@@ -1,0 +1,64 @@
+# Unity - Các thư mục và file không cần thiết
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+Assets/AssetStoreTools*
+
+# Thư mục lưu dữ liệu ánh xạ cục bộ
+UserSettings/
+MemoryCaptures/
+Logs/
+
+# Visual Studio
+.vs/
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+
+# Mac / Linux hệ thống
+.DS_Store
+*.swp
+
+# Windows hệ thống
+Thumbs.db
+desktop.ini
+
+# CMake / JetBrains Rider (nếu có)
+CMakeLists.txt.user
+.idea/
+
+# Crash logs
+sysinfo.txt
+
+# Build output
+*.apk
+*.aab
+*.zip
+*.exe
+
+# Auto-generated meta và cache
+*.bak
+*.orig
+*.rej
+*.log
+
+# Unity Collaborate
+.collab/
+
+# Rider / JetBrains IDE
+*.sln.iml
+
+# Nếu dùng git-lfs
+/[Aa]ssets/**/*.psd
+/[Aa]ssets/**/*.tga
