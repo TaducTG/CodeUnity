@@ -15,6 +15,7 @@ MonoBehaviour:
   itemName: Iron_bar
   icon: {fileID: -2142185268650758390, guid: 026d561bd14c861428a2cd40fa93f98a, type: 3}
   prefabs: {fileID: 7285297516561513860, guid: 9b029e2744a38304e8769e5ac5f6199f, type: 3}
+  itemType: 2
   isStackable: 1
   maxStack: 99
   price: 0

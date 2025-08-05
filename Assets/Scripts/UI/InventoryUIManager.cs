@@ -13,6 +13,8 @@ public class InventoryUIManager : MonoBehaviour
 
     private bool isOpen = false;
     private List<InventorySlotUI> slotUIs = new List<InventorySlotUI>();
+
+    public Sprite trashIconSprite; // Gán trong Inspector
     void Start()
     {
         InitSlots();
@@ -34,7 +36,11 @@ public class InventoryUIManager : MonoBehaviour
 
             slotUIs.Add(slotUI);
         }
+        InventorySlotUI lastSlot = slotUIs[inventory.items.Count - 1];
 
+        // Gán sprite vào image của slot cuối
+        Image iconImage = lastSlot.GetComponent<Image>();
+        iconImage.sprite = trashIconSprite;
         inventory.slotUIs = slotUIs.ToArray(); // Nếu Inventory.cs có mảng này
     }
 
@@ -50,7 +56,6 @@ public class InventoryUIManager : MonoBehaviour
     {
         isOpen = !isOpen;
         inventoryPanel.SetActive(isOpen);
-
         if (isOpen)
         {
             RefreshInventoryUI();
@@ -63,30 +68,6 @@ public class InventoryUIManager : MonoBehaviour
     }
 
 
-    public void RefreshInventoryUI1()
-    {
-        // Xoá các slot UI cũ
-        foreach (Transform child in slotParent)
-        {
-            Destroy(child.gameObject);
-        }
-
-        slotUIs.Clear();
-
-        // Tạo lại slot UI mới từ inventory
-        for (int i = 0; i < inventory.items.Count; i++)
-        {
-            GameObject slotGO = Instantiate(slotPrefab, slotParent);
-            InventorySlotUI slotUI = slotGO.GetComponent<InventorySlotUI>();
-
-            slotUI.inventory = inventory;
-            slotUI.uiManager = this;
-            slotUI.slotIndex = i; // ⭐ Gán đúng chỉ số slot
-            slotUI.SetItem(inventory.items[i]);
-
-            slotUIs.Add(slotUI);
-        }
-    }
     public void RefreshInventoryUI()
     {
         for (int i = 0; i < slotUIs.Count; i++)

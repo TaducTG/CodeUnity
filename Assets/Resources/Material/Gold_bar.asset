@@ -15,6 +15,7 @@ MonoBehaviour:
   itemName: Gold_bar
   icon: {fileID: -359480309759690003, guid: 026d561bd14c861428a2cd40fa93f98a, type: 3}
   prefabs: {fileID: 9001690697769970185, guid: 6993858edbc2b694ea1fc9412439053d, type: 3}
+  itemType: 2
   isStackable: 1
   maxStack: 99
   price: 0

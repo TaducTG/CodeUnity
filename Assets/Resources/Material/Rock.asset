@@ -15,6 +15,7 @@ MonoBehaviour:
   itemName: Rock
   icon: {fileID: 1887494081247492234, guid: 26990865cac989340a24c887c029c560, type: 3}
   prefabs: {fileID: 1719797737436252560, guid: a022eee5103ee6340b9937d454bed4e2, type: 3}
+  itemType: 2
   isStackable: 1
   maxStack: 99
   price: 0

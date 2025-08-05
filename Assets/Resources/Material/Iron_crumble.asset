@@ -15,6 +15,7 @@ MonoBehaviour:
   itemName: iron_crumble
   icon: {fileID: -5360942402530436822, guid: 6edb0cfcebc38904aa0ab875e161192f, type: 3}
   prefabs: {fileID: 6425864740799642076, guid: 549a3efaec58d384e99da6b28a9023fa, type: 3}
+  itemType: 2
   isStackable: 1
   maxStack: 99
   price: 0

@@ -16,10 +16,41 @@ public class CraftingUIManager : MonoBehaviour
 
     public GameObject Craftbutton;
     public GameObject closeButton;
-    void Start()
+    void Awake()
     {
-        
+        // Tìm các thành phần UI theo đúng cấu trúc trong Canvas
+        Transform canvas = GameObject.Find("Canvas")?.transform;
+
+        if (canvas == null)
+        {
+            Debug.LogError("Không tìm thấy Canvas!");
+            return;
+        }
+
+        // Tìm root Crafting trong Canvas
+        Transform craftingRoot = canvas.Find("Crafting");
+
+        if (craftingRoot == null)
+        {
+            Debug.LogError("Không tìm thấy GameObject 'Crafting' trong Canvas!");
+            return;
+        }
+
+        // KHÔNG tìm Crafting trong chính nó nữa!
+        Craftbutton = craftingRoot.Find("Crafting_detail/Craftbutton")?.gameObject;
+        closeButton = craftingRoot.Find("Crafting_detail/exit")?.gameObject;
+        ingredientPanel = craftingRoot.Find("Crafting_detail")?.gameObject;
+        recipeListParent = craftingRoot.Find("Crafting_recipe_panel/Show_recipe_panel");
+        ingredientListParent = craftingRoot.Find("Crafting_detail/Show_ingredient_panel");
+
+        // Debug kiểm tra
+        if (Craftbutton == null) Debug.LogError("Không tìm thấy Craftbutton!");
+        if (closeButton == null) Debug.LogError("Không tìm thấy exit (CloseButton)!");
+        if (ingredientPanel == null) Debug.LogError("Không tìm thấy Show_ingredient_panel!");
+        if (recipeListParent == null) Debug.LogError("Không tìm thấy Show_recipe_panel!");
     }
+
+
     // Hàm xử lý in các recipe dưới dạng các button lên UI
     public void PopulateRecipeButtons()
     {
@@ -90,9 +121,11 @@ public class CraftingUIManager : MonoBehaviour
 
 
         // Tuỳ chọn: thêm nút Craft
+        Craftbutton.GetComponent<Button>().onClick.RemoveAllListeners();
         Craftbutton.GetComponent<Button>().onClick.AddListener(() => craftingSystem.Craft(recipe));
 
         //Exit
+        closeButton.GetComponent<Button>().onClick.RemoveAllListeners();
         closeButton.GetComponent<Button>().onClick.AddListener(() => ingredientPanel.SetActive(false));
     }
 }

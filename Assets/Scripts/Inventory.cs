@@ -5,7 +5,7 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     public List<InventoryItem> items;
-    public int maxSlots = 20;
+    public int maxSlots = 21;
 
     public InventorySlotUI[] slotUIs; // các slot hiển thị trên UI (kéo vào Inspector)
 

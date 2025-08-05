@@ -5,7 +5,7 @@ public class TopDownDepthSort : MonoBehaviour
     void LateUpdate()
     {
         Vector3 pos = transform.position;
-        pos.z = pos.y; // hoặc pos.z = -pos.y;
+        pos.z = pos.y / 1000f;
         transform.position = pos;
     }
 }

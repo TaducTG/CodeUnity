@@ -15,9 +15,10 @@ MonoBehaviour:
   itemName: Wood_pickaxe
   icon: {fileID: 2860006914309871096, guid: 9d513da89e7243340a5963782754ea53, type: 3}
   prefabs: {fileID: 4553720379009667703, guid: 32cd2906fdab7f940afd975763be5fd8, type: 3}
+  itemType: 1
   isStackable: 0
   maxStack: 99
-  damage: 6
+  damage: 4
   speed: 0.4
   tier: 0
   description: 

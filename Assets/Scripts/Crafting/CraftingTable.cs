@@ -5,7 +5,27 @@ public class CraftingTable : MonoBehaviour
     public GameObject craftingUIPanel;
     public CraftingUIManager craftingUIManager;
     private bool playerInRange = false;
+    void Awake()
+    {
+        // Tìm các thành phần UI theo đúng cấu trúc trong Canvas
+        Transform canvas = GameObject.Find("Canvas")?.transform;
 
+        if (canvas == null)
+        {
+            Debug.LogError("Không tìm thấy Canvas!");
+            return;
+        }
+
+        // Tìm root Crafting trong Canvas
+        Transform craftingRoot = canvas.Find("Crafting");
+
+        if (craftingRoot == null)
+        {
+            Debug.LogError("Không tìm thấy GameObject 'Crafting' trong Canvas!");
+            return;
+        }
+        craftingUIPanel = craftingRoot.Find("Crafting_recipe_panel")?.gameObject;
+    }
     void Update()
     {
         if (playerInRange && Input.GetKeyDown(KeyCode.E))

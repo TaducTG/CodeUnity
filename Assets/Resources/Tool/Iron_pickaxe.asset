@@ -15,9 +15,10 @@ MonoBehaviour:
   itemName: Iron_pickaxe
   icon: {fileID: 6232742816020895870, guid: 9d513da89e7243340a5963782754ea53, type: 3}
   prefabs: {fileID: 8079707903450270792, guid: 0a7f1b048e67c834185f1609d7756794, type: 3}
+  itemType: 1
   isStackable: 0
   maxStack: 99
-  damage: 10
+  damage: 6.5
   speed: 0.4
   tier: 2
   description: 

@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: fed27da1c45640a43a84b97cca2933d8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3257297218098827841
+    second: Wood_scaled_5x_pngcrushed_0
+  - first:
+      213: 1431869958028234748
+    second: Wood_scaled_5x_pngcrushed_1
+  - first:
+      213: 8985928570281194876
+    second: Wood_scaled_5x_pngcrushed_2
+  - first:
+      213: -5666710945345724557
+    second: Wood_scaled_5x_pngcrushed_3
+  - first:
+      213: 9016353006468407580
+    second: Wood_scaled_5x_pngcrushed_4
+  - first:
+      213: -5632293227139580691
+    second: Wood_scaled_5x_pngcrushed_5
+  - first:
+      213: 3923037870120095461
+    second: Wood_scaled_5x_pngcrushed_6
+  - first:
+      213: -7527083116540997656
+    second: Wood_scaled_5x_pngcrushed_7
+  - first:
+      213: 4908983180655246730
+    second: Wood_scaled_5x_pngcrushed_8
+  - first:
+      213: 417695901018089653
+    second: Wood_scaled_5x_pngcrushed_9
+  - first:
+      213: -1574760810838866086
+    second: Wood_scaled_5x_pngcrushed_10
+  - first:
+      213: -9216769047853851423
+    second: Wood_scaled_5x_pngcrushed_11
+  - first:
+      213: -7183529591837426409
+    second: Wood_scaled_5x_pngcrushed_12
+  - first:
+      213: 7766672913426037102
+    second: Wood_scaled_5x_pngcrushed_13
+  - first:
+      213: -6720683477529727976
+    second: Wood_scaled_5x_pngcrushed_14
+  - first:
+      213: -7701163701681448847
+    second: Wood_scaled_5x_pngcrushed_15
+  - first:
+      213: 1646502291570791877
+    second: Wood_scaled_5x_pngcrushed_16
+  - first:
+      213: -35840095425623805
+    second: Wood_scaled_5x_pngcrushed_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wood_scaled_5x_pngcrushed_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 324
+        width: 52
+        height: 207
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbde9532071cbc2d0800000000000000
+      internalID: -3257297218098827841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood_scaled_5x_pngcrushed_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 324
+        width: 82
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cff83d4f3260fd310800000000000000
+      internalID: 1431869958028234748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood_scaled_5x_pngcrushed_2
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 504
+        width: 82
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c75f4a8dc6e64bc70800000000000000
+      internalID: 8985928570281194876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood_scaled_5x_pngcrushed_3
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 484
+        width: 57
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37f99d13b6ccb51b0800000000000000
+      internalID: -5666710945345724557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood_scaled_5x_pngcrushed_4
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 319
+        width: 42
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c112318e945802d70800000000000000
+      internalID: 9016353006468407580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood_scaled_5x_pngcrushed_5
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 494
+        width: 147
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: decb18da62316d1b0800000000000000
+      internalID: -5632293227139580691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood_scaled_5x_pngcrushed_6
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 479
+        width: 162
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eec9e0682e617630800000000000000
+      internalID: 3923037870120095461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood_scaled_5x_pngcrushed_7
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 479
+        width: 72
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8efcbb329cd6a8790800000000000000
+      internalID: -7527083116540997656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood_scaled_5x_pngcrushed_8
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 334
+        width: 52
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8db253a136302440800000000000000
+      internalID: 4908983180655246730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood_scaled_5x_pngcrushed_9
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 329
+        width: 82
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8e15c7534fbc500800000000000000
+      internalID: 417695901018089653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood_scaled_5x_pngcrushed_10
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 374
+        width: 52
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a574ebfc263552ae0800000000000000
+      internalID: -1574760810838866086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood_scaled_5x_pngcrushed_11
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 254
+        width: 57
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ec1bdd2265771080800000000000000
+      internalID: -9216769047853851423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood_scaled_5x_pngcrushed_12
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 344
+        width: 87
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71df50d65e9fe4c90800000000000000
+      internalID: -7183529591837426409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood_scaled_5x_pngcrushed_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 169
+        width: 81
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e69386b7dd3c8cb60800000000000000
+      internalID: 7766672913426037102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood_scaled_5x_pngcrushed_14
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 159
+        width: 52
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81ce0022cf55bb2a0800000000000000
+      internalID: -6720683477529727976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood_scaled_5x_pngcrushed_15
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 159
+        width: 82
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17815247a68ff1590800000000000000
+      internalID: -7701163701681448847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood_scaled_5x_pngcrushed_16
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 159
+        width: 52
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c591f25c1d89d610800000000000000
+      internalID: 1646502291570791877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood_scaled_5x_pngcrushed_17
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 169
+        width: 147
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30980738f9ba08ff0800000000000000
+      internalID: -35840095425623805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: afd2585b2e8ad2e4a9db3cd78abbfaca
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Wood_scaled_5x_pngcrushed_0: -3257297218098827841
+      Wood_scaled_5x_pngcrushed_1: 1431869958028234748
+      Wood_scaled_5x_pngcrushed_10: -1574760810838866086
+      Wood_scaled_5x_pngcrushed_11: -9216769047853851423
+      Wood_scaled_5x_pngcrushed_12: -7183529591837426409
+      Wood_scaled_5x_pngcrushed_13: 7766672913426037102
+      Wood_scaled_5x_pngcrushed_14: -6720683477529727976
+      Wood_scaled_5x_pngcrushed_15: -7701163701681448847
+      Wood_scaled_5x_pngcrushed_16: 1646502291570791877
+      Wood_scaled_5x_pngcrushed_17: -35840095425623805
+      Wood_scaled_5x_pngcrushed_2: 8985928570281194876
+      Wood_scaled_5x_pngcrushed_3: -5666710945345724557
+      Wood_scaled_5x_pngcrushed_4: 9016353006468407580
+      Wood_scaled_5x_pngcrushed_5: -5632293227139580691
+      Wood_scaled_5x_pngcrushed_6: 3923037870120095461
+      Wood_scaled_5x_pngcrushed_7: -7527083116540997656
+      Wood_scaled_5x_pngcrushed_8: 4908983180655246730
+      Wood_scaled_5x_pngcrushed_9: 417695901018089653
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

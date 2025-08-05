@@ -1,0 +1,4550 @@
+fileFormatVersion: 2
+guid: dee09ca8ceb00e94fae2152ac81999c4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6783511174338137619
+    second: Vegetation_scaled_5x_pngcrushed_0
+  - first:
+      213: -8040076049845060706
+    second: Vegetation_scaled_5x_pngcrushed_1
+  - first:
+      213: 7538350869036458148
+    second: Vegetation_scaled_5x_pngcrushed_2
+  - first:
+      213: 3733612907060091977
+    second: Vegetation_scaled_5x_pngcrushed_3
+  - first:
+      213: 316708683446080048
+    second: Vegetation_scaled_5x_pngcrushed_4
+  - first:
+      213: 1571525089579611371
+    second: Vegetation_scaled_5x_pngcrushed_5
+  - first:
+      213: 6683062593371166821
+    second: Vegetation_scaled_5x_pngcrushed_6
+  - first:
+      213: -1443307527387987204
+    second: Vegetation_scaled_5x_pngcrushed_7
+  - first:
+      213: -3630360289518817782
+    second: Vegetation_scaled_5x_pngcrushed_8
+  - first:
+      213: 7976433665257916296
+    second: Vegetation_scaled_5x_pngcrushed_9
+  - first:
+      213: 4346068307917258256
+    second: Vegetation_scaled_5x_pngcrushed_10
+  - first:
+      213: -5178137792209846110
+    second: Vegetation_scaled_5x_pngcrushed_11
+  - first:
+      213: -5028727351358154826
+    second: Vegetation_scaled_5x_pngcrushed_12
+  - first:
+      213: 8626738610092203728
+    second: Vegetation_scaled_5x_pngcrushed_13
+  - first:
+      213: 9029660252818026628
+    second: Vegetation_scaled_5x_pngcrushed_14
+  - first:
+      213: 7961018884705245639
+    second: Vegetation_scaled_5x_pngcrushed_15
+  - first:
+      213: 4399806449690475617
+    second: Vegetation_scaled_5x_pngcrushed_16
+  - first:
+      213: 7557549100022405822
+    second: Vegetation_scaled_5x_pngcrushed_17
+  - first:
+      213: -8947683961297646992
+    second: Vegetation_scaled_5x_pngcrushed_18
+  - first:
+      213: -4120051528729334629
+    second: Vegetation_scaled_5x_pngcrushed_19
+  - first:
+      213: -727475242545292590
+    second: Vegetation_scaled_5x_pngcrushed_20
+  - first:
+      213: -4532272236821519989
+    second: Vegetation_scaled_5x_pngcrushed_21
+  - first:
+      213: -3791945268615381442
+    second: Vegetation_scaled_5x_pngcrushed_22
+  - first:
+      213: -3474166957569528715
+    second: Vegetation_scaled_5x_pngcrushed_23
+  - first:
+      213: -3473261739909191761
+    second: Vegetation_scaled_5x_pngcrushed_24
+  - first:
+      213: -9080239649065770416
+    second: Vegetation_scaled_5x_pngcrushed_25
+  - first:
+      213: 4324140628974600405
+    second: Vegetation_scaled_5x_pngcrushed_26
+  - first:
+      213: -2906027673275248893
+    second: Vegetation_scaled_5x_pngcrushed_27
+  - first:
+      213: 1665037570895420807
+    second: Vegetation_scaled_5x_pngcrushed_28
+  - first:
+      213: -6894903388012071354
+    second: Vegetation_scaled_5x_pngcrushed_29
+  - first:
+      213: 880169045085710127
+    second: Vegetation_scaled_5x_pngcrushed_30
+  - first:
+      213: -5242043161204134471
+    second: Vegetation_scaled_5x_pngcrushed_31
+  - first:
+      213: -8658118170746499457
+    second: Vegetation_scaled_5x_pngcrushed_32
+  - first:
+      213: 8226622298978302118
+    second: Vegetation_scaled_5x_pngcrushed_33
+  - first:
+      213: 7802312157362101257
+    second: Vegetation_scaled_5x_pngcrushed_34
+  - first:
+      213: -3179720283564837294
+    second: Vegetation_scaled_5x_pngcrushed_35
+  - first:
+      213: 8867015043622019043
+    second: Vegetation_scaled_5x_pngcrushed_36
+  - first:
+      213: 7796213280839392481
+    second: Vegetation_scaled_5x_pngcrushed_37
+  - first:
+      213: -8770442386115326813
+    second: Vegetation_scaled_5x_pngcrushed_38
+  - first:
+      213: 861202293254350049
+    second: Vegetation_scaled_5x_pngcrushed_39
+  - first:
+      213: 8293849241140920992
+    second: Vegetation_scaled_5x_pngcrushed_40
+  - first:
+      213: 2699260469757722231
+    second: Vegetation_scaled_5x_pngcrushed_41
+  - first:
+      213: -2642622729210560790
+    second: Vegetation_scaled_5x_pngcrushed_42
+  - first:
+      213: 6380196402128546303
+    second: Vegetation_scaled_5x_pngcrushed_43
+  - first:
+      213: -1504454342150103198
+    second: Vegetation_scaled_5x_pngcrushed_44
+  - first:
+      213: 7825030415098135934
+    second: Vegetation_scaled_5x_pngcrushed_45
+  - first:
+      213: -4501296159551434097
+    second: Vegetation_scaled_5x_pngcrushed_46
+  - first:
+      213: -871371985833710006
+    second: Vegetation_scaled_5x_pngcrushed_47
+  - first:
+      213: -3674028173578791839
+    second: Vegetation_scaled_5x_pngcrushed_48
+  - first:
+      213: -7111236867874467847
+    second: Vegetation_scaled_5x_pngcrushed_49
+  - first:
+      213: 7092301353859155010
+    second: Vegetation_scaled_5x_pngcrushed_50
+  - first:
+      213: -4208324143983990797
+    second: Vegetation_scaled_5x_pngcrushed_51
+  - first:
+      213: 1962042453565821950
+    second: Vegetation_scaled_5x_pngcrushed_52
+  - first:
+      213: -4728078239635809612
+    second: Vegetation_scaled_5x_pngcrushed_53
+  - first:
+      213: 4253108901358868223
+    second: Vegetation_scaled_5x_pngcrushed_54
+  - first:
+      213: 1974404591802116996
+    second: Vegetation_scaled_5x_pngcrushed_55
+  - first:
+      213: -8431432220707374180
+    second: Vegetation_scaled_5x_pngcrushed_56
+  - first:
+      213: 2363620689104985213
+    second: Vegetation_scaled_5x_pngcrushed_57
+  - first:
+      213: -7214753206219305766
+    second: Vegetation_scaled_5x_pngcrushed_58
+  - first:
+      213: -9193001887089912494
+    second: Vegetation_scaled_5x_pngcrushed_59
+  - first:
+      213: -6740815391076460885
+    second: Vegetation_scaled_5x_pngcrushed_60
+  - first:
+      213: 4477913864772779295
+    second: Vegetation_scaled_5x_pngcrushed_61
+  - first:
+      213: 1935245369759040855
+    second: Vegetation_scaled_5x_pngcrushed_62
+  - first:
+      213: -7445411456200888126
+    second: Vegetation_scaled_5x_pngcrushed_63
+  - first:
+      213: 461172930165032813
+    second: Vegetation_scaled_5x_pngcrushed_64
+  - first:
+      213: 5102569448082854607
+    second: Vegetation_scaled_5x_pngcrushed_65
+  - first:
+      213: -5577962170727832688
+    second: Vegetation_scaled_5x_pngcrushed_66
+  - first:
+      213: 4381626877500615600
+    second: Vegetation_scaled_5x_pngcrushed_67
+  - first:
+      213: -6027621549161078578
+    second: Vegetation_scaled_5x_pngcrushed_68
+  - first:
+      213: 7883386273694689338
+    second: Vegetation_scaled_5x_pngcrushed_69
+  - first:
+      213: 8638831918098362906
+    second: Vegetation_scaled_5x_pngcrushed_70
+  - first:
+      213: 1890682692358748025
+    second: Vegetation_scaled_5x_pngcrushed_71
+  - first:
+      213: -2576659829507831275
+    second: Vegetation_scaled_5x_pngcrushed_72
+  - first:
+      213: 3086952501383656920
+    second: Vegetation_scaled_5x_pngcrushed_73
+  - first:
+      213: 5823462196980130144
+    second: Vegetation_scaled_5x_pngcrushed_74
+  - first:
+      213: -6384653007286927250
+    second: Vegetation_scaled_5x_pngcrushed_75
+  - first:
+      213: -8694081516280859413
+    second: Vegetation_scaled_5x_pngcrushed_76
+  - first:
+      213: 7501398951085730702
+    second: Vegetation_scaled_5x_pngcrushed_77
+  - first:
+      213: 8314769590987158172
+    second: Vegetation_scaled_5x_pngcrushed_78
+  - first:
+      213: -1579429324885505553
+    second: Vegetation_scaled_5x_pngcrushed_79
+  - first:
+      213: 6615331605717354263
+    second: Vegetation_scaled_5x_pngcrushed_80
+  - first:
+      213: -7092574160702121595
+    second: Vegetation_scaled_5x_pngcrushed_81
+  - first:
+      213: 4600952234637941193
+    second: Vegetation_scaled_5x_pngcrushed_82
+  - first:
+      213: -7697424620331246492
+    second: Vegetation_scaled_5x_pngcrushed_83
+  - first:
+      213: 5776496958830473302
+    second: Vegetation_scaled_5x_pngcrushed_84
+  - first:
+      213: -8992402428050004690
+    second: Vegetation_scaled_5x_pngcrushed_85
+  - first:
+      213: 4218346784200421255
+    second: Vegetation_scaled_5x_pngcrushed_86
+  - first:
+      213: -6375456546153870479
+    second: Vegetation_scaled_5x_pngcrushed_87
+  - first:
+      213: -2482545996397467768
+    second: Vegetation_scaled_5x_pngcrushed_88
+  - first:
+      213: -9155068620823425021
+    second: Vegetation_scaled_5x_pngcrushed_89
+  - first:
+      213: 6115844080985469911
+    second: Vegetation_scaled_5x_pngcrushed_90
+  - first:
+      213: -8799289139615358625
+    second: Vegetation_scaled_5x_pngcrushed_91
+  - first:
+      213: -8595342609323116434
+    second: Vegetation_scaled_5x_pngcrushed_92
+  - first:
+      213: 1464243317652244308
+    second: Vegetation_scaled_5x_pngcrushed_93
+  - first:
+      213: 7162746474189057962
+    second: Vegetation_scaled_5x_pngcrushed_94
+  - first:
+      213: -6111443176734813572
+    second: Vegetation_scaled_5x_pngcrushed_95
+  - first:
+      213: -8557466909418778996
+    second: Vegetation_scaled_5x_pngcrushed_96
+  - first:
+      213: -7442037752091959376
+    second: Vegetation_scaled_5x_pngcrushed_97
+  - first:
+      213: -5253711256244527057
+    second: Vegetation_scaled_5x_pngcrushed_98
+  - first:
+      213: -4208499490533527100
+    second: Vegetation_scaled_5x_pngcrushed_99
+  - first:
+      213: 4397793347203076404
+    second: Vegetation_scaled_5x_pngcrushed_100
+  - first:
+      213: -8650268627033312303
+    second: Vegetation_scaled_5x_pngcrushed_101
+  - first:
+      213: 6502616190987839418
+    second: Vegetation_scaled_5x_pngcrushed_102
+  - first:
+      213: 3328022870155742146
+    second: Vegetation_scaled_5x_pngcrushed_103
+  - first:
+      213: -4146062319853876107
+    second: Vegetation_scaled_5x_pngcrushed_104
+  - first:
+      213: 200704746920580635
+    second: Vegetation_scaled_5x_pngcrushed_105
+  - first:
+      213: 8933872257219522031
+    second: Vegetation_scaled_5x_pngcrushed_106
+  - first:
+      213: 4675138923624597932
+    second: Vegetation_scaled_5x_pngcrushed_107
+  - first:
+      213: -6794625376464507875
+    second: Vegetation_scaled_5x_pngcrushed_108
+  - first:
+      213: 2227521510068793699
+    second: Vegetation_scaled_5x_pngcrushed_109
+  - first:
+      213: -1033463483645742989
+    second: Vegetation_scaled_5x_pngcrushed_110
+  - first:
+      213: 4998618348982977605
+    second: Vegetation_scaled_5x_pngcrushed_111
+  - first:
+      213: 8884141330082429137
+    second: Vegetation_scaled_5x_pngcrushed_112
+  - first:
+      213: 476726323865406069
+    second: Vegetation_scaled_5x_pngcrushed_113
+  - first:
+      213: 6251139518719568977
+    second: Vegetation_scaled_5x_pngcrushed_114
+  - first:
+      213: 8863907365755262986
+    second: Vegetation_scaled_5x_pngcrushed_115
+  - first:
+      213: 4135617105354399078
+    second: Vegetation_scaled_5x_pngcrushed_116
+  - first:
+      213: -1085198881148303483
+    second: Vegetation_scaled_5x_pngcrushed_117
+  - first:
+      213: 8126986189422507782
+    second: Vegetation_scaled_5x_pngcrushed_118
+  - first:
+      213: 5373939552479982705
+    second: Vegetation_scaled_5x_pngcrushed_119
+  - first:
+      213: -322812267171374293
+    second: Vegetation_scaled_5x_pngcrushed_120
+  - first:
+      213: 9040186324507703596
+    second: Vegetation_scaled_5x_pngcrushed_121
+  - first:
+      213: -3648631896627104022
+    second: Vegetation_scaled_5x_pngcrushed_122
+  - first:
+      213: -7317719032305019546
+    second: Vegetation_scaled_5x_pngcrushed_123
+  - first:
+      213: -2532555369458768333
+    second: Vegetation_scaled_5x_pngcrushed_124
+  - first:
+      213: 7418887034154693425
+    second: Vegetation_scaled_5x_pngcrushed_125
+  - first:
+      213: 2817353831974961250
+    second: Vegetation_scaled_5x_pngcrushed_126
+  - first:
+      213: -3605336945968479823
+    second: Vegetation_scaled_5x_pngcrushed_127
+  - first:
+      213: 1216972373882888341
+    second: Vegetation_scaled_5x_pngcrushed_128
+  - first:
+      213: -1668816355094590875
+    second: Vegetation_scaled_5x_pngcrushed_129
+  - first:
+      213: 7897674441046509600
+    second: Vegetation_scaled_5x_pngcrushed_130
+  - first:
+      213: 2256460516831092518
+    second: Vegetation_scaled_5x_pngcrushed_131
+  - first:
+      213: -6162812380646061330
+    second: Vegetation_scaled_5x_pngcrushed_132
+  - first:
+      213: 1302757554753467159
+    second: Vegetation_scaled_5x_pngcrushed_133
+  - first:
+      213: 2564555773018721770
+    second: Vegetation_scaled_5x_pngcrushed_134
+  - first:
+      213: 1523657239691510482
+    second: Vegetation_scaled_5x_pngcrushed_135
+  - first:
+      213: -9211230905174423522
+    second: Vegetation_scaled_5x_pngcrushed_136
+  - first:
+      213: 4984186312847893000
+    second: Vegetation_scaled_5x_pngcrushed_137
+  - first:
+      213: 6469166313804575133
+    second: Vegetation_scaled_5x_pngcrushed_138
+  - first:
+      213: 4948364634628160708
+    second: Vegetation_scaled_5x_pngcrushed_139
+  - first:
+      213: -7758614646906427102
+    second: Vegetation_scaled_5x_pngcrushed_140
+  - first:
+      213: 1454929464555408941
+    second: Vegetation_scaled_5x_pngcrushed_141
+  - first:
+      213: 5459702687722541033
+    second: Vegetation_scaled_5x_pngcrushed_142
+  - first:
+      213: -8409577039382396372
+    second: Vegetation_scaled_5x_pngcrushed_143
+  - first:
+      213: 3872303293139246349
+    second: Vegetation_scaled_5x_pngcrushed_144
+  - first:
+      213: -5678948873262795976
+    second: Vegetation_scaled_5x_pngcrushed_145
+  - first:
+      213: 5657978524986494924
+    second: Vegetation_scaled_5x_pngcrushed_146
+  - first:
+      213: 4307406858904624689
+    second: Vegetation_scaled_5x_pngcrushed_147
+  - first:
+      213: 6211012000373653910
+    second: Vegetation_scaled_5x_pngcrushed_148
+  - first:
+      213: -159642948313424680
+    second: Vegetation_scaled_5x_pngcrushed_149
+  - first:
+      213: 4762270503083825249
+    second: Vegetation_scaled_5x_pngcrushed_150
+  - first:
+      213: 6569278862727025652
+    second: Vegetation_scaled_5x_pngcrushed_151
+  - first:
+      213: -5459714238264835842
+    second: Vegetation_scaled_5x_pngcrushed_152
+  - first:
+      213: -4714209546912192074
+    second: Vegetation_scaled_5x_pngcrushed_153
+  - first:
+      213: -7841744355506725204
+    second: Vegetation_scaled_5x_pngcrushed_154
+  - first:
+      213: 5775809526765435720
+    second: Vegetation_scaled_5x_pngcrushed_155
+  - first:
+      213: 4385219086166797936
+    second: Vegetation_scaled_5x_pngcrushed_156
+  - first:
+      213: -3608404167382613182
+    second: Vegetation_scaled_5x_pngcrushed_157
+  - first:
+      213: 2773180876576068293
+    second: Vegetation_scaled_5x_pngcrushed_158
+  - first:
+      213: 133450653830483541
+    second: Vegetation_scaled_5x_pngcrushed_159
+  - first:
+      213: -3376926873520367195
+    second: Vegetation_scaled_5x_pngcrushed_160
+  - first:
+      213: -8474661715320760981
+    second: Vegetation_scaled_5x_pngcrushed_161
+  - first:
+      213: -783989572216578854
+    second: Vegetation_scaled_5x_pngcrushed_162
+  - first:
+      213: 6653470234821301105
+    second: Vegetation_scaled_5x_pngcrushed_163
+  - first:
+      213: -4352035905714016338
+    second: Vegetation_scaled_5x_pngcrushed_164
+  - first:
+      213: 2604943519290821164
+    second: Vegetation_scaled_5x_pngcrushed_165
+  - first:
+      213: -7911566219360472342
+    second: Vegetation_scaled_5x_pngcrushed_166
+  - first:
+      213: -2530235888042450439
+    second: Vegetation_scaled_5x_pngcrushed_167
+  - first:
+      213: -8707305226398050655
+    second: Vegetation_scaled_5x_pngcrushed_168
+  - first:
+      213: -2878888265908364817
+    second: Vegetation_scaled_5x_pngcrushed_169
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1999
+        width: 147
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de1beab07802cd1a0800000000000000
+      internalID: -6783511174338137619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_1
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1999
+        width: 147
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9bfbd94e69eb6090800000000000000
+      internalID: -8040076049845060706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_2
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 1999
+        width: 147
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a0ec2dec2a9d9860800000000000000
+      internalID: 7538350869036458148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_3
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 1999
+        width: 147
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94c512e482570d330800000000000000
+      internalID: 3733612907060091977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_4
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 2094
+        width: 47
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 032d51e9edc256400800000000000000
+      internalID: 316708683446080048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_5
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 2079
+        width: 47
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be4b1002ebd2fc510800000000000000
+      internalID: 1571525089579611371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_6
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 2089
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 568d69135020fbc50800000000000000
+      internalID: 6683062593371166821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_7
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 2089
+        width: 47
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf24468637758fbe0800000000000000
+      internalID: -1443307527387987204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_8
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 2089
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0eeb881d8e5e9dc0800000000000000
+      internalID: -3630360289518817782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_9
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 2084
+        width: 47
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8874a28582cf1be60800000000000000
+      internalID: 7976433665257916296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_10
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 2084
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ebdfe7916505c30800000000000000
+      internalID: 4346068307917258256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_11
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 2084
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a08e49ec1f8328b0800000000000000
+      internalID: -5178137792209846110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_12
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 2084
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b791060e1f563ab0800000000000000
+      internalID: -5028727351358154826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_13
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 2084
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de51b83f0558b770800000000000000
+      internalID: 8626738610092203728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_14
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 2019
+        width: 67
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 480bea3a82ccf4d70800000000000000
+      internalID: 9029660252818026628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_15
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 2019
+        width: 57
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c958011f783b7e60800000000000000
+      internalID: 7961018884705245639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_16
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 2009
+        width: 57
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16cf542a7a04f0d30800000000000000
+      internalID: 4399806449690475617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_17
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 2019
+        width: 52
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba98676ddec1e860800000000000000
+      internalID: 7557549100022405822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_18
+      rect:
+        serializedVersion: 2
+        x: 1784
+        y: 2024
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ac46418d073d380800000000000000
+      internalID: -8947683961297646992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_19
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 2024
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9c68cda6f2a2d6c0800000000000000
+      internalID: -4120051528729334629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_20
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 2024
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2da52390f1d77e5f0800000000000000
+      internalID: -727475242545292590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_21
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1679
+        width: 212
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8163e2e9622a11c0800000000000000
+      internalID: -4532272236821519989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_22
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1679
+        width: 212
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3ef4786edd406bc0800000000000000
+      internalID: -3791945268615381442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_23
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 1679
+        width: 212
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57c2bab1f8749cfc0800000000000000
+      internalID: -3474166957569528715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_24
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 1679
+        width: 212
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa7e1c489de7ccfc0800000000000000
+      internalID: -3473261739909191761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_25
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1679
+        width: 172
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 052640af5228cf180800000000000000
+      internalID: -9080239649065770416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_26
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1449
+        width: 217
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d08dd4edfe620c30800000000000000
+      internalID: 4324140628974600405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_27
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1449
+        width: 217
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f49fa5a37bba7d0800000000000000
+      internalID: -2906027673275248893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_28
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 1449
+        width: 217
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d96e659d66b1710800000000000000
+      internalID: 1665037570895420807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_29
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 1449
+        width: 217
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64637ec36e16050a0800000000000000
+      internalID: -6894903388012071354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_30
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 1439
+        width: 197
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f27e0aa451df63c00800000000000000
+      internalID: 880169045085710127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_31
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 1439
+        width: 62
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd6927b4858047b0800000000000000
+      internalID: -5242043161204134471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_32
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1369
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ecc49756f28d780800000000000000
+      internalID: -8658118170746499457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_33
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1379
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a8b8e7f465da2270800000000000000
+      internalID: 8226622298978302118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_34
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1369
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90c97469191674c60800000000000000
+      internalID: 7802312157362101257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_35
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1379
+        width: 47
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 256730dbf3d5fd3d0800000000000000
+      internalID: -3179720283564837294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_36
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1359
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef9225e337fd0b70800000000000000
+      internalID: 8867015043622019043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_37
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1299
+        width: 157
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ec5d9d3ca6b13c60800000000000000
+      internalID: 7796213280839392481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_38
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1289
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ac019c1e11294680800000000000000
+      internalID: -8770442386115326813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_39
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1289
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e46d214cea93fb00800000000000000
+      internalID: 861202293254350049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_40
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1299
+        width: 47
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a209de21fba91370800000000000000
+      internalID: 8293849241140920992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_41
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 1304
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77eb9209813b57520800000000000000
+      internalID: 2699260469757722231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_42
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1299
+        width: 57
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeef70601a4835bd0800000000000000
+      internalID: -2642622729210560790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_43
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1199
+        width: 162
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff9e812f2d20b8850800000000000000
+      internalID: 6380196402128546303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_44
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1199
+        width: 77
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26f595b2fba1f1be0800000000000000
+      internalID: -1504454342150103198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_45
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 1199
+        width: 57
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e754d8824b7189c60800000000000000
+      internalID: 7825030415098135934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_46
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 1199
+        width: 47
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f825b15edfe2881c0800000000000000
+      internalID: -4501296159551434097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_47
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1204
+        width: 57
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ea72dabc348e3f0800000000000000
+      internalID: -871371985833710006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_48
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1204
+        width: 47
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1641f0b87da330dc0800000000000000
+      internalID: -3674028173578791839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_49
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 1209
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ff4ea0eebfcf4d90800000000000000
+      internalID: -7111236867874467847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_50
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1219
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2440cc4318aec6260800000000000000
+      internalID: 7092301353859155010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_51
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1119
+        width: 82
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7622adc770995c0800000000000000
+      internalID: -4208324143983990797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_52
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1199
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef3d60757339a3b10800000000000000
+      internalID: 1962042453565821950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_53
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1199
+        width: 72
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bad04834ed726eb0800000000000000
+      internalID: -4728078239635809612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_54
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 1199
+        width: 47
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff61c880304160b30800000000000000
+      internalID: 4253108901358868223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_55
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 1199
+        width: 37
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48be341f38e766b10800000000000000
+      internalID: 1974404591802116996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_56
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 1199
+        width: 42
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b34f021198dfa80800000000000000
+      internalID: -8431432220707374180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_57
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1129
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7cddd56e744dc020800000000000000
+      internalID: 2363620689104985213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_58
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1139
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc00313f2c00eb90800000000000000
+      internalID: -7214753206219305766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_59
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1129
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25592848d75eb6080800000000000000
+      internalID: -9193001887089912494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_60
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1139
+        width: 47
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba6d66ebd10d372a0800000000000000
+      internalID: -6740815391076460885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_61
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1059
+        width: 157
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1df39c5feeb42e30800000000000000
+      internalID: 4477913864772779295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_62
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1049
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75505b1196f5bda10800000000000000
+      internalID: 1935245369759040855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_63
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1049
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c0b5826ab59ca890800000000000000
+      internalID: -7445411456200888126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_64
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1059
+        width: 47
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d67438a265a666600800000000000000
+      internalID: 461172930165032813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_65
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 1064
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc25db2e0e7ffc640800000000000000
+      internalID: 5102569448082854607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_66
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1059
+        width: 57
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 093633385f81792b0800000000000000
+      internalID: -5577962170727832688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_67
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 959
+        width: 162
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb6ab32e6aaecc30800000000000000
+      internalID: 4381626877500615600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_68
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 959
+        width: 77
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec0a3c10326995ca0800000000000000
+      internalID: -6027621549161078578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_69
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 964
+        width: 57
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3823c64c0a676d60800000000000000
+      internalID: 7883386273694689338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_70
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 964
+        width: 47
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a123f88ebdb43e770800000000000000
+      internalID: 8638831918098362906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_71
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 969
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 977b50534ed0d3a10800000000000000
+      internalID: 1890682692358748025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_72
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 979
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51aca2b698ddd3cd0800000000000000
+      internalID: -2576659829507831275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_73
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 879
+        width: 82
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d5f973d1fe07da20800000000000000
+      internalID: 3086952501383656920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_74
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 959
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 061aaed930811d050800000000000000
+      internalID: 5823462196980130144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_75
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 959
+        width: 72
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e60888ecae72567a0800000000000000
+      internalID: -6384653007286927250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_76
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 959
+        width: 47
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be43ac59cea685780800000000000000
+      internalID: -8694081516280859413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_77
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 959
+        width: 37
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8be3f51a925a1860800000000000000
+      internalID: 7501398951085730702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_78
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 889
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c927204b3eef36370800000000000000
+      internalID: 8314769590987158172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_79
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 899
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe94d5ea56db41ae0800000000000000
+      internalID: -1579429324885505553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_80
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 889
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 717823ebb016ecb50800000000000000
+      internalID: 6615331605717354263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_81
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 899
+        width: 47
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5895c30016d129d90800000000000000
+      internalID: -7092574160702121595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_82
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 819
+        width: 157
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c952263eadd9df30800000000000000
+      internalID: 4600952234637941193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_83
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 809
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46c5fcb27114d2590800000000000000
+      internalID: -7697424620331246492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_84
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 809
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 650f63df06d3a2050800000000000000
+      internalID: 5776496958830473302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_85
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 819
+        width: 47
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2528bea2a1943380800000000000000
+      internalID: -8992402428050004690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_86
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 824
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f6dabec049a8a30800000000000000
+      internalID: 4218346784200421255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_87
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 819
+        width: 57
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17b4f85cc04d587a0800000000000000
+      internalID: -6375456546153870479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_88
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 719
+        width: 162
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8872922c1993c8dd0800000000000000
+      internalID: -2482545996397467768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_89
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 719
+        width: 77
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3009e715899a2f080800000000000000
+      internalID: -9155068620823425021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_90
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 724
+        width: 57
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d370dcd9c7dfd450800000000000000
+      internalID: 6115844080985469911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_91
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 724
+        width: 47
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f51264de525a2e580800000000000000
+      internalID: -8799289139615358625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_92
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 729
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e683488df6537b880800000000000000
+      internalID: -8595342609323116434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_93
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 739
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 457c66d1a89025410800000000000000
+      internalID: 1464243317652244308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_94
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 719
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf683ae7ff276360800000000000000
+      internalID: 7162746474189057962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_95
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 719
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c729cb18fcacf2ba0800000000000000
+      internalID: -6111443176734813572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_96
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 719
+        width: 72
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8e0fee6f25cd3980800000000000000
+      internalID: -8557466909418778996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_97
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 719
+        width: 47
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf1385181298b890800000000000000
+      internalID: -7442037752091959376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_98
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 719
+        width: 37
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f20e213a2711717b0800000000000000
+      internalID: -5253711256244527057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_99
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 429
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c1365dc2086895c0800000000000000
+      internalID: -4208499490533527100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_100
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 419
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4319d9fafb9180d30800000000000000
+      internalID: 4397793347203076404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_101
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 414
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d339f9c38214f780800000000000000
+      internalID: -8650268627033312303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_102
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 399
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7a88e29feed3a50800000000000000
+      internalID: 6502616190987839418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_103
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 424
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cb4204fa238f2e20800000000000000
+      internalID: 3328022870155742146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_104
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 434
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57c4a70794a3676c0800000000000000
+      internalID: -4146062319853876107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_105
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 434
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b169fe867eb09c200800000000000000
+      internalID: 200704746920580635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_106
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 424
+        width: 67
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fed6948fb7d7bfb70800000000000000
+      internalID: 8933872257219522031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_107
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 324
+        width: 57
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca90f32c41e61e040800000000000000
+      internalID: 4675138923624597932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_108
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 324
+        width: 57
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c6af53834a4b1a0800000000000000
+      internalID: -6794625376464507875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_109
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 359
+        width: 72
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3613131f20fb9ee10800000000000000
+      internalID: 2227521510068793699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_110
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 364
+        width: 82
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37035f8ef6668a1f0800000000000000
+      internalID: -1033463483645742989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_111
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 344
+        width: 82
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54441e297e8ae5540800000000000000
+      internalID: 4998618348982977605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_112
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 349
+        width: 52
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d8fde1387fca4b70800000000000000
+      internalID: 8884141330082429137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_113
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 319
+        width: 142
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57a4315d01cad9600800000000000000
+      internalID: 476726323865406069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_114
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 274
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15cafa6b54280c650800000000000000
+      internalID: 6251139518719568977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_115
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 274
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a089fc149cce20b70800000000000000
+      internalID: 8863907365755262986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_116
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 274
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66d9dab88d9a46930800000000000000
+      internalID: 4135617105354399078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_117
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 264
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58701820e5990f0f0800000000000000
+      internalID: -1085198881148303483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_118
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 264
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 607b80371ead8c070800000000000000
+      internalID: 8126986189422507782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_119
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 269
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174bdf5fc81149a40800000000000000
+      internalID: 5373939552479982705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_120
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 259
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2b9c1e04f3258bf0800000000000000
+      internalID: -322812267171374293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_121
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 264
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2930afa091357d70800000000000000
+      internalID: 9040186324507703596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_122
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 264
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae6b16d0f947d5dc0800000000000000
+      internalID: -3648631896627104022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_123
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 259
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6651851af4d327a90800000000000000
+      internalID: -7317719032305019546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_124
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 264
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 336e66d3f4e8adcd0800000000000000
+      internalID: -2532555369458768333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_125
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 274
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 133ba8b537e25f660800000000000000
+      internalID: 7418887034154693425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_126
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 274
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26004791260491720800000000000000
+      internalID: 2817353831974961250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_127
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 274
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b105f7462547fdc0800000000000000
+      internalID: -3605336945968479823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_128
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 194
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 590e0ce1ded83e010800000000000000
+      internalID: 1216972373882888341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_129
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 194
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56a8937ed5c27d8e0800000000000000
+      internalID: -1668816355094590875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_130
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 194
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 028424a7f0d2a9d60800000000000000
+      internalID: 7897674441046509600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_131
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 184
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62f596382ee805f10800000000000000
+      internalID: 2256460516831092518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_132
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 184
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea4632baca497aa0800000000000000
+      internalID: -6162812380646061330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_133
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 189
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 713798ff713541210800000000000000
+      internalID: 1302757554753467159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_134
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 179
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aed457153e1279320800000000000000
+      internalID: 2564555773018721770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_135
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 184
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d2c343df2e152510800000000000000
+      internalID: 1523657239691510482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_136
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 184
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e188af08b422b2080800000000000000
+      internalID: -9211230905174423522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_137
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 179
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 802a9af4b036b2540800000000000000
+      internalID: 4984186312847893000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_138
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 184
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d91be3fbc7817c950800000000000000
+      internalID: 6469166313804575133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_139
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 194
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ccfd1aea6f1ca440800000000000000
+      internalID: 4948364634628160708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_140
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 194
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 229eff5e51dd35490800000000000000
+      internalID: -7758614646906427102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_141
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 194
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e0314b3a2f03410800000000000000
+      internalID: 1454929464555408941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_142
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 114
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ef82f0faa2c4cb40800000000000000
+      internalID: 5459702687722541033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_143
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 114
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c22c4501d3e2b4b80800000000000000
+      internalID: -8409577039382396372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_144
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 114
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0dd32a245f2db530800000000000000
+      internalID: 3872303293139246349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_145
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 104
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 833f09f86125031b0800000000000000
+      internalID: -5678948873262795976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_146
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 104
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccfcb90cd7d258e40800000000000000
+      internalID: 5657978524986494924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_147
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 109
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13e571077bbf6cb30800000000000000
+      internalID: 4307406858904624689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_148
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 99
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 691c5f9c182f13650800000000000000
+      internalID: 6211012000373653910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_149
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 104
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dcd1e69595d8cdf0800000000000000
+      internalID: -159642948313424680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_150
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 104
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 168d1ac7acbf61240800000000000000
+      internalID: 4762270503083825249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_151
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 99
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f39353f154ca2b50800000000000000
+      internalID: 6569278862727025652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_152
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 104
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef0051db3d23b34b0800000000000000
+      internalID: -5459714238264835842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_153
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 114
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b92b8fd463c39eb0800000000000000
+      internalID: -4714209546912192074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_154
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 114
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caed8965e078c2390800000000000000
+      internalID: -7841744355506725204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_155
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 114
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84bbb2db92cc72050800000000000000
+      internalID: 5775809526765435720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_156
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 34
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07e2c35668d6bdc30800000000000000
+      internalID: 4385219086166797936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_157
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 34
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 243ce15278f5cedc0800000000000000
+      internalID: -3608404167382613182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_158
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 34
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c2193670515c7620800000000000000
+      internalID: 2773180876576068293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_159
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 24
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55e0c90a9ac1ad100800000000000000
+      internalID: 133450653830483541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_160
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 24
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9195776eeb221d0800000000000000
+      internalID: -3376926873520367195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_161
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 29
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6514b21214f36a80800000000000000
+      internalID: -8474661715320760981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_162
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 19
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc9b6843a5be15f0800000000000000
+      internalID: -783989572216578854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_163
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 24
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 173982e4defd55c50800000000000000
+      internalID: 6653470234821301105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_164
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 24
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eafab2ed6667a93c0800000000000000
+      internalID: -4352035905714016338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_165
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 19
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a0947445e962420800000000000000
+      internalID: 2604943519290821164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_166
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 24
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae2f906d078743290800000000000000
+      internalID: -7911566219360472342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_167
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 34
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f1e8479ddbc2ecd0800000000000000
+      internalID: -2530235888042450439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_168
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 34
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a654a5a700792780800000000000000
+      internalID: -8707305226398050655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vegetation_scaled_5x_pngcrushed_169
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 34
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe9dd7a00622c08d0800000000000000
+      internalID: -2878888265908364817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Vegetation_scaled_5x_pngcrushed_0: -6783511174338137619
+      Vegetation_scaled_5x_pngcrushed_1: -8040076049845060706
+      Vegetation_scaled_5x_pngcrushed_10: 4346068307917258256
+      Vegetation_scaled_5x_pngcrushed_100: 4397793347203076404
+      Vegetation_scaled_5x_pngcrushed_101: -8650268627033312303
+      Vegetation_scaled_5x_pngcrushed_102: 6502616190987839418
+      Vegetation_scaled_5x_pngcrushed_103: 3328022870155742146
+      Vegetation_scaled_5x_pngcrushed_104: -4146062319853876107
+      Vegetation_scaled_5x_pngcrushed_105: 200704746920580635
+      Vegetation_scaled_5x_pngcrushed_106: 8933872257219522031
+      Vegetation_scaled_5x_pngcrushed_107: 4675138923624597932
+      Vegetation_scaled_5x_pngcrushed_108: -6794625376464507875
+      Vegetation_scaled_5x_pngcrushed_109: 2227521510068793699
+      Vegetation_scaled_5x_pngcrushed_11: -5178137792209846110
+      Vegetation_scaled_5x_pngcrushed_110: -1033463483645742989
+      Vegetation_scaled_5x_pngcrushed_111: 4998618348982977605
+      Vegetation_scaled_5x_pngcrushed_112: 8884141330082429137
+      Vegetation_scaled_5x_pngcrushed_113: 476726323865406069
+      Vegetation_scaled_5x_pngcrushed_114: 6251139518719568977
+      Vegetation_scaled_5x_pngcrushed_115: 8863907365755262986
+      Vegetation_scaled_5x_pngcrushed_116: 4135617105354399078
+      Vegetation_scaled_5x_pngcrushed_117: -1085198881148303483
+      Vegetation_scaled_5x_pngcrushed_118: 8126986189422507782
+      Vegetation_scaled_5x_pngcrushed_119: 5373939552479982705
+      Vegetation_scaled_5x_pngcrushed_12: -5028727351358154826
+      Vegetation_scaled_5x_pngcrushed_120: -322812267171374293
+      Vegetation_scaled_5x_pngcrushed_121: 9040186324507703596
+      Vegetation_scaled_5x_pngcrushed_122: -3648631896627104022
+      Vegetation_scaled_5x_pngcrushed_123: -7317719032305019546
+      Vegetation_scaled_5x_pngcrushed_124: -2532555369458768333
+      Vegetation_scaled_5x_pngcrushed_125: 7418887034154693425
+      Vegetation_scaled_5x_pngcrushed_126: 2817353831974961250
+      Vegetation_scaled_5x_pngcrushed_127: -3605336945968479823
+      Vegetation_scaled_5x_pngcrushed_128: 1216972373882888341
+      Vegetation_scaled_5x_pngcrushed_129: -1668816355094590875
+      Vegetation_scaled_5x_pngcrushed_13: 8626738610092203728
+      Vegetation_scaled_5x_pngcrushed_130: 7897674441046509600
+      Vegetation_scaled_5x_pngcrushed_131: 2256460516831092518
+      Vegetation_scaled_5x_pngcrushed_132: -6162812380646061330
+      Vegetation_scaled_5x_pngcrushed_133: 1302757554753467159
+      Vegetation_scaled_5x_pngcrushed_134: 2564555773018721770
+      Vegetation_scaled_5x_pngcrushed_135: 1523657239691510482
+      Vegetation_scaled_5x_pngcrushed_136: -9211230905174423522
+      Vegetation_scaled_5x_pngcrushed_137: 4984186312847893000
+      Vegetation_scaled_5x_pngcrushed_138: 6469166313804575133
+      Vegetation_scaled_5x_pngcrushed_139: 4948364634628160708
+      Vegetation_scaled_5x_pngcrushed_14: 9029660252818026628
+      Vegetation_scaled_5x_pngcrushed_140: -7758614646906427102
+      Vegetation_scaled_5x_pngcrushed_141: 1454929464555408941
+      Vegetation_scaled_5x_pngcrushed_142: 5459702687722541033
+      Vegetation_scaled_5x_pngcrushed_143: -8409577039382396372
+      Vegetation_scaled_5x_pngcrushed_144: 3872303293139246349
+      Vegetation_scaled_5x_pngcrushed_145: -5678948873262795976
+      Vegetation_scaled_5x_pngcrushed_146: 5657978524986494924
+      Vegetation_scaled_5x_pngcrushed_147: 4307406858904624689
+      Vegetation_scaled_5x_pngcrushed_148: 6211012000373653910
+      Vegetation_scaled_5x_pngcrushed_149: -159642948313424680
+      Vegetation_scaled_5x_pngcrushed_15: 7961018884705245639
+      Vegetation_scaled_5x_pngcrushed_150: 4762270503083825249
+      Vegetation_scaled_5x_pngcrushed_151: 6569278862727025652
+      Vegetation_scaled_5x_pngcrushed_152: -5459714238264835842
+      Vegetation_scaled_5x_pngcrushed_153: -4714209546912192074
+      Vegetation_scaled_5x_pngcrushed_154: -7841744355506725204
+      Vegetation_scaled_5x_pngcrushed_155: 5775809526765435720
+      Vegetation_scaled_5x_pngcrushed_156: 4385219086166797936
+      Vegetation_scaled_5x_pngcrushed_157: -3608404167382613182
+      Vegetation_scaled_5x_pngcrushed_158: 2773180876576068293
+      Vegetation_scaled_5x_pngcrushed_159: 133450653830483541
+      Vegetation_scaled_5x_pngcrushed_16: 4399806449690475617
+      Vegetation_scaled_5x_pngcrushed_160: -3376926873520367195
+      Vegetation_scaled_5x_pngcrushed_161: -8474661715320760981
+      Vegetation_scaled_5x_pngcrushed_162: -783989572216578854
+      Vegetation_scaled_5x_pngcrushed_163: 6653470234821301105
+      Vegetation_scaled_5x_pngcrushed_164: -4352035905714016338
+      Vegetation_scaled_5x_pngcrushed_165: 2604943519290821164
+      Vegetation_scaled_5x_pngcrushed_166: -7911566219360472342
+      Vegetation_scaled_5x_pngcrushed_167: -2530235888042450439
+      Vegetation_scaled_5x_pngcrushed_168: -8707305226398050655
+      Vegetation_scaled_5x_pngcrushed_169: -2878888265908364817
+      Vegetation_scaled_5x_pngcrushed_17: 7557549100022405822
+      Vegetation_scaled_5x_pngcrushed_18: -8947683961297646992
+      Vegetation_scaled_5x_pngcrushed_19: -4120051528729334629
+      Vegetation_scaled_5x_pngcrushed_2: 7538350869036458148
+      Vegetation_scaled_5x_pngcrushed_20: -727475242545292590
+      Vegetation_scaled_5x_pngcrushed_21: -4532272236821519989
+      Vegetation_scaled_5x_pngcrushed_22: -3791945268615381442
+      Vegetation_scaled_5x_pngcrushed_23: -3474166957569528715
+      Vegetation_scaled_5x_pngcrushed_24: -3473261739909191761
+      Vegetation_scaled_5x_pngcrushed_25: -9080239649065770416
+      Vegetation_scaled_5x_pngcrushed_26: 4324140628974600405
+      Vegetation_scaled_5x_pngcrushed_27: -2906027673275248893
+      Vegetation_scaled_5x_pngcrushed_28: 1665037570895420807
+      Vegetation_scaled_5x_pngcrushed_29: -6894903388012071354
+      Vegetation_scaled_5x_pngcrushed_3: 3733612907060091977
+      Vegetation_scaled_5x_pngcrushed_30: 880169045085710127
+      Vegetation_scaled_5x_pngcrushed_31: -5242043161204134471
+      Vegetation_scaled_5x_pngcrushed_32: -8658118170746499457
+      Vegetation_scaled_5x_pngcrushed_33: 8226622298978302118
+      Vegetation_scaled_5x_pngcrushed_34: 7802312157362101257
+      Vegetation_scaled_5x_pngcrushed_35: -3179720283564837294
+      Vegetation_scaled_5x_pngcrushed_36: 8867015043622019043
+      Vegetation_scaled_5x_pngcrushed_37: 7796213280839392481
+      Vegetation_scaled_5x_pngcrushed_38: -8770442386115326813
+      Vegetation_scaled_5x_pngcrushed_39: 861202293254350049
+      Vegetation_scaled_5x_pngcrushed_4: 316708683446080048
+      Vegetation_scaled_5x_pngcrushed_40: 8293849241140920992
+      Vegetation_scaled_5x_pngcrushed_41: 2699260469757722231
+      Vegetation_scaled_5x_pngcrushed_42: -2642622729210560790
+      Vegetation_scaled_5x_pngcrushed_43: 6380196402128546303
+      Vegetation_scaled_5x_pngcrushed_44: -1504454342150103198
+      Vegetation_scaled_5x_pngcrushed_45: 7825030415098135934
+      Vegetation_scaled_5x_pngcrushed_46: -4501296159551434097
+      Vegetation_scaled_5x_pngcrushed_47: -871371985833710006
+      Vegetation_scaled_5x_pngcrushed_48: -3674028173578791839
+      Vegetation_scaled_5x_pngcrushed_49: -7111236867874467847
+      Vegetation_scaled_5x_pngcrushed_5: 1571525089579611371
+      Vegetation_scaled_5x_pngcrushed_50: 7092301353859155010
+      Vegetation_scaled_5x_pngcrushed_51: -4208324143983990797
+      Vegetation_scaled_5x_pngcrushed_52: 1962042453565821950
+      Vegetation_scaled_5x_pngcrushed_53: -4728078239635809612
+      Vegetation_scaled_5x_pngcrushed_54: 4253108901358868223
+      Vegetation_scaled_5x_pngcrushed_55: 1974404591802116996
+      Vegetation_scaled_5x_pngcrushed_56: -8431432220707374180
+      Vegetation_scaled_5x_pngcrushed_57: 2363620689104985213
+      Vegetation_scaled_5x_pngcrushed_58: -7214753206219305766
+      Vegetation_scaled_5x_pngcrushed_59: -9193001887089912494
+      Vegetation_scaled_5x_pngcrushed_6: 6683062593371166821
+      Vegetation_scaled_5x_pngcrushed_60: -6740815391076460885
+      Vegetation_scaled_5x_pngcrushed_61: 4477913864772779295
+      Vegetation_scaled_5x_pngcrushed_62: 1935245369759040855
+      Vegetation_scaled_5x_pngcrushed_63: -7445411456200888126
+      Vegetation_scaled_5x_pngcrushed_64: 461172930165032813
+      Vegetation_scaled_5x_pngcrushed_65: 5102569448082854607
+      Vegetation_scaled_5x_pngcrushed_66: -5577962170727832688
+      Vegetation_scaled_5x_pngcrushed_67: 4381626877500615600
+      Vegetation_scaled_5x_pngcrushed_68: -6027621549161078578
+      Vegetation_scaled_5x_pngcrushed_69: 7883386273694689338
+      Vegetation_scaled_5x_pngcrushed_7: -1443307527387987204
+      Vegetation_scaled_5x_pngcrushed_70: 8638831918098362906
+      Vegetation_scaled_5x_pngcrushed_71: 1890682692358748025
+      Vegetation_scaled_5x_pngcrushed_72: -2576659829507831275
+      Vegetation_scaled_5x_pngcrushed_73: 3086952501383656920
+      Vegetation_scaled_5x_pngcrushed_74: 5823462196980130144
+      Vegetation_scaled_5x_pngcrushed_75: -6384653007286927250
+      Vegetation_scaled_5x_pngcrushed_76: -8694081516280859413
+      Vegetation_scaled_5x_pngcrushed_77: 7501398951085730702
+      Vegetation_scaled_5x_pngcrushed_78: 8314769590987158172
+      Vegetation_scaled_5x_pngcrushed_79: -1579429324885505553
+      Vegetation_scaled_5x_pngcrushed_8: -3630360289518817782
+      Vegetation_scaled_5x_pngcrushed_80: 6615331605717354263
+      Vegetation_scaled_5x_pngcrushed_81: -7092574160702121595
+      Vegetation_scaled_5x_pngcrushed_82: 4600952234637941193
+      Vegetation_scaled_5x_pngcrushed_83: -7697424620331246492
+      Vegetation_scaled_5x_pngcrushed_84: 5776496958830473302
+      Vegetation_scaled_5x_pngcrushed_85: -8992402428050004690
+      Vegetation_scaled_5x_pngcrushed_86: 4218346784200421255
+      Vegetation_scaled_5x_pngcrushed_87: -6375456546153870479
+      Vegetation_scaled_5x_pngcrushed_88: -2482545996397467768
+      Vegetation_scaled_5x_pngcrushed_89: -9155068620823425021
+      Vegetation_scaled_5x_pngcrushed_9: 7976433665257916296
+      Vegetation_scaled_5x_pngcrushed_90: 6115844080985469911
+      Vegetation_scaled_5x_pngcrushed_91: -8799289139615358625
+      Vegetation_scaled_5x_pngcrushed_92: -8595342609323116434
+      Vegetation_scaled_5x_pngcrushed_93: 1464243317652244308
+      Vegetation_scaled_5x_pngcrushed_94: 7162746474189057962
+      Vegetation_scaled_5x_pngcrushed_95: -6111443176734813572
+      Vegetation_scaled_5x_pngcrushed_96: -8557466909418778996
+      Vegetation_scaled_5x_pngcrushed_97: -7442037752091959376
+      Vegetation_scaled_5x_pngcrushed_98: -5253711256244527057
+      Vegetation_scaled_5x_pngcrushed_99: -4208499490533527100
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

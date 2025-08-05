@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 574788952288246642}
   - component: {fileID: 5279749427225982194}
   - component: {fileID: -8174931568940607374}
-  - component: {fileID: -2167143694954222394}
+  - component: {fileID: 177088401080085835}
   m_Layer: 0
   m_Name: gold_crumble
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,7 +128,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.82, y: 0.59}
+    oldSize: {x: 0.68333334, y: 0.49166667}
     newSize: {x: 0.82, y: 0.59}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -149,7 +149,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 6c13ba1647adb8748a32ac9a533b71bb, type: 2}
---- !u!50 &-2167143694954222394
+  block: 0
+--- !u!50 &177088401080085835
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0

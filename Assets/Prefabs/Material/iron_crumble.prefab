@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 6195612821108679026}
   - component: {fileID: 7199939048073774774}
   - component: {fileID: 6411351667497556547}
-  - component: {fileID: 5784702922545879417}
+  - component: {fileID: -6213534923804124459}
   m_Layer: 0
   m_Name: iron_crumble
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,7 +128,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.84, y: 0.59}
+    oldSize: {x: 0.7, y: 0.49166667}
     newSize: {x: 0.84, y: 0.59}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -149,7 +149,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: c526af5392e9cc54da8ae46ed83c7123, type: 2}
---- !u!50 &5784702922545879417
+  block: 0
+--- !u!50 &-6213534923804124459
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0

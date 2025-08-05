@@ -6,6 +6,14 @@ TagManager:
   tags:
   - Tool
   - Tool_hitbox
+  - Item
+  - Placeable
+  - MapObject
+  - Enemy
+  - Weapon
+  - Weapon_hitbox
+  - Range_Weapon
+  - Spear
   layers:
   - Default
   - TransparentFX

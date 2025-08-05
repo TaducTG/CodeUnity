@@ -15,6 +15,7 @@ MonoBehaviour:
   itemName: gold_crumble
   icon: {fileID: 1137235062, guid: 6edb0cfcebc38904aa0ab875e161192f, type: 3}
   prefabs: {fileID: 4282413245993143561, guid: 6f3357cc02968ec48a19010155ccdcbc, type: 3}
+  itemType: 2
   isStackable: 1
   maxStack: 99
   price: 0

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d74d08d395d1d4696d5dbac7dc0f91, type: 3}
+  m_Name: Fiber
+  m_EditorClassIdentifier: 
+  itemName: Fiber
+  icon: {fileID: 7802312157362101257, guid: dee09ca8ceb00e94fae2152ac81999c4, type: 3}
+  prefabs: {fileID: 3952412880351932973, guid: c14f7928bf1b02546a7fefa732368ab4, type: 3}
+  itemType: 2
+  isStackable: 1
+  maxStack: 99
+  price: 0

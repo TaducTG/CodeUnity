@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
+using System.Collections.Generic;
 
 public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
 {
@@ -18,10 +19,31 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
     public InventoryUIManager uiManager;
 
-    public InventoryItem CurrentItem { get; private set; }
+    private InventoryItem currentItem;
+    public InventoryItem CurrentItem
+    {
+        get => currentItem;
+        set
+        {
+            currentItem = value;
+            UpdateSlotUI();
+
+            // Cập nhật vào Inventory nếu có slotIndex hợp lệ
+            if (inventory != null && slotIndex >= 0 && slotIndex < inventory.items.Count)
+            {
+                inventory.items[slotIndex] = currentItem;
+            }
+            else if (externalItemList != null && slotIndex >= 0 && slotIndex < externalItemList.Count)
+            {
+                externalItemList[slotIndex] = currentItem;
+            }
+        }
+    }
+
+
 
     public Inventory inventory;
-
+    public List<InventoryItem> externalItemList; // null nếu là slot inventory
     public int slotIndex;
     private void Awake()
     {
@@ -33,7 +55,29 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
         canvas = GetComponentInParent<Canvas>();
     }
+    public void UpdateSlotUI()
+    {
+        if (CurrentItem != null && CurrentItem.itemData != null)
+        {
+            iconImage.sprite = CurrentItem.itemData.icon;
+            iconImage.enabled = true;
 
+            if (CurrentItem.itemData.isStackable && CurrentItem.quantity > 1)
+            {
+                quantityText.text = CurrentItem.quantity.ToString();
+            }
+            else
+            {
+                quantityText.text = ""; // Không hiện số nếu chỉ có 1
+            }
+        }
+        else
+        {
+            iconImage.sprite = null;
+            iconImage.enabled = false;
+            quantityText.text = "";
+        }
+    }
     public void SetItem(InventoryItem newItem)
     {
         CurrentItem = newItem;
@@ -51,10 +95,7 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
             ClearSlot();
         }
         // Luôn cập nhật inventory.items theo slotIndex
-        if (slotIndex >= 0 && slotIndex < inventory.items.Count)
-        {
-            inventory.items[slotIndex] = CurrentItem;
-        }
+
     }
 
     public void ClearSlot()
@@ -66,10 +107,7 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         quantityText.enabled = false;
 
         // Luôn cập nhật inventory.items theo slotIndex
-        if (slotIndex >= 0 && slotIndex < inventory.items.Count)
-        {
-            inventory.items[slotIndex] = CurrentItem;
-        }
+
     }
 
     // === DRAG ===
@@ -102,7 +140,28 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         {
             SetItem(draggedItem);
             draggedSlot.ClearSlot();
+            return;
         }
+
+        if (slotIndex == inventory.items.Count - 1)
+        {
+            // Nếu đang có item → xóa item cũ
+            if (targetItem != null)
+            {
+                Debug.Log($"Item cũ '{targetItem.itemData.itemName}' đã bị xóa khỏi slot rác.");
+            }
+
+            // Ghi đè bằng item mới
+            SetItem(draggedItem);
+            inventory.items[slotIndex] = draggedItem;
+
+            // Xóa khỏi slot gốc
+            draggedSlot.ClearSlot();
+
+            uiManager.SyncSlotsToInventory();
+            return;
+        }
+
         // Nếu cùng loại và stack được
         else if (draggedItem.itemData == targetItem.itemData && targetItem.itemData.isStackable)
         {
@@ -140,7 +199,7 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
             inventory.items[indexA] = inventory.items[indexB];
             inventory.items[indexB] = temp;
         }
-     
+
         uiManager.SyncSlotsToInventory();
     }
 

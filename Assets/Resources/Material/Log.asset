@@ -15,6 +15,7 @@ MonoBehaviour:
   itemName: Log
   icon: {fileID: -5034061168752090764, guid: 6ab77fa6084b67a47990ec5e04a83100, type: 3}
   prefabs: {fileID: 7543239524795441271, guid: 0e1da6f1362f9a14ba376f806dbcb36d, type: 3}
+  itemType: 2
   isStackable: 1
   maxStack: 99
   price: 0

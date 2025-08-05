@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 646945da8797ac94fb753f11389fbed1, type: 3}
+  m_Name: chess
+  m_EditorClassIdentifier: 
+  itemName: chess
+  icon: {fileID: -1607882866, guid: b631ed305dfd43c488e0f8edf5c829bc, type: 3}
+  prefabs: {fileID: 8881015596863003656, guid: aa6a86bb16791d343812c6772ff3e340, type: 3}
+  itemType: 3
+  isStackable: 0
+  maxStack: 99

@@ -15,9 +15,10 @@ MonoBehaviour:
   itemName: Stone_pickaxe
   icon: {fileID: -2376758258213490438, guid: 9d513da89e7243340a5963782754ea53, type: 3}
   prefabs: {fileID: 1408850184752697732, guid: 88dafdb0244772141b2270783845e5d6, type: 3}
+  itemType: 1
   isStackable: 0
   maxStack: 99
-  damage: 8
+  damage: 5
   speed: 0.4
   tier: 1
   description: 

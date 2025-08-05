@@ -15,9 +15,10 @@ MonoBehaviour:
   itemName: Gold_pickaxe
   icon: {fileID: -3569232777630780389, guid: 9d513da89e7243340a5963782754ea53, type: 3}
   prefabs: {fileID: 5414770641835457126, guid: e030fc77a49b7164a94bf9518a1d5a8a, type: 3}
+  itemType: 1
   isStackable: 0
   maxStack: 99
-  damage: 12
+  damage: 8
   speed: 0.4
   tier: 3
   description: 
