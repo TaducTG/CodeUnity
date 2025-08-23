@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8660984021528572598}
   - component: {fileID: 3065307485013339682}
+  - component: {fileID: 4845689329417008688}
   m_Layer: 0
   m_Name: hitbox
   m_TagString: Untagged
@@ -78,6 +79,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.25570655, y: 1.1395295}
   m_EdgeRadius: 0
+--- !u!114 &4845689329417008688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5521936897230618833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21bd9827ce1525c47adb945c21cfc289, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagePopupPrefab: {fileID: 0}
+  canvas: {fileID: 0}
+  damage: 0
 --- !u!1 &8804303004981022625
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,5 +242,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77dc795ce1f113409c98cd26f5ac9d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: 69eb0df7e2554894cbec21da94b757d8, type: 2}
+  itemData: {fileID: 11400000, guid: 7c22979f6c372aa4b8bcfbc0192d5891, type: 2}
   block: 0

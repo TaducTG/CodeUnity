@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using Pathfinding;
+using System.Collections;
 
 [RequireComponent(typeof(AIPath))]
 public class OrcRogue : MonoBehaviour
@@ -149,9 +150,19 @@ public class OrcRogue : MonoBehaviour
             }
         }
 
-        if (health <= 0)
+        if (health <= 0 && !die)
         {
             animator.SetBool("Death", true);
+            die = true;
+            StartCoroutine(Die());
+
         }
+    }
+    IEnumerator Die()
+    {
+        yield return new WaitForSeconds(0.6f);
+        health = maxHealth;
+        die = false;
+        EnemyPoolManager.Instance.ReturnToPool(gameObject);
     }
 }

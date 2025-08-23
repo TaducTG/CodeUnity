@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4dc1b5b64a97c4468cb5ecd3dd222cf, type: 3}
+  m_Name: Garlic_seed
+  m_EditorClassIdentifier: 
+  itemName: Garlic_seed
+  icon: {fileID: -1419029278, guid: 43164162382f9bc4eb129d95e1c8e24e, type: 3}
+  prefabs: {fileID: 461610747631842583, guid: e33bd09857d9c204c8a04d6eb0cff364, type: 3}
+  itemType: 2
+  isStackable: 1
+  maxStack: 99
+  description: []
+  placePrefabs: {fileID: 1809154648200496943, guid: 6cac6f8880ef8ff44ae788a094e780e5, type: 3}

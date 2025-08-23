@@ -14,16 +14,20 @@ TagManager:
   - Weapon_hitbox
   - Range_Weapon
   - Spear
+  - Shop
+  - Farm_land
+  - FarmTools
+  - Crops
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
-  - 
-  - 
+  - VFX
+  - HardObject
+  - SoftObject
   - 
   - 
   - 

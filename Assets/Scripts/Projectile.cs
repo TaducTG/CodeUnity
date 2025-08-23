@@ -12,7 +12,8 @@ public class Projectile : MonoBehaviour
     void Start()
     {
         // Tìm Canvas
-        canvas = FindObjectOfType<Canvas>();
+        canvas = Object.FindFirstObjectByType<Canvas>();
+        //canvas = FindObjectOfType<Canvas>();
         if (canvas == null)
         {
             Debug.LogError("Không tìm thấy Canvas trong scene!");
@@ -46,6 +47,13 @@ public class Projectile : MonoBehaviour
         }
         if (collision.CompareTag("Enemy") && !taggetPlayer)
         {
+            Animal animal = collision.GetComponent<Animal>();
+            if(animal != null)
+            {
+                animal.TakeDamage(damage);
+                ShowDamagePopup((int)damage, transform.position);
+            }
+
             Orc enemy = collision.GetComponent<Orc>();
             if (enemy != null)
             {
@@ -58,6 +66,16 @@ public class Projectile : MonoBehaviour
                 enemy2.health -= damage;
                 ShowDamagePopup((int)damage, transform.position);
             }
+            Slime enemy3 = collision.GetComponent<Slime>();
+            if(enemy3 != null)
+            {
+                enemy3.health -= damage;
+
+                enemy3.isHurt = 0.2f;
+                ShowDamagePopup((int)damage, transform.position);
+            }
+
+
             Boss boss = collision.GetComponentInParent<Boss>();
             if (boss != null)
             {

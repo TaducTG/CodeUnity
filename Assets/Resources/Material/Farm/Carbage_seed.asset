@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4dc1b5b64a97c4468cb5ecd3dd222cf, type: 3}
+  m_Name: Carbage_seed
+  m_EditorClassIdentifier: 
+  itemName: Carbage_seed
+  icon: {fileID: -4057977143843180069, guid: 43164162382f9bc4eb129d95e1c8e24e, type: 3}
+  prefabs: {fileID: 3540285845371809075, guid: 894b59949b82d044d85da9c53db67f60, type: 3}
+  itemType: 2
+  isStackable: 1
+  maxStack: 99
+  description: []
+  placePrefabs: {fileID: 5518326976757530466, guid: 40fdbcad1510a5841b2fdfc5eee4e928, type: 3}

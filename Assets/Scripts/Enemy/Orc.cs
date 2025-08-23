@@ -126,11 +126,11 @@ public class Orc : MonoBehaviour
             }
         }
 
-        if(health <= 0)
+        if(health <= 0 && !die)
         {
             animator.SetBool("Death", true);
             die = true;
-            Die();
+            StartCoroutine(Die());
 
         }
     }
@@ -138,6 +138,8 @@ public class Orc : MonoBehaviour
     IEnumerator Die()
     {
         yield return new WaitForSeconds(0.6f);
-        Destroy(gameObject);
+        health = maxHealth;
+        die = false;
+        EnemyPoolManager.Instance.ReturnToPool(gameObject);
     }
 }

@@ -1,36 +1,47 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using JetBrains.Rider.Unity.Editor;
-using NUnit.Framework.Interfaces;
-using UnityEditor;
+
 using UnityEngine;
-using UnityEngine.Playables;
-using static UnityEditor.Progress;
+
 
 public class Player : MonoBehaviour
 {
-    public float moveSpeed;
+    [Header("Setting")]
     public float atkSpeedTime;
     private float localScaleX;
     public float angle = 45f;
     Rigidbody2D rb;
-
+    Animator animator;
+    public GameObject hitboxPrefab;
     public Inventory inventory;
     public Items mainHand;
     public GameObject MainHand;
     public GameObject[] panelsToBlockAttack;
+    public MapGenerator map;
 
+    [Header("Stat")]
     public float maxHealth;
+    public float baseHealth;
     public float health;
     public float maxMana;
+    public float baseMana;
     public float mana;
+    public float def;
+    public float baseDef;
+    public float moveSpeed;
+    public float baseSpeed;
 
+    public float maxDistance = 2f; // khoảng cách tối đa
 
     void Start()
     {
+        baseSpeed = moveSpeed;
+        baseDef = def;
+
         health = maxHealth;
         mana = maxMana;
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         localScaleX = rb.transform.localScale.x;
     }
 
@@ -41,8 +52,15 @@ public class Player : MonoBehaviour
         float moveY = Input.GetAxis("Vertical");
 
         rb.linearVelocity = new Vector2(moveX * moveSpeed, moveY * moveSpeed);
-
-        if(moveX < 0)
+        if(moveX != 0 || moveY != 0)
+        {
+            animator.SetBool("Run", true);
+        }
+        else
+        {
+            animator.SetBool("Run", false);
+        }
+        if (moveX < 0)
         {
             rb.transform.localScale = new Vector3(-localScaleX, rb.transform.localScale.y);
         }
@@ -64,6 +82,11 @@ public class Player : MonoBehaviour
         if (Input.GetMouseButtonDown(1)) // Chuột phải để đặt block
         {
             TryPlaceBlock();
+            if (mainHand is Tools farmTool && MainHand.tag == "FarmTools")
+            {
+                Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                farmTool.UseFarmTool(mouseWorldPos,map);
+            }
         }
 
         if (mainHand != null)
@@ -87,71 +110,63 @@ public class Player : MonoBehaviour
                 {
                     Tools hold = (Tools)mainHand;
                     atkSpeedTime = hold.speed;
-                    if(MainHand.tag == "Range_Weapon")
+                    StartCoroutine(SwingTool(hold.speed / 2f, hold.speed / 2f));
+                }
+                if (mainHand is WeaponItem weapon)
+                {
+                    atkSpeedTime = weapon.attackSpeed;
+                    weapon.ATK(gameObject, MainHand);
+
+                    if (MainHand.tag == "Weapon")
                     {
-                        List<InventoryItem> inventoryPlayer = new List<InventoryItem>();
-                        inventoryPlayer = inventory.GetComponent<Inventory>().items;
-
-                        ProjectileItem projectile = ScriptableObject.CreateInstance<ProjectileItem>();
-                        bool haveProjectile = false;
-                        for (int i = 0; i < inventoryPlayer.Count; i++)
+                        Transform hitbox = MainHand.transform.Find("hitbox");
+                        if (hitbox != null)
                         {
-                            InventoryItem item = inventoryPlayer[i];
-                            if (item == null) continue;
-
-                            if (item.itemData is ProjectileItem proj && item.quantity > 0)
-                            {
-                                item.quantity -= 1;
-                                projectile = proj;
-                                haveProjectile = true;
-
-                                if (item.quantity <= 0)
-                                {
-                                    // Xóa item khỏi slot (để trống slot)
-                                    inventoryPlayer[i] = null;
-                                    // Nếu có UI: cập nhật lại
-                                    // uiManager?.RefreshInventoryUI(); // hoặc SyncSlotsToInventory()
-                                }
-                                break;
-                            }
-                        }
-                        if (haveProjectile)
-                        {
-                            Shoot(projectile.prefabs, projectile.speed,hold.damage + projectile.damage);
-                        }
-                        else
-                        {
-                            Debug.Log("Out of arrow");
+                            WeaponHitbox hb = hitbox.GetComponent<WeaponHitbox>();
+                            WeaponItem wp = (WeaponItem)mainHand;
+                            hb.damage = wp.damage;
                         }
                         
                     }
-                    else
-                    {
-                        if(MainHand.tag == "Spear")
-                        {
-                            angle = 180;
-                        }
-                        else if(MainHand.tag == "Weapon")
-                        {
-                            angle = 90;
-                        }
-                        else
-                        {
-                            angle = 45;
-                        }
-                            StartCoroutine(SwingTool(hold.speed / 2f, hold.speed / 2f));
-                    }
+                }
+                if(mainHand is ConsumableItem consumable)
+                {
+                    consumable.ApplyEffect(gameObject);
+                    inventory.RemoveItem(mainHand, 1);
 
+                    if(inventory.GetTotalItem(mainHand) == 0)
+                    {
+                        foreach (Transform child in gameObject.transform)
+                        {
+                            if (child.CompareTag("Tool") || child.CompareTag("Item") || child.CompareTag("Placeable"))  // hoặc bạn có thể đặt tag riêng cho weapon
+                            {
+                                GameObject.Destroy(child.gameObject); // hoặc DestroyImmediate trong editor
+                            }
+                        }
+                        mainHand = null;
+                    }
                 }
             }
         }
     }
-    IEnumerator SwingTool(float duration,float returnDuration)
+    IEnumerator SwingTool(float duration, float returnDuration)
     {
-        Transform hitbox = MainHand.transform.Find("hitbox");
-        hitbox.gameObject.SetActive(true);
+        // Lấy vị trí chuột
+        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mouseWorldPos.z = 0f;
 
+        GameObject tempHitbox = null;
 
+        // Nếu trong phạm vi cho phép → tạo hitbox
+        if (Vector2.Distance(transform.position, mouseWorldPos) <= maxDistance)
+        {
+            tempHitbox = Instantiate(hitboxPrefab, mouseWorldPos, Quaternion.identity);
+            Tools t = (Tools)MainHand.GetComponent<PickUpItem>().itemData;
+            tempHitbox.GetComponent<Hitbox>().damage = t.damage;
+            tempHitbox.GetComponent<Hitbox>().tier = t.tier;
+        }
+
+        // Lưu rotation ban đầu và target
         Quaternion originalRotation = MainHand.transform.localRotation;
         Quaternion targetRotation = Quaternion.Euler(MainHand.transform.localEulerAngles + new Vector3(0f, 0f, -angle));
 
@@ -173,32 +188,11 @@ public class Player : MonoBehaviour
             time += Time.deltaTime;
             yield return null;
         }
-        hitbox.gameObject.SetActive(false);
         MainHand.transform.localRotation = originalRotation;
-    }
 
-    public void Shoot(GameObject bulletPrefab,float bulletSpeed,float damage)
-    {
-        // Lấy vị trí chuột trong thế giới
-        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mouseWorldPos.z = 0f; // Đảm bảo không có sai lệch trục Z
-
-        // Tính hướng từ nòng súng đến chuột
-        Vector2 direction = (mouseWorldPos - transform.position).normalized;
-
-        // Tạo đạn
-        GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-
-        // Cho đạn bay theo hướng chuột
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.linearVelocity = direction * bulletSpeed;
-
-        // (Tuỳ chọn) Xoay viên đạn theo hướng bay
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        bullet.transform.rotation = Quaternion.Euler(0, 0, angle);
-
-        Projectile bl = bullet.GetComponent<Projectile>();
-        bl.damage = damage;
+        // Xóa hitbox khi kết thúc swing
+        if (tempHitbox != null)
+            Destroy(tempHitbox);
     }
     public void ChangeItem(int index)
     {
@@ -208,7 +202,8 @@ public class Player : MonoBehaviour
         foreach (Transform child in gameObject.transform)
         {
             if (child.CompareTag("Tool") || child.CompareTag("Item") || child.CompareTag("Placeable")
-                || child.CompareTag("Weapon") || child.CompareTag("Range_Weapon") || child.CompareTag("Spear"))
+                || child.CompareTag("Weapon") || child.CompareTag("Range_Weapon") || child.CompareTag("Spear")
+                || child.CompareTag("FarmTools"))
             {
                 GameObject.Destroy(child.gameObject);
             }
@@ -241,30 +236,31 @@ public class Player : MonoBehaviour
         tool.transform.parent = transform;
 
         //Nếu là Tools thì có thể swing
-        if (inventoryPlayer[index - 1].itemData is Tools)
+        if (inventoryPlayer[index - 1].itemData is Tools
+            || inventoryPlayer[index - 1].itemData is WeaponItem
+            || inventoryPlayer[index - 1].itemData is Placeable
+            || inventoryPlayer[index - 1].itemData is ConsumableItem
+            || inventoryPlayer[index - 1].itemData is Crops)
         {
            
             mainHand = inventoryPlayer[index - 1].itemData;
             MainHand = tool;
         }
-
-        //Nếu là Placeable thì có thể đặt 
-        if(inventoryPlayer[index - 1].itemData is Placeable)
+        else
         {
-            mainHand = inventoryPlayer[index - 1].itemData;
+            mainHand = null;
         }
     }
 
     void TryPlaceBlock()
     {
 
-        if (mainHand == null || !(mainHand is Placeable)) return;
+        if (mainHand == null || (!(mainHand is Placeable) && !(mainHand is Crops))) return;
 
         Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPos.z = 0f; // Cố định Z-axis
 
         // Snap theo lưới
-        float gridSize = 1f;
         float snappedX = Mathf.Floor(mouseWorldPos.x) + 0.5f;
         float snappedY = Mathf.Floor(mouseWorldPos.y) + 0.5f;
         Vector2 placementPos = new Vector2(snappedX, snappedY);
@@ -272,18 +268,40 @@ public class Player : MonoBehaviour
         // Kiểm tra xem có thể đặt được không
         if (!CanPlaceAt(placementPos)) return;
 
-        GameObject prefab = mainHand.prefabs; // Lưu ý bạn đang lưu prefab trong itemData
-        if (prefab == null)
+        GameObject spawned = new GameObject();
+        if (!(mainHand is Crops))
         {
-            Debug.LogWarning("Placeable item has no prefab assigned!");
-            return;
+            GameObject prefab = mainHand.prefabs; // Lưu ý bạn đang lưu prefab trong itemData
+            if (prefab == null)
+            {
+                Debug.LogWarning("Placeable item has no prefab assigned!");
+                return;
+            }
+
+            spawned = Instantiate(mainHand.prefabs, placementPos, Quaternion.identity);
+            spawned.GetComponent<DropItem>().dropItem = false;
+            spawned.GetComponent<PickUpItem>().block = true;
+        }
+        else
+        {
+            Crops c = (Crops)mainHand;
+            GameObject prefab = c.placePrefabs;
+            if (prefab == null)
+            {
+                Debug.LogWarning("Placeable item has no prefab assigned!");
+                return;
+            }
+            spawned = Instantiate(prefab, placementPos, Quaternion.identity);
+        }
+        if (!spawned.GetComponent<TopDownDepthSort>())
+        {
+            Vector3 pos = spawned.transform.position;
+            pos.z = 9f; // đặt z cố định
+            spawned.transform.position = pos;
         }
 
-        GameObject spawned = Instantiate(mainHand.prefabs, placementPos, Quaternion.identity);
 
 
-        spawned.GetComponent<DropItem>().dropItem = false;
-        spawned.GetComponent<PickUpItem>().block = true;
 
         // Trừ 1 item khỏi inventory nếu cần
         inventory.RemoveItem(mainHand, 1);
@@ -294,30 +312,64 @@ public class Player : MonoBehaviour
             connectScript.UpdateConnection(mainHand);         // Cập nhật chính nó
             connectScript.UpdateNeighbors(placementPos,mainHand);
         }
-
-        foreach (Transform child in gameObject.transform)
+        if (MainHand.layer == LayerMask.NameToLayer("HardObject"))
         {
-            if (child.CompareTag("Tool") || child.CompareTag("Item") || child.CompareTag("Placeable"))  // hoặc bạn có thể đặt tag riêng cho weapon
+            Collider2D[] softHits = Physics2D.OverlapCircleAll(placementPos, 0.4f, LayerMask.GetMask("SoftObject"));
+            foreach (var soft in softHits)
             {
-                GameObject.Destroy(child.gameObject); // hoặc DestroyImmediate trong editor
+                Destroy(soft.gameObject); // Phá object mềm bị đè
             }
         }
-        mainHand = null;
+        if (inventory.GetTotalItem(mainHand) == 0)
+        {
+            foreach (Transform child in gameObject.transform)
+            {
+                if (child.CompareTag("Tool") || child.CompareTag("Item") || child.CompareTag("Placeable"))  // hoặc bạn có thể đặt tag riêng cho weapon
+                {
+                    GameObject.Destroy(child.gameObject); // hoặc DestroyImmediate trong editor
+                }
+            }
+            mainHand = null;
+        }
     }
 
     bool CanPlaceAt(Vector2 position)
     {
-        Collider2D[] hits = Physics2D.OverlapCircleAll(position + Vector2.up*0.5f, 0.5f);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(position, 0.4f);
+
+        bool hasFarmLand = false;
 
         foreach (var hit in hits)
         {
-            if (!hit.isTrigger)
+            if (hit == null) continue;
+
+            // ❌ Không đặt nếu có cùng loại block
+            var pickUp = hit.GetComponent<PickUpItem>();
+            if (pickUp != null && pickUp.itemData == mainHand)
             {
-                return false; // Có collider thật sự (không phải trigger) -> không được đặt
+                return false;
+            }
+
+            // Check nếu có farm_land
+            if (hit.CompareTag("Farm_land"))
+            {
+                hasFarmLand = true;
+            }
+
+            // Nếu collider không phải trigger và không phải farmland → cản đặt
+            if (!hit.isTrigger && !hit.CompareTag("Farm_land"))
+            {
+                return false;
             }
         }
 
-        return true; // Không có collider nào "vật lý cản trở" -> được đặt
+        // Nếu mainHand là Crops thì chỉ đặt được trên farmland
+        if (mainHand is Crops && !hasFarmLand)
+        {
+            return false;
+        }
+
+        return true;
     }
 
 }

@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public class BiomeMapGenerator : MonoBehaviour
 {
-    public enum BiomeType { Grassland, Desert, Swamp, Snow,Sea }
+    public enum BiomeType { Grassland, Desert, Swamp, Snow,Sea,Sand }
 
     [System.Serializable]
     public class BiomeData
@@ -34,6 +35,7 @@ public class BiomeMapGenerator : MonoBehaviour
     public Tilemap swampTilemap;
     public Tilemap snowTilemap;
     public Tilemap seaTilemap;
+    public Tilemap sandTilemap;
 
     [Header("Tiles")]
     public TileBase grassTile;
@@ -41,6 +43,7 @@ public class BiomeMapGenerator : MonoBehaviour
     public TileBase swampTile;
     public TileBase snowTile;
     public TileBase seaTile;
+    public TileBase sandTile;
 
     [Header("Biomes")]
     public List<BiomeData> biomes;
@@ -63,19 +66,22 @@ public class BiomeMapGenerator : MonoBehaviour
     {
         
         // tạo phần biển ở rìa ngoài map
-        GenerateNoisySeaEdge(5,0.1f,0.5f);
+        GenerateNoisySeaEdge(15,0.1f,0.5f);
 
         // tạo các tilebase cho map chính
         GenerateBiomes();
 
         // Xử lý spawn biển lỗi
-        CleanupInvalidSeaTiles(7);
+        CleanupInvalidSeaTiles(15);
 
         // Đảm bảo các tilebase spawn trông tự nhiên hơn
         SmoothEdges();
 
         // Xử lý tilebase spawn lỗi
         FillRemainingWithClosestBiome();
+
+        // Spawn biome rìa ngoài của 1 biome nếu tiếp giáp với 1 biome khác
+        GenerateTransitionBiome(BiomeType.Grassland, BiomeType.Sea, BiomeType.Sand, 3);
 
         // Spawn các tilemap tự tạo
         ApplyFixedBiomePrefabs();
@@ -234,6 +240,55 @@ public class BiomeMapGenerator : MonoBehaviour
         }
     }
 
+    public void GenerateTransitionBiome(BiomeType innerBiome, BiomeType outerBiome, BiomeType transitionBiome, int thickness = 3)
+    {
+        if (!biomeTilePositions.ContainsKey(innerBiome) || !biomeTilePositions.ContainsKey(outerBiome))
+            return;
+
+        if (!biomeTilePositions.ContainsKey(transitionBiome))
+            biomeTilePositions[transitionBiome] = new List<Vector2Int>();
+
+        HashSet<Vector2Int> added = new();
+
+        foreach (var pos in biomeTilePositions[innerBiome].ToList())
+        {
+            foreach (var dir in Direction4)
+            {
+                Vector2Int neighbor = pos + dir;
+
+                // Nếu ô bên cạnh là outerBiome thì bắt đầu sinh transition
+                if (tileBiomeMap.TryGetValue(neighbor, out BiomeType biome) && biome == outerBiome)
+                {
+                    // Hướng từ outer → inner
+                    Vector2Int delta = pos - neighbor;
+                    delta = new Vector2Int(Mathf.Clamp(delta.x, -1, 1), Mathf.Clamp(delta.y, -1, 1));
+
+                    for (int i = 1; i <= thickness; i++)
+                    {
+                        Vector2Int transPos = neighbor + delta * i;
+                        if (!IsInMask(transPos)) continue;
+                        if (added.Contains(transPos)) continue;
+
+                        // ❗ Chỉ ghi đè nếu tile đó là innerBiome
+                        if (tileBiomeMap.TryGetValue(transPos, out var currentBiome) && currentBiome == innerBiome)
+                        {
+                            // Gỡ khỏi biome cũ
+                            biomeTilePositions[innerBiome].Remove(transPos);
+
+                            // Ghi đè
+                            tileBiomeMap[transPos] = transitionBiome;
+                            biomeTilePositions[transitionBiome].Add(transPos);
+                            added.Add(transPos);
+                        }
+                    }
+                }
+            }
+        }
+
+        globalUsedPositions.UnionWith(added);
+        //Debug.Log($"[BiomeTransition] Overwrote {innerBiome} → {transitionBiome} between {outerBiome} and {innerBiome}");
+    }
+
     void SmoothEdges()
     {
         HashSet<Vector2Int> toAdd = new();
@@ -353,6 +408,7 @@ public class BiomeMapGenerator : MonoBehaviour
             BiomeType.Swamp => swampTilemap,
             BiomeType.Snow => snowTilemap,
             BiomeType.Sea => seaTilemap,
+            BiomeType.Sand => sandTilemap,
             _ => grasslandTilemap
         };
     }
@@ -366,9 +422,11 @@ public class BiomeMapGenerator : MonoBehaviour
             BiomeType.Swamp => swampTile,
             BiomeType.Snow => snowTile,
             BiomeType.Sea => seaTile,
+            BiomeType.Sand => sandTile,
             _ => grassTile
         };
     }
+
 
     bool IsInMask(Vector2Int pos)
     {

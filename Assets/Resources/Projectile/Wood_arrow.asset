@@ -18,6 +18,8 @@ MonoBehaviour:
   itemType: 2
   isStackable: 1
   maxStack: 999
+  description:
+  - 'Damage: 1'
+  - 'Speed: 10'
   damage: 1
   speed: 10
-  description: 

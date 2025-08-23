@@ -4,6 +4,5 @@ public class ProjectileItem : Items
 {
 public float damage;
 public float speed;
-public string description;
 
 }

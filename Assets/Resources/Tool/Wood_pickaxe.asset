@@ -18,7 +18,11 @@ MonoBehaviour:
   itemType: 1
   isStackable: 0
   maxStack: 99
+  description:
+  - 'Damage: 4'
+  - 'Speed: 0.4'
+  - 'Tier: 0'
   damage: 4
   speed: 0.4
   tier: 0
-  description: 
+  farmLand: {fileID: 0}

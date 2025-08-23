@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66d45a0079b8db64f98ad3801bb87698, type: 3}
+  m_Name: Iron_helmet
+  m_EditorClassIdentifier: 
+  itemName: Iron_helmet
+  icon: {fileID: -504574306490611350, guid: da3a3b11eb6b9634db05f82af996b17f, type: 3}
+  prefabs: {fileID: 9136161093425827859, guid: 8c9dc4bc9fc2c884890a6a56e0d9ca00, type: 3}
+  itemType: 1
+  isStackable: 0
+  maxStack: 99
+  description:
+  - + 15 MaxHealth
+  - + 3 Def
+  slotType: 1
+  bonusHealth: 15
+  bonusDefense: 3
+  bonusMana: 0

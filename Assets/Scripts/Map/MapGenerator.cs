@@ -9,23 +9,16 @@ public class MapGenerator : MonoBehaviour
 
     public enum BiomeType { Grassland, Desert, Swamp, Snow }
     [Header("Map Size & Noise")]
-    public int width = 400;
-    public int height = 400;
     public float noiseScale = 20f;
 
     [Header("Tilemap & Tile Variants")]
     public BiomeType biomeTilemap;
-    private Tilemap grasslandTilemap;
-    public Tilemap riverTilemap;
+    public Tilemap grasslandTilemap;
 
     public TileBase[] grassTiles;
     public TileBase[] dirtTiles;
     public TileBase[] stoneTiles;
-    public TileBase riverTile;
 
-    public int number = 2;
-    public int riverWidth = 4; // Ngang
-    public int riverHeight = 5; // Dọc
     [Header("Object Prefabs")]
     public GameObject[] treePrefabs;
     public GameObject[] rockPrefabs;
@@ -65,15 +58,16 @@ public class MapGenerator : MonoBehaviour
             grasslandTilemap = biomeMapGenerator.grasslandTilemap;
         else if (biomeTilemap == BiomeType.Desert)
             grasslandTilemap = biomeMapGenerator.desertTilemap;
-
+        else if(biomeTilemap == BiomeType.Snow)
+            grasslandTilemap = biomeMapGenerator.snowTilemap;
         if (grasslandTilemap == null) yield break;
 
 
         ApplyNoiseToTiles(grasslandTilemap);
+
         PrepareOccupiedGrid();
 
         TrySpawnLargeObjects();
-
 
         SpawnSmallObjects();
     }
@@ -97,7 +91,7 @@ public class MapGenerator : MonoBehaviour
                 TileBase selectedTile = null;
                 if (noiseValue < 0.35f && stoneTiles.Length > 0)
                     selectedTile = stoneTiles[Random.Range(0, stoneTiles.Length)];
-                else if (noiseValue < 0.40f && dirtTiles.Length > 0)
+                else if (noiseValue < 0.44f && dirtTiles.Length > 0)
                     selectedTile = dirtTiles[Random.Range(0, dirtTiles.Length)];
                 else if (grassTiles.Length > 0)
                     selectedTile = grassTiles[Random.Range(0, grassTiles.Length)];
@@ -206,7 +200,7 @@ public class MapGenerator : MonoBehaviour
                 }
 
                 // BUSH — chỉ spawn trên grass hoặc dirt
-                else if (IsTileInList(currentTile, dirtTiles) || IsTileInList(currentTile, grassTiles))
+                if (IsTileInList(currentTile, dirtTiles) || IsTileInList(currentTile, grassTiles))
                 {
                     if (bushPrefabs.Length > 0 && Random.value < bushSpawnChance)
                     {
@@ -234,5 +228,22 @@ public class MapGenerator : MonoBehaviour
         if (grasslandTilemap == null) return;
         bounds = grasslandTilemap.cellBounds;
         occupied = new bool[bounds.size.x, bounds.size.y];
+    }
+
+
+
+    public bool CanFarmAt(Vector3Int cellPos)
+    {
+        // Kiểm tra trong grassLandTilemap
+        TileBase grassTile = grasslandTilemap.GetTile(cellPos);
+        if (grassTile != null && IsTileInList(grassTile, grassTiles))
+            return true;
+
+        // Kiểm tra trong dirtLandTilemap
+        TileBase dirtTile = grasslandTilemap.GetTile(cellPos);
+        if (dirtTile != null && IsTileInList(dirtTile, dirtTiles))
+            return true;
+
+        return false;
     }
 }

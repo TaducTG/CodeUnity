@@ -35,7 +35,7 @@ public class ConnectableBlock : MonoBehaviour
 
 
         NeighborDirection connection = NeighborDirection.None;
-        Vector2[] directions = { Vector2.up*1.25f, Vector2.down * 1.25f, Vector2.left * 1.25f, Vector2.right * 1.25f };
+        Vector2[] directions = { Vector2.up, Vector2.down, Vector2.left, Vector2.right};
         NeighborDirection[] flags = { NeighborDirection.Top, NeighborDirection.Bottom, NeighborDirection.Left, NeighborDirection.Right };
 
         for (int i = 0; i < directions.Length; i++)
@@ -84,7 +84,7 @@ public class ConnectableBlock : MonoBehaviour
 
     public void UpdateNeighbors(Vector2 pos, Items item)
     {
-        Vector2[] directions = { Vector2.up * 1.25f, Vector2.down * 1.25f, Vector2.left * 1.25f, Vector2.right * 1.25f };
+        Vector2[] directions = { Vector2.up, Vector2.down, Vector2.left, Vector2.right };
         foreach (var dir in directions)
         {
             Collider2D hit = Physics2D.OverlapPoint(pos + dir);

@@ -1,0 +1,2245 @@
+fileFormatVersion: 2
+guid: 12f1de2cc5048894889679cfc5ab8fe4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7690648886650632574
+    second: water_coasts_scaled_3x_pngcrushed_0
+  - first:
+      213: -7876514756519092829
+    second: water_coasts_scaled_3x_pngcrushed_1
+  - first:
+      213: 4598688033520581524
+    second: water_coasts_scaled_3x_pngcrushed_2
+  - first:
+      213: -4516162248305932820
+    second: water_coasts_scaled_3x_pngcrushed_3
+  - first:
+      213: -8055001324811915421
+    second: water_coasts_scaled_3x_pngcrushed_4
+  - first:
+      213: -2214967174313966592
+    second: water_coasts_scaled_3x_pngcrushed_5
+  - first:
+      213: -3404160147094030332
+    second: water_coasts_scaled_3x_pngcrushed_6
+  - first:
+      213: -822020085285101598
+    second: water_coasts_scaled_3x_pngcrushed_7
+  - first:
+      213: 89417661504037718
+    second: water_coasts_scaled_3x_pngcrushed_8
+  - first:
+      213: -9152612944917616733
+    second: water_coasts_scaled_3x_pngcrushed_9
+  - first:
+      213: -7430468769515017031
+    second: water_coasts_scaled_3x_pngcrushed_10
+  - first:
+      213: 306075080396996096
+    second: water_coasts_scaled_3x_pngcrushed_11
+  - first:
+      213: -2330213025523559593
+    second: water_coasts_scaled_3x_pngcrushed_12
+  - first:
+      213: 8967023938101093229
+    second: water_coasts_scaled_3x_pngcrushed_13
+  - first:
+      213: -3914212925864141987
+    second: water_coasts_scaled_3x_pngcrushed_14
+  - first:
+      213: -259447941464458552
+    second: water_coasts_scaled_3x_pngcrushed_15
+  - first:
+      213: -5451124874099520847
+    second: water_coasts_scaled_3x_pngcrushed_16
+  - first:
+      213: -3239249516873177608
+    second: water_coasts_scaled_3x_pngcrushed_17
+  - first:
+      213: 6873723536618256788
+    second: water_coasts_scaled_3x_pngcrushed_18
+  - first:
+      213: 1177521228680624313
+    second: water_coasts_scaled_3x_pngcrushed_19
+  - first:
+      213: -3644358879758763072
+    second: water_coasts_scaled_3x_pngcrushed_20
+  - first:
+      213: 4762485518312293069
+    second: water_coasts_scaled_3x_pngcrushed_21
+  - first:
+      213: 6804784986568354704
+    second: water_coasts_scaled_3x_pngcrushed_22
+  - first:
+      213: -8750937244905874849
+    second: water_coasts_scaled_3x_pngcrushed_23
+  - first:
+      213: 4064378116541879187
+    second: water_coasts_scaled_3x_pngcrushed_24
+  - first:
+      213: -1667660058130348876
+    second: water_coasts_scaled_3x_pngcrushed_25
+  - first:
+      213: -6146926582959914774
+    second: water_coasts_scaled_3x_pngcrushed_26
+  - first:
+      213: -3328015196013367963
+    second: water_coasts_scaled_3x_pngcrushed_27
+  - first:
+      213: 1090498067361342558
+    second: water_coasts_scaled_3x_pngcrushed_28
+  - first:
+      213: -5893356298712963550
+    second: water_coasts_scaled_3x_pngcrushed_29
+  - first:
+      213: -4822334679846900133
+    second: water_coasts_scaled_3x_pngcrushed_30
+  - first:
+      213: -4584446866742310829
+    second: water_coasts_scaled_3x_pngcrushed_31
+  - first:
+      213: -3456538757818872246
+    second: water_coasts_scaled_3x_pngcrushed_32
+  - first:
+      213: 7867065409894729689
+    second: water_coasts_scaled_3x_pngcrushed_33
+  - first:
+      213: 2307235316459108257
+    second: water_coasts_scaled_3x_pngcrushed_34
+  - first:
+      213: 4011632773461473568
+    second: water_coasts_scaled_3x_pngcrushed_35
+  - first:
+      213: 7166501476427650365
+    second: water_coasts_scaled_3x_pngcrushed_36
+  - first:
+      213: -1755832260817143815
+    second: water_coasts_scaled_3x_pngcrushed_37
+  - first:
+      213: 2828701811545092981
+    second: water_coasts_scaled_3x_pngcrushed_38
+  - first:
+      213: -8390897335944925974
+    second: water_coasts_scaled_3x_pngcrushed_39
+  - first:
+      213: -3904502354016030263
+    second: water_coasts_scaled_3x_pngcrushed_40
+  - first:
+      213: -2416871072081267626
+    second: water_coasts_scaled_3x_pngcrushed_41
+  - first:
+      213: -2684976247936472945
+    second: water_coasts_scaled_3x_pngcrushed_42
+  - first:
+      213: -7515603898729203543
+    second: water_coasts_scaled_3x_pngcrushed_43
+  - first:
+      213: 6761274141612442247
+    second: water_coasts_scaled_3x_pngcrushed_44
+  - first:
+      213: -5376332704568178571
+    second: water_coasts_scaled_3x_pngcrushed_45
+  - first:
+      213: -5984638636768503545
+    second: water_coasts_scaled_3x_pngcrushed_46
+  - first:
+      213: 4676744036536082633
+    second: water_coasts_scaled_3x_pngcrushed_47
+  - first:
+      213: -5418471023611121937
+    second: water_coasts_scaled_3x_pngcrushed_48
+  - first:
+      213: 7661062474455962063
+    second: water_coasts_scaled_3x_pngcrushed_49
+  - first:
+      213: 8605075228023638779
+    second: water_coasts_scaled_3x_pngcrushed_50
+  - first:
+      213: -2246375426862057796
+    second: water_coasts_scaled_3x_pngcrushed_51
+  - first:
+      213: -5737565952351446554
+    second: water_coasts_scaled_3x_pngcrushed_52
+  - first:
+      213: -7578368119673466801
+    second: water_coasts_scaled_3x_pngcrushed_53
+  - first:
+      213: 4270813222876987041
+    second: water_coasts_scaled_3x_pngcrushed_54
+  - first:
+      213: -302486239662251493
+    second: water_coasts_scaled_3x_pngcrushed_55
+  - first:
+      213: -1180255824181442977
+    second: water_coasts_scaled_3x_pngcrushed_56
+  - first:
+      213: -5398510716318728002
+    second: water_coasts_scaled_3x_pngcrushed_57
+  - first:
+      213: 4483108017826682925
+    second: water_coasts_scaled_3x_pngcrushed_58
+  - first:
+      213: -7875932181425071869
+    second: water_coasts_scaled_3x_pngcrushed_59
+  - first:
+      213: -249378259938412505
+    second: water_coasts_scaled_3x_pngcrushed_60
+  - first:
+      213: 105043091212198581
+    second: water_coasts_scaled_3x_pngcrushed_61
+  - first:
+      213: 8914187705276784111
+    second: water_coasts_scaled_3x_pngcrushed_62
+  - first:
+      213: 2985108198640248397
+    second: water_coasts_scaled_3x_pngcrushed_63
+  - first:
+      213: 2439295642179724786
+    second: water_coasts_scaled_3x_pngcrushed_64
+  - first:
+      213: 7966125078182214376
+    second: water_coasts_scaled_3x_pngcrushed_65
+  - first:
+      213: 4761553447351820031
+    second: water_coasts_scaled_3x_pngcrushed_66
+  - first:
+      213: 8804381081692667112
+    second: water_coasts_scaled_3x_pngcrushed_67
+  - first:
+      213: 2572629808557161000
+    second: water_coasts_scaled_3x_pngcrushed_68
+  - first:
+      213: 1329599497437748287
+    second: water_coasts_scaled_3x_pngcrushed_69
+  - first:
+      213: 5612999681689580320
+    second: water_coasts_scaled_3x_pngcrushed_70
+  - first:
+      213: -616394391733292769
+    second: water_coasts_scaled_3x_pngcrushed_71
+  - first:
+      213: -4774668129083519725
+    second: water_coasts_scaled_3x_pngcrushed_72
+  - first:
+      213: -4513587797915607988
+    second: water_coasts_scaled_3x_pngcrushed_73
+  - first:
+      213: 1417858207354398207
+    second: water_coasts_scaled_3x_pngcrushed_74
+  - first:
+      213: -7011943214514222706
+    second: water_coasts_scaled_3x_pngcrushed_75
+  - first:
+      213: 5954520868595746140
+    second: water_coasts_scaled_3x_pngcrushed_76
+  - first:
+      213: -5603920934080870548
+    second: water_coasts_scaled_3x_pngcrushed_77
+  - first:
+      213: 5299617517592145457
+    second: water_coasts_scaled_3x_pngcrushed_78
+  - first:
+      213: 1696372081168782520
+    second: water_coasts_scaled_3x_pngcrushed_79
+  - first:
+      213: -2639813679035574893
+    second: water_coasts_scaled_3x_pngcrushed_80
+  - first:
+      213: 7814812704293024170
+    second: water_coasts_scaled_3x_pngcrushed_81
+  - first:
+      213: -9052089171849631476
+    second: water_coasts_scaled_3x_pngcrushed_82
+  - first:
+      213: -6732139187595463626
+    second: water_coasts_scaled_3x_pngcrushed_83
+  - first:
+      213: 8752753281209890155
+    second: water_coasts_scaled_3x_pngcrushed_84
+  - first:
+      213: -360437744329916873
+    second: water_coasts_scaled_3x_pngcrushed_85
+  - first:
+      213: 1061173862301727849
+    second: water_coasts_scaled_3x_pngcrushed_86
+  - first:
+      213: 8942084261242186245
+    second: water_coasts_scaled_3x_pngcrushed_87
+  - first:
+      213: -6165047132277545905
+    second: water_coasts_scaled_3x_pngcrushed_88
+  - first:
+      213: -8930030838290419324
+    second: water_coasts_scaled_3x_pngcrushed_89
+  - first:
+      213: 8387721596708939452
+    second: water_coasts_scaled_3x_pngcrushed_90
+  - first:
+      213: 7597791010312291868
+    second: water_coasts_scaled_3x_pngcrushed_91
+  - first:
+      213: -3160814910919828035
+    second: water_coasts_scaled_3x_pngcrushed_92
+  - first:
+      213: -1266462283197538164
+    second: water_coasts_scaled_3x_pngcrushed_93
+  - first:
+      213: 4069871814423595015
+    second: water_coasts_scaled_3x_pngcrushed_94
+  - first:
+      213: 1699179199199502989
+    second: water_coasts_scaled_3x_pngcrushed_95
+  - first:
+      213: -4711444214434577967
+    second: water_coasts_scaled_3x_pngcrushed_96
+  - first:
+      213: -7629951150622860125
+    second: water_coasts_scaled_3x_pngcrushed_97
+  - first:
+      213: -3424197656008908053
+    second: water_coasts_scaled_3x_pngcrushed_98
+  - first:
+      213: -4522285862722934414
+    second: water_coasts_scaled_3x_pngcrushed_99
+  - first:
+      213: -4697184051637088879
+    second: water_coasts_scaled_3x_pngcrushed_100
+  - first:
+      213: -1280123720249505720
+    second: water_coasts_scaled_3x_pngcrushed_101
+  - first:
+      213: -5559580487427187764
+    second: water_coasts_scaled_3x_pngcrushed_102
+  - first:
+      213: 3046767527707624686
+    second: water_coasts_scaled_3x_pngcrushed_103
+  - first:
+      213: -5506555957078013308
+    second: water_coasts_scaled_3x_pngcrushed_104
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 45
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 2731
+        width: 146
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2868fea9593554590800000000000000
+      internalID: -7690648886650632574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_1
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 2687
+        width: 194
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ad9e8d7f8ff0b290800000000000000
+      internalID: -7876514756519092829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_2
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 2774
+        width: 98
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49b75dec662d1df30800000000000000
+      internalID: 4598688033520581524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_3
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 2780
+        width: 98
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce502b1ec5e5351c0800000000000000
+      internalID: -4516162248305932820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_4
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 2735
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36fe849e8f2e63090800000000000000
+      internalID: -8055001324811915421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_5
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 2878
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0048dd1271bd241e0800000000000000
+      internalID: -2214967174313966592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_6
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 2735
+        width: 86
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4083be9d16ef1c0d0800000000000000
+      internalID: -3404160147094030332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_7
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 2777
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ef585276199794f0800000000000000
+      internalID: -822020085285101598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_8
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 2648
+        width: 98
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 653289ea3ecad3100800000000000000
+      internalID: 89417661504037718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_9
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 2687
+        width: 101
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a72b8be4036bf080800000000000000
+      internalID: -9152612944917616733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_10
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 2486
+        width: 149
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bc6c6eb50ca1e890800000000000000
+      internalID: -7430468769515017031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_11
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 2447
+        width: 194
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00e79a9f9a56f3400800000000000000
+      internalID: 306075080396996096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_12
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 2531
+        width: 98
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7531eaa699b69afd0800000000000000
+      internalID: -2330213025523559593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_13
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 2537
+        width: 98
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d63a0fa23c4417c70800000000000000
+      internalID: 8967023938101093229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_14
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 2495
+        width: 92
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5b10a2151ceda9c0800000000000000
+      internalID: -3914212925864141987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_15
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 2495
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cafd4bc871466cf0800000000000000
+      internalID: -259447941464458552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_16
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 2489
+        width: 140
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ba800deec6b954b0800000000000000
+      internalID: -5451124874099520847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_17
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 2483
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f52be70abfdb03d0800000000000000
+      internalID: -3239249516873177608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_18
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 2447
+        width: 107
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4997f54532f546f50800000000000000
+      internalID: 6873723536618256788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_19
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 2786
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b87df69155675010800000000000000
+      internalID: 1177521228680624313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_31
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 2048
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3580c283dd5c060c0800000000000000
+      internalID: -4584446866742310829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_35
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1892
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0297c7fb0ce2ca730800000000000000
+      internalID: 4011632773461473568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_43
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1655
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a874bfc21633b790800000000000000
+      internalID: -7515603898729203543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_49
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1559
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc1d5000bbf815a60800000000000000
+      internalID: 7661062474455962063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_53
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1289
+        width: 146
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f40d7b9d85a34d690800000000000000
+      internalID: -7578368119673466801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_54
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 1247
+        width: 194
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aebf9b9ff9f44b30800000000000000
+      internalID: 4270813222876987041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_55
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 1334
+        width: 98
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b12ec7f1e5a5dcbf0800000000000000
+      internalID: -302486239662251493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_56
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1340
+        width: 98
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f564497c493ee9fe0800000000000000
+      internalID: -1180255824181442977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_57
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 1295
+        width: 86
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb0cea52b13a415b0800000000000000
+      internalID: -5398510716318728002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_58
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1337
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d28d34c5df2373e30800000000000000
+      internalID: 4483108017826682925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_59
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1295
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3095713d86113b290800000000000000
+      internalID: -7875932181425071869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_60
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 1208
+        width: 98
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7287aa93bc70a8cf0800000000000000
+      internalID: -249378259938412505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_61
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 1247
+        width: 101
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b2efc98220357100800000000000000
+      internalID: 105043091212198581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_62
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1046
+        width: 149
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fed5d221d7e85bb70800000000000000
+      internalID: 8914187705276784111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_63
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 1007
+        width: 194
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d46ee04471c3d6920800000000000000
+      internalID: 2985108198640248397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_64
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 1091
+        width: 98
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f5e74e667e1ad120800000000000000
+      internalID: 2439295642179724786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_65
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1097
+        width: 98
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eab1616d8c5d8e60800000000000000
+      internalID: 7966125078182214376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_66
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 1055
+        width: 92
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffe1170f1af641240800000000000000
+      internalID: 4761553447351820031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_67
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1055
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ecf57932f17f2a70800000000000000
+      internalID: 8804381081692667112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_68
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 1007
+        width: 140
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82a71a53e21d3b320800000000000000
+      internalID: 2572629808557161000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_69
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1043
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3c905ac2bfa37210800000000000000
+      internalID: 1329599497437748287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_70
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1007
+        width: 107
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 023fc77b87165ed40800000000000000
+      internalID: 5612999681689580320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_71
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 806
+        width: 149
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f11b13701902277f0800000000000000
+      internalID: -616394391733292769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_72
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 767
+        width: 194
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31d099542a8fcbdb0800000000000000
+      internalID: -4774668129083519725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_73
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 851
+        width: 98
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4cd3b2dfc38c51c0800000000000000
+      internalID: -4513587797915607988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_74
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 815
+        width: 98
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff52b37078e3da310800000000000000
+      internalID: 1417858207354398207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_75
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 815
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e894ba91cc290be90800000000000000
+      internalID: -7011943214514222706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_76
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 680
+        width: 98
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c55cc4c7e25b2a250800000000000000
+      internalID: 5954520868595746140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_77
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 767
+        width: 101
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c670cbee99fda32b0800000000000000
+      internalID: -5603920934080870548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_78
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 563
+        width: 146
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13e648dbd060c8940800000000000000
+      internalID: 5299617517592145457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_79
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 527
+        width: 194
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b494f88b69ba8710800000000000000
+      internalID: 1696372081168782520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_80
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 608
+        width: 98
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3951edbf17f7d5bd0800000000000000
+      internalID: -2639813679035574893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_81
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 617
+        width: 98
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa17899ffbac37c60800000000000000
+      internalID: 7814812704293024170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_82
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 575
+        width: 92
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c092eb4bbd4806280800000000000000
+      internalID: -9052089171849631476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_83
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 608
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 634b2e8c313a292a0800000000000000
+      internalID: -6732139187595463626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_84
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 575
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6576253cb6087970800000000000000
+      internalID: 8752753281209890155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_85
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 527
+        width: 140
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73e729df7c77ffaf0800000000000000
+      internalID: -360437744329916873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_86
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 527
+        width: 101
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c7c63610c0abe00800000000000000
+      internalID: 1061173862301727849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_87
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 452
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50aa3f6224aa81c70800000000000000
+      internalID: 8942084261242186245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_88
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 326
+        width: 146
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f446e090c4a517aa0800000000000000
+      internalID: -6165047132277545905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_89
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 287
+        width: 194
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4817a621448221480800000000000000
+      internalID: -8930030838290419324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_90
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 368
+        width: 98
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb665b62a5c276470800000000000000
+      internalID: 8387721596708939452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_91
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 335
+        width: 98
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1602574ba6c07960800000000000000
+      internalID: 7597791010312291868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_92
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 335
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbd9dd1d5978224d0800000000000000
+      internalID: -3160814910919828035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_93
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 287
+        width: 98
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c80a490734f9c6ee0800000000000000
+      internalID: -1266462283197538164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_94
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 200
+        width: 98
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 708c7142ad61b7830800000000000000
+      internalID: 4069871814423595015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_95
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 215
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82e402aa72b49710800000000000000
+      internalID: 1699179199199502989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_96
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 89
+        width: 146
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d1ce8303769d9eb0800000000000000
+      internalID: -4711444214434577967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_97
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 47
+        width: 194
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ac9a8d8ad7fc1690800000000000000
+      internalID: -7629951150622860125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_98
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 134
+        width: 98
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be22dd0cf5eca70d0800000000000000
+      internalID: -3424197656008908053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_99
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 140
+        width: 98
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 279e0abc7fc9d31c0800000000000000
+      internalID: -4522285862722934414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_100
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 95
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d8a85edff30deb0800000000000000
+      internalID: -4697184051637088879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_101
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 119
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8480af142461c3ee0800000000000000
+      internalID: -1280123720249505720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_102
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 95
+        width: 86
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccb95baa00768d2b0800000000000000
+      internalID: -5559580487427187764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_103
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 44
+        width: 140
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee4453a8cea484a20800000000000000
+      internalID: 3046767527707624686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_104
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 47
+        width: 98
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48acd823888c493b0800000000000000
+      internalID: -5506555957078013308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_coasts_scaled_3x_pngcrushed_20
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 2809
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcdbcd9b5646ff344a0a8135873ccdec
+      internalID: -3644358879758763072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bd76480e7ee823f41a24196ad7151363
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      water_coasts_scaled_3x_pngcrushed_0: -7690648886650632574
+      water_coasts_scaled_3x_pngcrushed_1: -7876514756519092829
+      water_coasts_scaled_3x_pngcrushed_10: -7430468769515017031
+      water_coasts_scaled_3x_pngcrushed_100: -4697184051637088879
+      water_coasts_scaled_3x_pngcrushed_101: -1280123720249505720
+      water_coasts_scaled_3x_pngcrushed_102: -5559580487427187764
+      water_coasts_scaled_3x_pngcrushed_103: 3046767527707624686
+      water_coasts_scaled_3x_pngcrushed_104: -5506555957078013308
+      water_coasts_scaled_3x_pngcrushed_105: 19831841
+      water_coasts_scaled_3x_pngcrushed_11: 306075080396996096
+      water_coasts_scaled_3x_pngcrushed_12: -2330213025523559593
+      water_coasts_scaled_3x_pngcrushed_13: 8967023938101093229
+      water_coasts_scaled_3x_pngcrushed_14: -3914212925864141987
+      water_coasts_scaled_3x_pngcrushed_15: -259447941464458552
+      water_coasts_scaled_3x_pngcrushed_16: -5451124874099520847
+      water_coasts_scaled_3x_pngcrushed_17: -3239249516873177608
+      water_coasts_scaled_3x_pngcrushed_18: 6873723536618256788
+      water_coasts_scaled_3x_pngcrushed_19: 1177521228680624313
+      water_coasts_scaled_3x_pngcrushed_2: 4598688033520581524
+      water_coasts_scaled_3x_pngcrushed_20: -3644358879758763072
+      water_coasts_scaled_3x_pngcrushed_21: 4762485518312293069
+      water_coasts_scaled_3x_pngcrushed_22: 6804784986568354704
+      water_coasts_scaled_3x_pngcrushed_23: -8750937244905874849
+      water_coasts_scaled_3x_pngcrushed_24: 4064378116541879187
+      water_coasts_scaled_3x_pngcrushed_25: -1667660058130348876
+      water_coasts_scaled_3x_pngcrushed_26: -6146926582959914774
+      water_coasts_scaled_3x_pngcrushed_27: -3328015196013367963
+      water_coasts_scaled_3x_pngcrushed_28: 1090498067361342558
+      water_coasts_scaled_3x_pngcrushed_29: -5893356298712963550
+      water_coasts_scaled_3x_pngcrushed_3: -4516162248305932820
+      water_coasts_scaled_3x_pngcrushed_30: -4822334679846900133
+      water_coasts_scaled_3x_pngcrushed_31: -4584446866742310829
+      water_coasts_scaled_3x_pngcrushed_32: -3456538757818872246
+      water_coasts_scaled_3x_pngcrushed_33: 7867065409894729689
+      water_coasts_scaled_3x_pngcrushed_34: 2307235316459108257
+      water_coasts_scaled_3x_pngcrushed_35: 4011632773461473568
+      water_coasts_scaled_3x_pngcrushed_36: 7166501476427650365
+      water_coasts_scaled_3x_pngcrushed_37: -1755832260817143815
+      water_coasts_scaled_3x_pngcrushed_38: 2828701811545092981
+      water_coasts_scaled_3x_pngcrushed_39: -8390897335944925974
+      water_coasts_scaled_3x_pngcrushed_4: -8055001324811915421
+      water_coasts_scaled_3x_pngcrushed_40: -3904502354016030263
+      water_coasts_scaled_3x_pngcrushed_41: -2416871072081267626
+      water_coasts_scaled_3x_pngcrushed_42: -2684976247936472945
+      water_coasts_scaled_3x_pngcrushed_43: -7515603898729203543
+      water_coasts_scaled_3x_pngcrushed_44: 6761274141612442247
+      water_coasts_scaled_3x_pngcrushed_45: -5376332704568178571
+      water_coasts_scaled_3x_pngcrushed_46: -5984638636768503545
+      water_coasts_scaled_3x_pngcrushed_47: 4676744036536082633
+      water_coasts_scaled_3x_pngcrushed_48: -5418471023611121937
+      water_coasts_scaled_3x_pngcrushed_49: 7661062474455962063
+      water_coasts_scaled_3x_pngcrushed_5: -2214967174313966592
+      water_coasts_scaled_3x_pngcrushed_50: 8605075228023638779
+      water_coasts_scaled_3x_pngcrushed_51: -2246375426862057796
+      water_coasts_scaled_3x_pngcrushed_52: -5737565952351446554
+      water_coasts_scaled_3x_pngcrushed_53: -7578368119673466801
+      water_coasts_scaled_3x_pngcrushed_54: 4270813222876987041
+      water_coasts_scaled_3x_pngcrushed_55: -302486239662251493
+      water_coasts_scaled_3x_pngcrushed_56: -1180255824181442977
+      water_coasts_scaled_3x_pngcrushed_57: -5398510716318728002
+      water_coasts_scaled_3x_pngcrushed_58: 4483108017826682925
+      water_coasts_scaled_3x_pngcrushed_59: -7875932181425071869
+      water_coasts_scaled_3x_pngcrushed_6: -3404160147094030332
+      water_coasts_scaled_3x_pngcrushed_60: -249378259938412505
+      water_coasts_scaled_3x_pngcrushed_61: 105043091212198581
+      water_coasts_scaled_3x_pngcrushed_62: 8914187705276784111
+      water_coasts_scaled_3x_pngcrushed_63: 2985108198640248397
+      water_coasts_scaled_3x_pngcrushed_64: 2439295642179724786
+      water_coasts_scaled_3x_pngcrushed_65: 7966125078182214376
+      water_coasts_scaled_3x_pngcrushed_66: 4761553447351820031
+      water_coasts_scaled_3x_pngcrushed_67: 8804381081692667112
+      water_coasts_scaled_3x_pngcrushed_68: 2572629808557161000
+      water_coasts_scaled_3x_pngcrushed_69: 1329599497437748287
+      water_coasts_scaled_3x_pngcrushed_7: -822020085285101598
+      water_coasts_scaled_3x_pngcrushed_70: 5612999681689580320
+      water_coasts_scaled_3x_pngcrushed_71: -616394391733292769
+      water_coasts_scaled_3x_pngcrushed_72: -4774668129083519725
+      water_coasts_scaled_3x_pngcrushed_73: -4513587797915607988
+      water_coasts_scaled_3x_pngcrushed_74: 1417858207354398207
+      water_coasts_scaled_3x_pngcrushed_75: -7011943214514222706
+      water_coasts_scaled_3x_pngcrushed_76: 5954520868595746140
+      water_coasts_scaled_3x_pngcrushed_77: -5603920934080870548
+      water_coasts_scaled_3x_pngcrushed_78: 5299617517592145457
+      water_coasts_scaled_3x_pngcrushed_79: 1696372081168782520
+      water_coasts_scaled_3x_pngcrushed_8: 89417661504037718
+      water_coasts_scaled_3x_pngcrushed_80: -2639813679035574893
+      water_coasts_scaled_3x_pngcrushed_81: 7814812704293024170
+      water_coasts_scaled_3x_pngcrushed_82: -9052089171849631476
+      water_coasts_scaled_3x_pngcrushed_83: -6732139187595463626
+      water_coasts_scaled_3x_pngcrushed_84: 8752753281209890155
+      water_coasts_scaled_3x_pngcrushed_85: -360437744329916873
+      water_coasts_scaled_3x_pngcrushed_86: 1061173862301727849
+      water_coasts_scaled_3x_pngcrushed_87: 8942084261242186245
+      water_coasts_scaled_3x_pngcrushed_88: -6165047132277545905
+      water_coasts_scaled_3x_pngcrushed_89: -8930030838290419324
+      water_coasts_scaled_3x_pngcrushed_9: -9152612944917616733
+      water_coasts_scaled_3x_pngcrushed_90: 8387721596708939452
+      water_coasts_scaled_3x_pngcrushed_91: 7597791010312291868
+      water_coasts_scaled_3x_pngcrushed_92: -3160814910919828035
+      water_coasts_scaled_3x_pngcrushed_93: -1266462283197538164
+      water_coasts_scaled_3x_pngcrushed_94: 4069871814423595015
+      water_coasts_scaled_3x_pngcrushed_95: 1699179199199502989
+      water_coasts_scaled_3x_pngcrushed_96: -4711444214434577967
+      water_coasts_scaled_3x_pngcrushed_97: -7629951150622860125
+      water_coasts_scaled_3x_pngcrushed_98: -3424197656008908053
+      water_coasts_scaled_3x_pngcrushed_99: -4522285862722934414
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3318616284783306945}
   - component: {fileID: 536116174372501446}
   - component: {fileID: 3296537268849955256}
+  - component: {fileID: 3280740527129649136}
   m_Layer: 0
   m_Name: wood_sword
   m_TagString: Weapon
@@ -148,8 +149,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77dc795ce1f113409c98cd26f5ac9d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: 3961f8dcf4e8c304f9f3c15fff658587, type: 2}
+  itemData: {fileID: 11400000, guid: 1f7cb56e0c317e042ac61f8472ff722b, type: 2}
   block: 0
+--- !u!114 &3280740527129649136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393367871919173458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21bd9827ce1525c47adb945c21cfc289, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagePopupPrefab: {fileID: 0}
+  canvas: {fileID: 0}
+  damage: 0
 --- !u!1 &2307902531127831710
 GameObject:
   m_ObjectHideFlags: 0

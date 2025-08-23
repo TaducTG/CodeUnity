@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d74d08d395d1d4696d5dbac7dc0f91, type: 3}
+  m_Name: Cotton
+  m_EditorClassIdentifier: 
+  itemName: Cotton
+  icon: {fileID: 476177140, guid: 43164162382f9bc4eb129d95e1c8e24e, type: 3}
+  prefabs: {fileID: 957046576297868538, guid: 845ccb8e2a2b59c4bae81bdcdb2f33a9, type: 3}
+  itemType: 2
+  isStackable: 1
+  maxStack: 99
+  description: []
+  price: 0

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 646945da8797ac94fb753f11389fbed1, type: 3}
+  m_Name: Wood_bookselve
+  m_EditorClassIdentifier: 
+  itemName: Wood_bookselve
+  icon: {fileID: -6908575831710699870, guid: 20c799f62cebb6144a0ce7903fd6bab4, type: 3}
+  prefabs: {fileID: 4561215937626673634, guid: 9c17e8bee2876d045bcc8c832c8e541b, type: 3}
+  itemType: 3
+  isStackable: 0
+  maxStack: 99

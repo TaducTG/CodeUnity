@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66d45a0079b8db64f98ad3801bb87698, type: 3}
+  m_Name: gold_helmet
+  m_EditorClassIdentifier: 
+  itemName: gold_helmet
+  icon: {fileID: 7973886625310189405, guid: da3a3b11eb6b9634db05f82af996b17f, type: 3}
+  prefabs: {fileID: 890321280145376824, guid: 2cc2c513e1b482f4a914fc43371f14d6, type: 3}
+  itemType: 1
+  isStackable: 0
+  maxStack: 99
+  description:
+  - + 20 MaxHealth
+  - + 5 Def
+  slotType: 1
+  bonusHealth: 20
+  bonusDefense: 5
+  bonusMana: 0

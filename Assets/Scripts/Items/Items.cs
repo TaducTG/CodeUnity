@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+
 public enum ItemType
 {
     Consumable,
@@ -6,6 +7,8 @@ public enum ItemType
     Material,
     Placeable,  // ✅ thêm loại mới
 }
+
+
 public class Items : ScriptableObject
 {
     public string itemName;
@@ -16,4 +19,6 @@ public class Items : ScriptableObject
 
     public bool isStackable;
     public int maxStack = 99;
+
+    public string[] description;
 }

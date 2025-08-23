@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 646945da8797ac94fb753f11389fbed1, type: 3}
+  m_Name: Wood_table
+  m_EditorClassIdentifier: 
+  itemName: Wood_table
+  icon: {fileID: 2693470749061965190, guid: 20c799f62cebb6144a0ce7903fd6bab4, type: 3}
+  prefabs: {fileID: 3141818364502609353, guid: 90ec531774d1fc041b964b1e8438860b, type: 3}
+  itemType: 3
+  isStackable: 0
+  maxStack: 99

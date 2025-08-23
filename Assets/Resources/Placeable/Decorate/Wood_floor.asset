@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 646945da8797ac94fb753f11389fbed1, type: 3}
+  m_Name: Wood_floor
+  m_EditorClassIdentifier: 
+  itemName: Wood_floor
+  icon: {fileID: 543181889924136100, guid: 5bf98fb7311ca484eb6e65901bb6ec34, type: 3}
+  prefabs: {fileID: 3441861008575519995, guid: cfb18cd2515db3548abf9b51b823014c, type: 3}
+  itemType: 3
+  isStackable: 1
+  maxStack: 99

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66d45a0079b8db64f98ad3801bb87698, type: 3}
+  m_Name: Leather_boot
+  m_EditorClassIdentifier: 
+  itemName: Leather_boot
+  icon: {fileID: -2048730905889478084, guid: da3a3b11eb6b9634db05f82af996b17f, type: 3}
+  prefabs: {fileID: 5494957166164135707, guid: 382ccb10c1afdc84ab0226b3328da649, type: 3}
+  itemType: 1
+  isStackable: 0
+  maxStack: 99
+  description:
+  - + 5 MaxHealth
+  - + 1 Def
+  slotType: 3
+  bonusHealth: 5
+  bonusDefense: 1
+  bonusMana: 0

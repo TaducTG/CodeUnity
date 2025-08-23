@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66d45a0079b8db64f98ad3801bb87698, type: 3}
+  m_Name: Iron_armor
+  m_EditorClassIdentifier: 
+  itemName: Iron_armor
+  icon: {fileID: 8744135167966358179, guid: da3a3b11eb6b9634db05f82af996b17f, type: 3}
+  prefabs: {fileID: 8930986937071778219, guid: ef71d0890e674414eb385e0d2fe346cd, type: 3}
+  itemType: 1
+  isStackable: 0
+  maxStack: 99
+  description:
+  - + 20 MaxHealth
+  - + 5 Def
+  slotType: 2
+  bonusHealth: 20
+  bonusDefense: 5
+  bonusMana: 0

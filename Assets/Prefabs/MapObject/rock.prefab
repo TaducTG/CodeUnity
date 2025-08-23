@@ -189,8 +189,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 20
-  maxHealth: 20
+  maxHealth: 40
   tier: 0
   dropItem: 0
-  dropItems:
-  - {fileID: 1719797737436252560, guid: a022eee5103ee6340b9937d454bed4e2, type: 3}
+  dropTable:
+  - itemPrefab: {fileID: 1719797737436252560, guid: a022eee5103ee6340b9937d454bed4e2, type: 3}
+    quantity: 3
+    dropChance: 100
+  - itemPrefab: {fileID: 7371213298827188893, guid: 9199f4ce83b69bf4bb71324b4f621384, type: 3}
+    quantity: 1
+    dropChance: 50
