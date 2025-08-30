@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b0c7f9a6ff0b6d4baa8fa362af1b704, type: 3}
+  m_Name: Beefstake
+  m_EditorClassIdentifier: 
+  itemName: Beefstake
+  icon: {fileID: 5335510183781546509, guid: c3a770dad308c8b48b56eadb42522b34, type: 3}
+  prefabs: {fileID: 6096087520034625715, guid: 94f88add09915434bbdb1f89f62dc95f, type: 3}
+  itemType: 0
+  isStackable: 1
+  maxStack: 5
+  description:
+  - + 60Hp
+  effects:
+  - effectType: 0
+    effectValue: 60
+    duration: 0
+    buffTarget: 0

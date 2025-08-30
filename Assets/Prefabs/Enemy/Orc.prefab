@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3643730182090635119}
   - component: {fileID: 723843279403952615}
-  - component: {fileID: 2183647032307243265}
+  - component: {fileID: 9071763603913716041}
   m_Layer: 0
   m_Name: atkRange
   m_TagString: Untagged
@@ -69,7 +69,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0.8679373}
   m_Radius: 1.3679373
---- !u!114 &2183647032307243265
+--- !u!114 &9071763603913716041
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -78,10 +78,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1279135634058513004}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00bcf1bb865383945b67817eb1ac7e8b, type: 3}
+  m_Script: {fileID: 11500000, guid: 21bd9827ce1525c47adb945c21cfc289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damagePopupPrefab: {fileID: 0}
+  canvas: {fileID: 0}
   damage: 0
+  taggetPlayer: 1
 --- !u!1 &4302497042036809820
 GameObject:
   m_ObjectHideFlags: 0
@@ -100,6 +103,7 @@ GameObject:
   - component: {fileID: 79880576989171277}
   - component: {fileID: 6967955100265238110}
   - component: {fileID: 3259874506942448539}
+  - component: {fileID: 684565260848064020}
   m_Layer: 0
   m_Name: Orc
   m_TagString: Enemy
@@ -376,9 +380,43 @@ MonoBehaviour:
   invertFlip: 0
   flipSpeedDeadzone: 0.05
   useDesiredVelocity: 0
-  damage: 5
-  maxHealth: 40
-  health: 0
+  enemyStat: {fileID: 0}
   atkSpeed: 1.5
-  player: {fileID: 0}
   atkRange: {fileID: 1279135634058513004}
+--- !u!114 &684565260848064020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4302497042036809820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eff68ab685be900418443c6ced65e03b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseHealth: 40
+  baseMana: 0
+  baseDamage: 5
+  baseDefense: 0
+  baseSpeed: 0
+  equipHealth: 0
+  equipMana: 0
+  equipDamage: 0
+  equipDefense: 0
+  equipSpeed: 0
+  equipPercentSpeed: 0
+  buffHealth: 0
+  buffMana: 0
+  buffDamage: 0
+  buffPercentDamage: 0
+  buffDefense: 0
+  buffSpeed: 0
+  buffPercentSpeed: 0
+  maxHealth: 0
+  health: 0
+  maxMana: 0
+  mana: 0
+  damage: 0
+  defense: 0
+  speed: 0

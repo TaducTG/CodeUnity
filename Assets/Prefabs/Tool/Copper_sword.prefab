@@ -67,7 +67,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.1462369, y: 0.288625}
+  m_Offset: {x: 0.1462369, y: 1.3099785}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -77,7 +77,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.19954777, y: 1.57725}
+  m_Size: {x: 0.19954777, y: 1.5097227}
   m_EdgeRadius: 0
 --- !u!114 &7453326649575789250
 MonoBehaviour:
@@ -94,6 +94,7 @@ MonoBehaviour:
   damagePopupPrefab: {fileID: 0}
   canvas: {fileID: 0}
   damage: 0
+  taggetPlayer: 0
 --- !u!1 &4828231678168691456
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,7 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77dc795ce1f113409c98cd26f5ac9d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: 5d6368d7eeb414c4696e9c1bb3d7d5fd, type: 2}
+  itemData: {fileID: 11400000, guid: cbed49d9ea22e924bb8f4e4f51b1a191, type: 2}
   block: 0
 --- !u!61 &3300501509028641541
 BoxCollider2D:
@@ -232,15 +233,15 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 1.0931015}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.67, y: 2.17}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.75, y: 2.17}
     newSize: {x: 0.67, y: 2.17}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.67, y: 2.17}
+  m_Size: {x: 0.67, y: 2.2459688}
   m_EdgeRadius: 0

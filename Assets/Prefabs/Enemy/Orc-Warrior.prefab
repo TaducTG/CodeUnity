@@ -11,13 +11,14 @@ GameObject:
   - component: {fileID: 2670798030019287177}
   - component: {fileID: 8054756402917873793}
   - component: {fileID: 7290590552246265286}
+  - component: {fileID: 6469227617688144632}
   - component: {fileID: 5431645972080943558}
   - component: {fileID: 5312117804222069019}
   - component: {fileID: 5090242235412933531}
   - component: {fileID: 918508090610201936}
   - component: {fileID: 1694903634962548280}
   - component: {fileID: 4012138345394493185}
-  - component: {fileID: 6469227617688144632}
+  - component: {fileID: -1381943004551495695}
   m_Layer: 0
   m_Name: Orc-Warrior
   m_TagString: Untagged
@@ -118,6 +119,52 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!61 &6469227617688144632
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3343068644041036108}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.07499999, y: 0.8}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5714286, y: 0}
+    oldSize: {x: 1.05, y: 1.6}
+    newSize: {x: 1.05, y: 1.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.05, y: 1.6}
+  m_EdgeRadius: 0
 --- !u!114 &5431645972080943558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,58 +295,46 @@ MonoBehaviour:
   invertFlip: 0
   flipSpeedDeadzone: 0.05
   useDesiredVelocity: 0
-  damage: 25
-  maxHealth: 200
-  health: 0
+  enemyStat: {fileID: 0}
   atkSpeed: 1.8
-  player: {fileID: 0}
   atkRange: {fileID: 8346230541830179665}
---- !u!61 &6469227617688144632
-BoxCollider2D:
+--- !u!114 &-1381943004551495695
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3343068644041036108}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: -0.07499999, y: 0.8}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5714286, y: 0}
-    oldSize: {x: 1.05, y: 1.6}
-    newSize: {x: 1.05, y: 1.6}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1.05, y: 1.6}
-  m_EdgeRadius: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eff68ab685be900418443c6ced65e03b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseHealth: 200
+  baseMana: 0
+  baseDamage: 25
+  baseDefense: 2
+  baseSpeed: 0
+  equipHealth: 0
+  equipMana: 0
+  equipDamage: 0
+  equipDefense: 0
+  equipSpeed: 0
+  equipPercentSpeed: 0
+  buffHealth: 0
+  buffMana: 0
+  buffDamage: 0
+  buffPercentDamage: 0
+  buffDefense: 0
+  buffSpeed: 0
+  buffPercentSpeed: 0
+  maxHealth: 0
+  health: 0
+  maxMana: 0
+  mana: 0
+  damage: 0
+  defense: 0
+  speed: 0
 --- !u!1 &8346230541830179665
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,8 +344,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4677034008070069833}
-  - component: {fileID: 1219787197720812529}
   - component: {fileID: 6670795286042682229}
+  - component: {fileID: 7933308592967278968}
   m_Layer: 0
   m_Name: atkRange
   m_TagString: Untagged
@@ -333,19 +368,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2670798030019287177}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1219787197720812529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8346230541830179665}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00bcf1bb865383945b67817eb1ac7e8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 0
 --- !u!58 &6670795286042682229
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -382,3 +404,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0.92812896}
   m_Radius: 1.428129
+--- !u!114 &7933308592967278968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8346230541830179665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21bd9827ce1525c47adb945c21cfc289, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagePopupPrefab: {fileID: 0}
+  canvas: {fileID: 0}
+  damage: 0
+  taggetPlayer: 1

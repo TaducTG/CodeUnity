@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3869177755610249677}
   - component: {fileID: 4046678534823785377}
   - component: {fileID: 5290873923499413180}
+  - component: {fileID: -5364634122603694424}
   m_Layer: 0
   m_Name: Stick
   m_TagString: Item
@@ -149,3 +150,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 868f9ade5a9289b47815b24f67697385, type: 2}
   block: 0
+--- !u!50 &-5364634122603694424
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5275620622011092718}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 7
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

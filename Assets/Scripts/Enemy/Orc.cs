@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using Pathfinding;
 using System.Collections;
+using System.Collections.Generic;
 
 [RequireComponent(typeof(AIPath))]
 public class Orc : MonoBehaviour
@@ -29,24 +30,39 @@ public class Orc : MonoBehaviour
     private AIPath aiPath;
     Animator animator;
 
-    public float damage;
-    public float maxHealth;
-    public float health;
+    [Header("Stat")]
+    public Stat enemyStat;
+
     public float atkSpeed;
+
+
     private float atkSpeedTime;
-    public GameObject player;
+
     public GameObject atkRange;
 
-
+    [Header("Drop items")]
     private bool die = false;
+    public class DropData
+    {
+        public GameObject itemPrefab; // Prefab item sẽ rơi
+        public int quantity = 1;      // Số lượng item spawn
+        [Range(0f, 100f)]
+        public float dropChance = 100f; // % tỉ lệ spawn
+    }
+
+    public List<DropData> dropTable = new List<DropData>();
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        WeaponHitbox AtkRange = atkRange.GetComponent<WeaponHitbox>();
+        enemyStat = GetComponent<Stat>();
         animator = GetComponent<Animator>();
         aiPath = GetComponent<AIPath>();
+
+        AtkRange.damage = enemyStat.damage;
         atkSpeedTime = 0;
-        health = maxHealth;
+        enemyStat.health = enemyStat.maxHealth;
         if (spriteRenderer == null)
         {
             // Thử lấy ở chính GameObject
@@ -126,7 +142,7 @@ public class Orc : MonoBehaviour
             }
         }
 
-        if(health <= 0 && !die)
+        if(enemyStat.health <= 0 && !die)
         {
             animator.SetBool("Death", true);
             die = true;
@@ -138,8 +154,56 @@ public class Orc : MonoBehaviour
     IEnumerator Die()
     {
         yield return new WaitForSeconds(0.6f);
-        health = maxHealth;
+        enemyStat.health = enemyStat.maxHealth;
         die = false;
+        DropAllItems();
         EnemyPoolManager.Instance.ReturnToPool(gameObject);
+    }
+
+    private void DropAllItems()
+    {
+        foreach (DropData data in dropTable)
+        {
+            // Quay số random xem có rơi hay không
+            float roll = Random.Range(0f, 100f);
+            if (roll <= data.dropChance && data.itemPrefab != null)
+            {
+                // Spawn số lượng item mong muốn
+                for (int j = 0; j < data.quantity; j++)
+                {
+                    GameObject drop = Instantiate(data.itemPrefab, transform.position, Quaternion.identity);
+
+                    // Bật tất cả script trên item (nếu có tắt sẵn)
+                    foreach (MonoBehaviour script in drop.GetComponents<MonoBehaviour>())
+                    {
+                        script.enabled = true;
+                    }
+
+                    // Bật Collider2D nếu có
+                    var col = drop.GetComponent<Collider2D>();
+                    if (col) col.enabled = true;
+
+                    // Nếu item này cũng có DropItem => đánh dấu là item rơi và scale nhỏ lại
+                    var dropScript = drop.GetComponent<DropItem>();
+                    if (dropScript != null)
+                    {
+                        dropScript.dropItem = true;
+                        drop.transform.localScale *= 0.5f;
+                    }
+
+                    // Nếu có PickUpItem => bỏ trạng thái block
+                    var pickup = drop.GetComponent<PickUpItem>();
+                    if (pickup) pickup.block = false;
+
+                    // Thêm lực ngẫu nhiên để item bắn ra
+                    var rb = drop.GetComponent<Rigidbody2D>();
+                    if (rb != null)
+                    {
+                        Vector2 force = new Vector2(Random.Range(-2f, 2f), Random.Range(1f, 3f));
+                        rb.AddForce(force, ForceMode2D.Impulse);
+                    }
+                }
+            }
+        }
     }
 }

@@ -224,4 +224,10 @@ MonoBehaviour:
   hit: 0.4
   death: 0.8
   dropItems: 0
-  dropTable: []
+  dropTable:
+  - itemPrefab: {fileID: 7704230190875788924, guid: 1deb0dd34bc1b0c48b1cf9b1feeb599f, type: 3}
+    quantity: 1
+    dropChance: 100
+  - itemPrefab: {fileID: 6169155366842995643, guid: 78c058efd27a04e41acdf29fdf77878f, type: 3}
+    quantity: 1
+    dropChance: 100

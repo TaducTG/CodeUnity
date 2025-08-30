@@ -176,7 +176,7 @@ public class Boss : MonoBehaviour
     IEnumerator Die()
     {
         yield return new WaitForSeconds(1f);
-        Destroy(gameObject);
+        ResetStat();
     }
     IEnumerator ATK()
     {
@@ -205,5 +205,14 @@ public class Boss : MonoBehaviour
             }
             
         }
+    }
+
+    public void ResetStat()
+    {
+        die = false;
+        health = maxHealth;
+        rage = 20;
+        raged = false;
+        gameObject.SetActive(false);
     }
 }

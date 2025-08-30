@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d647843a897730e4cb5dd782bcc14994, type: 3}
+  m_Name: Flame_bow
+  m_EditorClassIdentifier: 
+  itemName: Flame_bow
+  icon: {fileID: -4570319719078681119, guid: 3daa4ca6b67d02c4aadd2822301c1045, type: 3}
+  prefabs: {fileID: 2700227361703117464, guid: 9db5337766b9331498ff86e9e6245727, type: 3}
+  itemType: 1
+  isStackable: 0
+  maxStack: 99
+  description: []
+  damage: 25
+  attackSpeed: 1
+  defaultProjectile: {fileID: 0}
+  projectileSpeed: 14

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b0c7f9a6ff0b6d4baa8fa362af1b704, type: 3}
+  m_Name: Raw_meat
+  m_EditorClassIdentifier: 
+  itemName: Raw_meat
+  icon: {fileID: -4675466342796047459, guid: 339bbad313a3000448ddf95bfba3e91c, type: 3}
+  prefabs: {fileID: 7704230190875788924, guid: 1deb0dd34bc1b0c48b1cf9b1feeb599f, type: 3}
+  itemType: 0
+  isStackable: 1
+  maxStack: 99
+  description:
+  - + 5Hp
+  effects:
+  - effectType: 0
+    effectValue: 5
+    duration: 0
+    buffTarget: 0

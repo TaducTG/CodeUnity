@@ -18,16 +18,16 @@ public class EquipmentItem : Items
     public int bonusMana;
     public void ApplyStats(Player player)
     {
-        player.maxHealth += bonusHealth;
-        player.baseDef += bonusDefense;
-        player.maxMana += bonusMana;
+        player.playerStat.equipHealth += bonusHealth;
+        player.playerStat.equipDefense += bonusDefense;
+        player.playerStat.equipMana += bonusMana;
     }
 
     // Trừ chỉ số khi bỏ trang bị
     public void RemoveStats(Player player)
     {
-        player.maxHealth -= bonusHealth;
-        player.baseDef -= bonusDefense;
-        player.maxMana -= bonusMana;
+        player.playerStat.equipHealth -= bonusHealth;
+        player.playerStat.equipDefense -= bonusDefense;
+        player.playerStat.equipMana -= bonusMana;
     }
 }

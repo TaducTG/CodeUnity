@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 
 public class Player : MonoBehaviour
@@ -19,54 +20,50 @@ public class Player : MonoBehaviour
     public GameObject[] panelsToBlockAttack;
     public MapGenerator map;
 
+    [Header("Blocked Biomes")]
+    public Tilemap[] blockedBiomes; // kéo tilemap biển, dung nham… vào đây trong Inspector
+
     [Header("Stat")]
-    public float maxHealth;
-    public float baseHealth;
-    public float health;
-    public float maxMana;
-    public float baseMana;
-    public float mana;
-    public float def;
-    public float baseDef;
-    public float moveSpeed;
-    public float baseSpeed;
+    public Stat playerStat;
 
     public float maxDistance = 2f; // khoảng cách tối đa
 
     void Start()
     {
-        baseSpeed = moveSpeed;
-        baseDef = def;
-
-        health = maxHealth;
-        mana = maxMana;
+        playerStat = GetComponent<Stat>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         localScaleX = rb.transform.localScale.x;
     }
-
-    // Update is called once per frame
     void Update()
     {
-        float moveX = Input.GetAxis("Horizontal");
-        float moveY = Input.GetAxis("Vertical");
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveY = Input.GetAxisRaw("Vertical");
 
-        rb.linearVelocity = new Vector2(moveX * moveSpeed, moveY * moveSpeed);
-        if(moveX != 0 || moveY != 0)
+        Vector2 moveDir = new Vector2(moveX, moveY).normalized;
+        Vector2 targetPos = rb.position + moveDir * playerStat.speed * Time.fixedDeltaTime;
+
+        // kiểm tra biome trước khi cho move
+        if (!IsBlocked(targetPos))
         {
-            animator.SetBool("Run", true);
+            rb.linearVelocity = moveDir * playerStat.speed;
         }
         else
         {
-            animator.SetBool("Run", false);
+            rb.linearVelocity = Vector2.zero; // chặn đứng
         }
+
+        // Animation
+        animator.SetBool("Run", rb.linearVelocity.magnitude > 0.01f);
+
+        // Flip
         if (moveX < 0)
         {
-            rb.transform.localScale = new Vector3(-localScaleX, rb.transform.localScale.y);
+            transform.localScale = new Vector3(-localScaleX, transform.localScale.y, transform.localScale.z);
         }
-        if (moveX > 0)
+        else if (moveX > 0)
         {
-            rb.transform.localScale = new Vector3(localScaleX, rb.transform.localScale.y);
+            transform.localScale = new Vector3(localScaleX, transform.localScale.y, transform.localScale.z);
         }
 
 
@@ -104,18 +101,24 @@ public class Player : MonoBehaviour
                 }
             }
 
-            if (!isUIPanelOpen && Input.GetMouseButtonDown(0) && atkSpeedTime < 0)
+            if (!isUIPanelOpen && atkSpeedTime < 0)
             {
-                if(mainHand is Tools)
+                if (mainHand is Tools)
                 {
-                    Tools hold = (Tools)mainHand;
-                    atkSpeedTime = hold.speed;
-                    StartCoroutine(SwingTool(hold.speed / 2f, hold.speed / 2f));
+                    if(Input.GetMouseButtonDown(0))
+                    {
+                        Tools hold = (Tools)mainHand;
+                        atkSpeedTime = hold.speed;
+                        StartCoroutine(SwingTool(hold.speed / 2f, hold.speed / 2f));
+                    }
                 }
                 if (mainHand is WeaponItem weapon)
                 {
-                    atkSpeedTime = weapon.attackSpeed;
-                    weapon.ATK(gameObject, MainHand);
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        atkSpeedTime = weapon.attackSpeed;
+                        weapon.ATK(gameObject, MainHand);
+                    }
 
                     if (MainHand.tag == "Weapon")
                     {
@@ -126,15 +129,15 @@ public class Player : MonoBehaviour
                             WeaponItem wp = (WeaponItem)mainHand;
                             hb.damage = wp.damage;
                         }
-                        
+
                     }
                 }
-                if(mainHand is ConsumableItem consumable)
+                if (mainHand is ConsumableItem consumable)
                 {
                     consumable.ApplyEffect(gameObject);
                     inventory.RemoveItem(mainHand, 1);
 
-                    if(inventory.GetTotalItem(mainHand) == 0)
+                    if (inventory.GetTotalItem(mainHand) == 0)
                     {
                         foreach (Transform child in gameObject.transform)
                         {
@@ -251,7 +254,6 @@ public class Player : MonoBehaviour
             mainHand = null;
         }
     }
-
     void TryPlaceBlock()
     {
 
@@ -272,6 +274,9 @@ public class Player : MonoBehaviour
         if (!(mainHand is Crops))
         {
             GameObject prefab = mainHand.prefabs; // Lưu ý bạn đang lưu prefab trong itemData
+
+            
+
             if (prefab == null)
             {
                 Debug.LogWarning("Placeable item has no prefab assigned!");
@@ -279,6 +284,12 @@ public class Player : MonoBehaviour
             }
 
             spawned = Instantiate(mainHand.prefabs, placementPos, Quaternion.identity);
+
+            //if (spawned.GetComponent<ItemInstance>())
+            //{
+            //    spawned.GetComponent<ItemInstance>().Setup((Placeable)mainHand);
+            //}
+
             spawned.GetComponent<DropItem>().dropItem = false;
             spawned.GetComponent<PickUpItem>().block = true;
         }
@@ -332,7 +343,6 @@ public class Player : MonoBehaviour
             mainHand = null;
         }
     }
-
     bool CanPlaceAt(Vector2 position)
     {
         Collider2D[] hits = Physics2D.OverlapCircleAll(position, 0.4f);
@@ -371,5 +381,17 @@ public class Player : MonoBehaviour
 
         return true;
     }
+    bool IsBlocked(Vector2 targetPos)
+    {
+        foreach (Tilemap map in blockedBiomes)
+        {
+            if (map == null) continue;
 
+            Vector3Int cellPos = map.WorldToCell(targetPos);
+            TileBase tile = map.GetTile(cellPos);
+
+            if (tile != null) return true; // có tile => chặn
+        }
+        return false;
+    }
 }

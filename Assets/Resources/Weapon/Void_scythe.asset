@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ea6135f98d7d8444a4538507dd721fc, type: 3}
+  m_Name: Void_scythe
+  m_EditorClassIdentifier: 
+  itemName: Void_scythe
+  icon: {fileID: -8702967748025807226, guid: c69ca532c60dfd24885edea456cf5bef, type: 3}
+  prefabs: {fileID: 1741318339150071673, guid: 65d145f1532c70f4da81d1b96c44b390, type: 3}
+  itemType: 1
+  isStackable: 0
+  maxStack: 99
+  description: []
+  damage: 40
+  attackSpeed: 1
+  angle: -180

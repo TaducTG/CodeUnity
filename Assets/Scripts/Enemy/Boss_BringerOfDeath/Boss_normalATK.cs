@@ -10,7 +10,7 @@ public class Boss_normalATK : MonoBehaviour
         {
             Player p = collision.GetComponent<Player>();
 
-                p.health -= damage;
+                p.playerStat.health -= damage;
 
         }
     }

@@ -2,7 +2,6 @@
 using UnityEngine.Tilemaps;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -55,16 +54,26 @@ public class EnemySpawner : MonoBehaviour
         Vector3Int playerCell = tilemap.WorldToCell(player.position);
         List<Vector3Int> validCells = new List<Vector3Int>();
 
-        foreach (var pos in tilemap.cellBounds.allPositionsWithin)
-        {
-            if (!tilemap.HasTile(pos)) continue;
+        // Xác định phạm vi xét quanh player theo cell
+        int radius = Mathf.RoundToInt(spawnRadius / tilemap.cellSize.x);
 
-            if (Vector3Int.Distance(pos, playerCell) <= spawnRadius)
-                validCells.Add(pos);
+        for (int x = -radius; x <= radius; x++)
+        {
+            for (int y = -radius; y <= radius; y++)
+            {
+                Vector3Int cell = playerCell + new Vector3Int(x, y, 0);
+
+                if (!tilemap.HasTile(cell)) continue;
+
+                // kiểm tra khoảng cách Euclidean
+                if (Vector3Int.Distance(playerCell, cell) <= radius)
+                    validCells.Add(cell);
+            }
         }
 
         if (validCells.Count == 0) return Vector3.zero;
 
+        // chọn 1 cell ngẫu nhiên
         Vector3Int randomCell = validCells[Random.Range(0, validCells.Count)];
         return tilemap.CellToWorld(randomCell) + new Vector3(0.5f, 0.5f, 0);
     }

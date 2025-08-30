@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b0c7f9a6ff0b6d4baa8fa362af1b704, type: 3}
+  m_Name: Vegetable_meal
+  m_EditorClassIdentifier: 
+  itemName: Vegetable_meal
+  icon: {fileID: -2705729263970091897, guid: 983cf5bba86551a4e91feae5e9594d68, type: 3}
+  prefabs: {fileID: 5493702772569885892, guid: 64954a8bc74f6144b9a11948a1ec7b13, type: 3}
+  itemType: 0
+  isStackable: 1
+  maxStack: 5
+  description:
+  - + 20Hp
+  - + 50Mp
+  effects:
+  - effectType: 0
+    effectValue: 20
+    duration: 0
+    buffTarget: 0
+  - effectType: 1
+    effectValue: 50
+    duration: 0
+    buffTarget: 0

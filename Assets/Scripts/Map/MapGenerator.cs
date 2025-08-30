@@ -6,8 +6,8 @@ using UnityEngine.Tilemaps;
 
 public class MapGenerator : MonoBehaviour
 {
-
     public enum BiomeType { Grassland, Desert, Swamp, Snow }
+
     [Header("Map Size & Noise")]
     public float noiseScale = 20f;
 
@@ -16,8 +16,11 @@ public class MapGenerator : MonoBehaviour
     public Tilemap grasslandTilemap;
 
     public TileBase[] grassTiles;
+    public float grassChance;
     public TileBase[] dirtTiles;
+    public float dirtChance;
     public TileBase[] stoneTiles;
+    public float stoneChance;
 
     [Header("Object Prefabs")]
     public GameObject[] treePrefabs;
@@ -31,19 +34,23 @@ public class MapGenerator : MonoBehaviour
     public TileBase requiredTileForLargeObject; // VD: grassTile
     public int maxAttemptsPerLargeObject = 50;
 
-
     [Header("Spawn Chance (0–1)")]
     public float flowerSpawnChance = 0.08f;
     public float treeSpawnChance = 0.05f;  // 5%
     public float rockSpawnChance = 0.03f;  // 3%
-    public float bushSpawnChance = 0.15f;  // 2%
-
+    public float bushSpawnChance = 0.15f;  // 15%
 
     // Internal
     private bool[,] occupied;
     private BoundsInt bounds;
 
     public BiomeMapGenerator biomeMapGenerator;
+
+    [Header("Chunk Settings")]
+    public int chunkSize = 32; // kích thước 1 chunk
+    public Transform player;
+    public int viewDistance = 2; // số chunk hiển thị xung quanh player
+    private Dictionary<Vector2Int, GameObject> chunkObjects = new();
 
     void Start()
     {
@@ -58,10 +65,9 @@ public class MapGenerator : MonoBehaviour
             grasslandTilemap = biomeMapGenerator.grasslandTilemap;
         else if (biomeTilemap == BiomeType.Desert)
             grasslandTilemap = biomeMapGenerator.desertTilemap;
-        else if(biomeTilemap == BiomeType.Snow)
+        else if (biomeTilemap == BiomeType.Snow)
             grasslandTilemap = biomeMapGenerator.snowTilemap;
         if (grasslandTilemap == null) yield break;
-
 
         ApplyNoiseToTiles(grasslandTilemap);
 
@@ -72,6 +78,46 @@ public class MapGenerator : MonoBehaviour
         SpawnSmallObjects();
     }
 
+    void Update()
+    {
+        UpdateChunks();
+    }
+
+    // ================== CHUNK HELPERS ==================
+    private Vector2Int WorldToChunk(Vector3 pos)
+    {
+        return new Vector2Int(
+            Mathf.FloorToInt(pos.x / chunkSize),
+            Mathf.FloorToInt(pos.y / chunkSize)
+        );
+    }
+
+    private GameObject GetOrCreateChunk(Vector2Int coord)
+    {
+        if (!chunkObjects.ContainsKey(coord))
+        {
+            GameObject chunkGO = new GameObject($"Chunk_{coord.x}_{coord.y}");
+            chunkGO.transform.parent = this.transform;
+            chunkObjects[coord] = chunkGO;
+        }
+        return chunkObjects[coord];
+    }
+
+    private void UpdateChunks()
+    {
+        if (player == null) return;
+
+        Vector2Int currentChunk = WorldToChunk(player.position);
+
+        foreach (var kvp in chunkObjects)
+        {
+            Vector2Int coord = kvp.Key;
+            float dist = Vector2Int.Distance(coord, currentChunk);
+            kvp.Value.SetActive(dist <= viewDistance);
+        }
+    }
+
+    // ================== TILE GENERATION ==================
     private void ApplyNoiseToTiles(Tilemap targetTilemap)
     {
         if (targetTilemap == null) return;
@@ -89,9 +135,9 @@ public class MapGenerator : MonoBehaviour
 
                 float noiseValue = Mathf.PerlinNoise(x / noiseScale, y / noiseScale);
                 TileBase selectedTile = null;
-                if (noiseValue < 0.35f && stoneTiles.Length > 0)
+                if (noiseValue < stoneChance && stoneTiles.Length > 0)
                     selectedTile = stoneTiles[Random.Range(0, stoneTiles.Length)];
-                else if (noiseValue < 0.44f && dirtTiles.Length > 0)
+                else if (noiseValue < dirtChance && dirtTiles.Length > 0)
                     selectedTile = dirtTiles[Random.Range(0, dirtTiles.Length)];
                 else if (grassTiles.Length > 0)
                     selectedTile = grassTiles[Random.Range(0, grassTiles.Length)];
@@ -102,6 +148,7 @@ public class MapGenerator : MonoBehaviour
         }
     }
 
+    // ================== LARGE OBJECTS ==================
     private void TrySpawnLargeObjects()
     {
         if (largeObjectPrefabs.Length != largeObjectSizes.Length)
@@ -140,7 +187,12 @@ public class MapGenerator : MonoBehaviour
                 if (canPlace)
                 {
                     Vector3 worldPos = grasslandTilemap.CellToWorld(baseCell) + new Vector3(size.x / 2f, size.y / 2f, 0);
-                    Instantiate(prefab, worldPos, Quaternion.identity);
+
+                    // Spawn vào chunk
+                    Vector2Int chunkCoord = WorldToChunk(worldPos);
+                    GameObject parentChunk = GetOrCreateChunk(chunkCoord);
+
+                    Instantiate(prefab, worldPos, Quaternion.identity, parentChunk.transform);
 
                     for (int dx = 0; dx < size.x; dx++)
                         for (int dy = 0; dy < size.y; dy++)
@@ -152,6 +204,7 @@ public class MapGenerator : MonoBehaviour
         }
     }
 
+    // ================== SMALL OBJECTS ==================
     private void SpawnSmallObjects()
     {
         if (grasslandTilemap == null) return;
@@ -170,19 +223,21 @@ public class MapGenerator : MonoBehaviour
                 if (currentTile == null) continue;
 
                 Vector3 worldPos = grasslandTilemap.CellToWorld(tilePos) + new Vector3(0.5f, 0.5f, 0);
+                Vector2Int chunkCoord = WorldToChunk(worldPos);
+                GameObject parentChunk = GetOrCreateChunk(chunkCoord);
 
                 // TREE & FLOWER — chỉ spawn trên grass tiles
                 if (IsTileInList(currentTile, grassTiles))
                 {
                     if (treePrefabs.Length > 0 && Random.value < treeSpawnChance)
                     {
-                        Instantiate(treePrefabs[Random.Range(0, treePrefabs.Length)], worldPos, Quaternion.identity);
+                        Instantiate(treePrefabs[Random.Range(0, treePrefabs.Length)], worldPos, Quaternion.identity, parentChunk.transform);
                         occupied[localX, localY] = true;
                         continue;
                     }
                     else if (flowerPrefabs.Length > 0 && Random.value < flowerSpawnChance)
                     {
-                        Instantiate(flowerPrefabs[Random.Range(0, flowerPrefabs.Length)], worldPos, Quaternion.identity);
+                        Instantiate(flowerPrefabs[Random.Range(0, flowerPrefabs.Length)], worldPos, Quaternion.identity, parentChunk.transform);
                         occupied[localX, localY] = true;
                         continue;
                     }
@@ -193,7 +248,7 @@ public class MapGenerator : MonoBehaviour
                 {
                     if (rockPrefabs.Length > 0 && Random.value < rockSpawnChance)
                     {
-                        Instantiate(rockPrefabs[Random.Range(0, rockPrefabs.Length)], worldPos, Quaternion.identity);
+                        Instantiate(rockPrefabs[Random.Range(0, rockPrefabs.Length)], worldPos, Quaternion.identity, parentChunk.transform);
                         occupied[localX, localY] = true;
                         continue;
                     }
@@ -204,7 +259,7 @@ public class MapGenerator : MonoBehaviour
                 {
                     if (bushPrefabs.Length > 0 && Random.value < bushSpawnChance)
                     {
-                        Instantiate(bushPrefabs[Random.Range(0, bushPrefabs.Length)], worldPos, Quaternion.identity);
+                        Instantiate(bushPrefabs[Random.Range(0, bushPrefabs.Length)], worldPos, Quaternion.identity, parentChunk.transform);
                         occupied[localX, localY] = true;
                         continue;
                     }
@@ -213,7 +268,7 @@ public class MapGenerator : MonoBehaviour
         }
     }
 
-
+    // ================== HELPERS ==================
     private bool IsTileInList(TileBase tile, TileBase[] tileList)
     {
         foreach (TileBase t in tileList)
@@ -223,14 +278,13 @@ public class MapGenerator : MonoBehaviour
         }
         return false;
     }
+
     private void PrepareOccupiedGrid()
     {
         if (grasslandTilemap == null) return;
         bounds = grasslandTilemap.cellBounds;
         occupied = new bool[bounds.size.x, bounds.size.y];
     }
-
-
 
     public bool CanFarmAt(Vector3Int cellPos)
     {

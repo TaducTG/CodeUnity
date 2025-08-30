@@ -17,11 +17,9 @@ MonoBehaviour:
   prefabs: {fileID: 8290255057516521986, guid: 8bcfb4933be57734190fcfad19fbfc9c, type: 3}
   itemType: 1
   isStackable: 0
-  maxStack: 1
-  description:
-  - 'Damage: 5'
-  - 'Speed: 0.4'
+  maxStack: 99
+  description: []
   damage: 5
   attackSpeed: 0.4
   defaultProjectile: {fileID: 0}
-  projectileSpeed: 8
+  projectileSpeed: 10

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4017771326681461208}
   - component: {fileID: 2790325414658041680}
   m_Layer: 0
-  m_Name: wood_bow
+  m_Name: Wood_bow
   m_TagString: Range_Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77dc795ce1f113409c98cd26f5ac9d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: f73bc5b54ca2783449c44fd93ff7fa50, type: 2}
+  itemData: {fileID: 11400000, guid: 7e5a04621cf4d854cbf7365153530053, type: 2}
   block: 0
 --- !u!61 &2790325414658041680
 BoxCollider2D:
@@ -141,7 +141,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.52, y: 1.62}
+    oldSize: {x: 0.91, y: 1.62}
     newSize: {x: 0.52, y: 1.62}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

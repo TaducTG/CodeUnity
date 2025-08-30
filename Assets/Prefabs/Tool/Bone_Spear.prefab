@@ -84,6 +84,7 @@ MonoBehaviour:
   damagePopupPrefab: {fileID: 0}
   canvas: {fileID: 0}
   damage: 0
+  taggetPlayer: 0
 --- !u!1 &7010725780606548703
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,7 +98,7 @@ GameObject:
   - component: {fileID: 8787949345520700484}
   - component: {fileID: 2894564705136901333}
   m_Layer: 0
-  m_Name: Bone_Spear
+  m_Name: Bone_spear
   m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -186,7 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77dc795ce1f113409c98cd26f5ac9d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: 4a1044df6f49a904c817fbfbfbe62afd, type: 2}
+  itemData: {fileID: 11400000, guid: 7e16105c84bac1947b8918a354d2b568, type: 2}
   block: 0
 --- !u!61 &2894564705136901333
 BoxCollider2D:
@@ -226,7 +227,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.53333336, y: 2.6333334}
+    oldSize: {x: 0.56666666, y: 2.6333334}
     newSize: {x: 0.17, y: 0.81}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

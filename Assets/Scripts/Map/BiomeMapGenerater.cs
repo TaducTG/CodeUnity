@@ -29,7 +29,8 @@ public class BiomeMapGenerator : MonoBehaviour
 
 
     [Header("Tilemaps")]
-    public Tilemap biomeMaskTilemap;
+    public Tilemap mainTilemap;
+
     public Tilemap grasslandTilemap;
     public Tilemap desertTilemap;
     public Tilemap swampTilemap;
@@ -88,6 +89,8 @@ public class BiomeMapGenerator : MonoBehaviour
 
         // Thêm các tilebase vào từng Tilemap cụ thể để xử lý spawn Object
         ApplyBiomesToIndividualTilemaps();
+
+        ApplyToMainTilemap();
 
         isGenerated = true;
     }
@@ -398,6 +401,18 @@ public class BiomeMapGenerator : MonoBehaviour
                 targetMap.SetTile(new Vector3Int(pos.x, pos.y, 0), tile);
             }
         }
+    }
+
+    void ApplyToMainTilemap()
+    {
+        foreach (var kv in tileBiomeMap)
+        {
+            TileBase tile = GetTileForBiome(kv.Value);
+            mainTilemap.SetTile(new Vector3Int(kv.Key.x, kv.Key.y, 0), tile);
+        }
+
+        mainTilemap.CompressBounds(); // thu gọn bounds chính xác
+        Debug.Log($"[BiomeMapGenerator] MainTilemap bounds: {mainTilemap.localBounds}");
     }
     Tilemap GetTilemapForBiome(BiomeType biome)
     {

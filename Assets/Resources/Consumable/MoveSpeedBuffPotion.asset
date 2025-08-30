@@ -23,5 +23,5 @@ MonoBehaviour:
   effects:
   - effectType: 2
     effectValue: 1
-    duration: 30
+    duration: 8
     buffTarget: 1

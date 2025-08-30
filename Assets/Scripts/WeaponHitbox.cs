@@ -6,6 +6,7 @@ public class WeaponHitbox : MonoBehaviour
     [SerializeField] private Canvas canvas;
     public float damage;
 
+    public bool taggetPlayer;
     void Start()
     {
         // Tìm Canvas
@@ -25,27 +26,31 @@ public class WeaponHitbox : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy"))
+        if (collision.CompareTag("Player") && taggetPlayer)
         {
-            Orc enemy = collision.GetComponent<Orc>();
-            if (enemy != null)
+            Player p = collision.GetComponent<Player>();
+            p.playerStat.health -= Mathf.Max(damage - p.playerStat.defense, 0);
+        }
+
+        if (collision.CompareTag("Enemy") && !taggetPlayer)
+        {
+            Stat enemyStat = collision.GetComponent<Stat>();
+            if (enemyStat != null)
             {
-                enemy.health -= damage;
-                ShowDamagePopup((int)damage, transform.position);
+                enemyStat.health -= Mathf.Max(damage - enemyStat.defense, 1);
+                ShowDamagePopup((int)Mathf.Max(damage - enemyStat.defense, 1), transform.position);
             }
-            OrcRogue enemy2 = collision.GetComponent<OrcRogue>();
-            if (enemy2 != null)
+
+            Animal animal = collision.GetComponent<Animal>();
+            if (animal != null)
             {
-                enemy2.health -= damage;
+                animal.TakeDamage(damage);
                 ShowDamagePopup((int)damage, transform.position);
             }
             Slime enemy3 = collision.GetComponent<Slime>();
             if (enemy3 != null)
             {
-                enemy3.health -= damage;
-
                 enemy3.isHurt = 0.2f;
-                ShowDamagePopup((int)damage, transform.position);
             }
 
 

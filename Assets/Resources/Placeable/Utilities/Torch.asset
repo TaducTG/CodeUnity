@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 646945da8797ac94fb753f11389fbed1, type: 3}
+  m_Name: Torch
+  m_EditorClassIdentifier: 
+  itemName: Torch
+  icon: {fileID: 924432098, guid: 79a9d1043655b5543a9c37ea527913f5, type: 3}
+  prefabs: {fileID: 5660166791720043283, guid: 2f019a5cf3959d94abb7d9acaa58a8af, type: 3}
+  itemType: 3
+  isStackable: 1
+  maxStack: 99
+  description: []
+  emitsLight: 1
+  lightColor: {r: 1, g: 1, b: 1, a: 1}
+  lightIntensity: 1
+  lightRadius: 9
+  scaleWithDayNight: 1

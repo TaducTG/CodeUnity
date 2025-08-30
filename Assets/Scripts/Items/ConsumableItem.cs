@@ -18,17 +18,6 @@ public class ConsumableItem : Items
         MoveSpeed,
         Defense
     }
-    private bool isDamageBuffed = false;
-    private float damageBuffAmount = 0f;
-    private int damageOverride = 0;
-
-    private bool isSpeedBuffed = false;
-    private float speedBuffAmount = 0f;
-    private int speedOverride = 0;
-
-    private bool isDefBuffed = false;
-    private float defBuffAmount = 0f;
-    private int defOverride = 0;
 
     [System.Serializable]
     public class EffectData
@@ -43,6 +32,9 @@ public class ConsumableItem : Items
 
     [Header("Consumable Settings")]
     public List<EffectData> effects = new List<EffectData>();
+
+    // Quản lý coroutine đang chạy cho từng buff
+    private Dictionary<BuffType, Coroutine> activeBuffs = new Dictionary<BuffType, Coroutine>();
 
     public void ApplyEffect(GameObject user)
     {
@@ -75,91 +67,71 @@ public class ConsumableItem : Items
 
     private void ApplyHeal(Player player, float amount)
     {
-        player.health = Mathf.Min(player.health + amount, player.maxHealth);
+        player.playerStat.health = Mathf.Min(player.playerStat.health + amount, player.playerStat.maxHealth);
         Debug.Log($"[Item] {itemName} hồi {amount} máu cho {player.name}");
     }
 
     private void ApplyMana(Player player, float amount)
     {
-        player.mana = Mathf.Min(player.mana + amount, player.maxMana);
+        player.playerStat.mana = Mathf.Min(player.playerStat.mana + amount, player.playerStat.maxMana);
         Debug.Log($"[Item] {itemName} hồi {amount} mana cho {player.name}");
     }
 
     private void ApplyBuff(Player player, BuffType buffType, float amount, float duration)
     {
-        player.StartCoroutine(BuffCoroutine(player, buffType, amount, duration));
-    }
+        // Nếu đã có buff cùng loại → dừng coroutine cũ và reset hiệu ứng
+        if (activeBuffs.ContainsKey(buffType) && activeBuffs[buffType] != null)
+        {
+            player.StopCoroutine(activeBuffs[buffType]);
+            ResetBuff(player, buffType);
+        }
 
-    
+        // Bắt đầu buff mới
+        Coroutine newBuff = player.StartCoroutine(BuffCoroutine(player, buffType, amount, duration));
+        activeBuffs[buffType] = newBuff;
+    }
 
     private IEnumerator BuffCoroutine(Player player, BuffType buffType, float amount, float duration)
     {
         Debug.Log($"[Item] {itemName} buff {buffType} +{amount} cho {player.name} trong {duration} giây");
 
-        // Lưu giá trị ban đầu
+        // Áp dụng buff
         switch (buffType)
         {
-            
             case BuffType.MoveSpeed:
-
-                // Xử lý cho vấn đề dùng nhiều potion cùng lúc sẽ không stack mà lấy effect cuối cùng được apply
-                if (!isSpeedBuffed)
-                {
-                    isSpeedBuffed = true;
-                    speedBuffAmount = amount;
-                    player.moveSpeed += amount;
-                }
-                else
-                {
-                    player.moveSpeed -= speedBuffAmount;
-                    player.moveSpeed += amount;
-                    speedBuffAmount = amount;
-                    speedOverride += 1;
-                }
-                    break;
+                player.playerStat.buffSpeed += amount;
+                break;
             case BuffType.Defense:
-                if (!isDefBuffed)
-                {
-                    isDefBuffed = true;
-                    defBuffAmount = amount;
-                    player.def += amount;
-                }
-                else
-                {
-                    player.def -= defBuffAmount;
-                    player.def += amount;
-                    defBuffAmount = amount;
-                    defOverride += 1;
-                }
-                    break;
+                player.playerStat.buffDefense += amount;
+                break;
+            case BuffType.Damage:
+                player.playerStat.buffDamage += amount;
+                break;
         }
 
         yield return new WaitForSeconds(duration);
 
-        // Hết buff → trả lại giá trị
-        switch (buffType)
-        {
-            
-            case BuffType.MoveSpeed:
-                if(speedOverride > 0)
-                {
-                    speedOverride -= 1;
-                    break;
-                }
-
-                isSpeedBuffed = false;
-                player.moveSpeed = player.baseSpeed;
-                break;
-            case BuffType.Defense:
-                if(defOverride > 0)
-                {
-                    defOverride -= 1;
-                    break;
-                }
-                player.def = player.baseDef;
-                break;
-        }
+        // Hết buff → reset
+        ResetBuff(player, buffType);
 
         Debug.Log($"Buff {buffType} từ {itemName} đã hết hiệu lực");
+        activeBuffs[buffType] = null;
+    }
+
+    private void ResetBuff(Player player, BuffType buffType)
+    {
+        // Trả lại về giá trị gốc
+        switch (buffType)
+        {
+            case BuffType.MoveSpeed:
+                player.playerStat.buffSpeed = 0f;
+                break;
+            case BuffType.Defense:
+                player.playerStat.buffDefense = 0f;
+                break;
+            case BuffType.Damage:
+                player.playerStat.buffDamage = 0f;
+                break;
+        }
     }
 }

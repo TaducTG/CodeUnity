@@ -18,3 +18,9 @@ MonoBehaviour:
   itemType: 3
   isStackable: 0
   maxStack: 99
+  description: []
+  emitsLight: 1
+  lightColor: {r: 1, g: 1, b: 1, a: 1}
+  lightIntensity: 1
+  lightRadius: 3
+  scaleWithDayNight: 1

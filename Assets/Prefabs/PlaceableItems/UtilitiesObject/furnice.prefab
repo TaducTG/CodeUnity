@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 7188191564324696478}
   - component: {fileID: 2311460680167281716}
   - component: {fileID: 2998625401897946361}
+  - component: {fileID: 3515685805659830602}
   m_Layer: 0
   m_Name: furnice
   m_TagString: Placeable
@@ -310,3 +311,16 @@ MonoBehaviour:
   - itemPrefab: {fileID: 2999261398920722939}
     quantity: 1
     dropChance: 100
+--- !u!114 &3515685805659830602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999261398920722939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b1ba3ffca750554098605e1bcf15b39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 4a52b21bb693ee14d835791c9fcef970, type: 2}

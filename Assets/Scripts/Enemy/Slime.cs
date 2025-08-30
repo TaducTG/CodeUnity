@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -14,9 +15,8 @@ public class Slime : MonoBehaviour
     public float jumpHeight = 0.5f;            // Độ cao tối đa (parabol giả)
 
     [Header("Stat")]
-    public float maxHealth;
-    public float health;
-    public float damage;
+    public Stat enemyStat;
+
     public float hurtTime = 0.2f;
     public float isHurt = 0;
 
@@ -24,20 +24,39 @@ public class Slime : MonoBehaviour
     private Transform player;
     private Vector2 targetPos;
     private bool isJumping = false;
+
+    public GameObject hitboxPrefabs;
+    public float hitboxTime = 0.05f;
+    [Header("Drop items")]
     private bool die = false;
+    public class DropData
+    {
+        public GameObject itemPrefab; // Prefab item sẽ rơi
+        public int quantity = 1;      // Số lượng item spawn
+        [Range(0f, 100f)]
+        public float dropChance = 100f; // % tỉ lệ spawn
+    }
+
+    public List<DropData> dropTable = new List<DropData>();
     void Awake()
     {
+        enemyStat = GetComponent<Stat>();
         animator = GetComponent<Animator>();
     }
 
     void Start()
     {
-        health = maxHealth;
+        enemyStat.health = enemyStat.maxHealth;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         StartCoroutine(BehaviorLoop());
     }
     private void Update()
     {
+        hitboxTime -= Time.deltaTime;
+        if (hitboxTime < 0)
+        {
+            hitboxPrefabs.SetActive(false);
+        }
         isHurt -= Time.deltaTime;
         if(isHurt > 0)
         {
@@ -48,7 +67,7 @@ public class Slime : MonoBehaviour
             animator.SetBool("Hurt", false);
         }
 
-        if(health <= 0)
+        if(enemyStat.health <= 0)
         {
             die = true;
             animator.SetBool("Death", true);
@@ -63,6 +82,7 @@ public class Slime : MonoBehaviour
         }
         while (true)
         {
+            
             if (!isJumping)
             {
                 float distToPlayer = Vector2.Distance(transform.position, player.position);
@@ -83,7 +103,6 @@ public class Slime : MonoBehaviour
                     Vector2 randomDir = Random.insideUnitCircle.normalized;
                     targetPos = (Vector2)transform.position + randomDir * maxJumpDistance;
                 }
-
                 yield return StartCoroutine(JumpTo(targetPos));
                 yield return new WaitForSeconds(jumpCooldown);
             }
@@ -117,6 +136,17 @@ public class Slime : MonoBehaviour
         }
 
         // Reset vị trí về đúng điểm đến (bỏ offset)
+        hitboxPrefabs.SetActive(true);
+
+        Transform hitbox = transform.Find("hitbox");
+        if (hitbox != null)
+        {
+            WeaponHitbox hb = hitbox.GetComponent<WeaponHitbox>();
+
+            hb.damage = enemyStat.damage;
+        }
+
+        hitboxTime = 0.05f;
         transform.position = destination;
         animator.SetBool("Run", false);
         isJumping = false;
@@ -125,11 +155,57 @@ public class Slime : MonoBehaviour
     IEnumerator Die()
     {
         yield return new WaitForSeconds(1f);
-        health = maxHealth;
+        enemyStat.health = enemyStat.maxHealth;
         die = false;
+        DropAllItems();
         EnemyPoolManager.Instance.ReturnToPool(gameObject);
     }
+    private void DropAllItems()
+    {
+        foreach (DropData data in dropTable)
+        {
+            // Quay số random xem có rơi hay không
+            float roll = Random.Range(0f, 100f);
+            if (roll <= data.dropChance && data.itemPrefab != null)
+            {
+                // Spawn số lượng item mong muốn
+                for (int j = 0; j < data.quantity; j++)
+                {
+                    GameObject drop = Instantiate(data.itemPrefab, transform.position, Quaternion.identity);
 
+                    // Bật tất cả script trên item (nếu có tắt sẵn)
+                    foreach (MonoBehaviour script in drop.GetComponents<MonoBehaviour>())
+                    {
+                        script.enabled = true;
+                    }
+
+                    // Bật Collider2D nếu có
+                    var col = drop.GetComponent<Collider2D>();
+                    if (col) col.enabled = true;
+
+                    // Nếu item này cũng có DropItem => đánh dấu là item rơi và scale nhỏ lại
+                    var dropScript = drop.GetComponent<DropItem>();
+                    if (dropScript != null)
+                    {
+                        dropScript.dropItem = true;
+                        drop.transform.localScale *= 0.5f;
+                    }
+
+                    // Nếu có PickUpItem => bỏ trạng thái block
+                    var pickup = drop.GetComponent<PickUpItem>();
+                    if (pickup) pickup.block = false;
+
+                    // Thêm lực ngẫu nhiên để item bắn ra
+                    var rb = drop.GetComponent<Rigidbody2D>();
+                    if (rb != null)
+                    {
+                        Vector2 force = new Vector2(Random.Range(-2f, 2f), Random.Range(1f, 3f));
+                        rb.AddForce(force, ForceMode2D.Impulse);
+                    }
+                }
+            }
+        }
+    }
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;

@@ -18,9 +18,7 @@ MonoBehaviour:
   itemType: 1
   isStackable: 0
   maxStack: 99
-  description:
-  - 'Damage: 15'
-  - 'Speed: 0.75'
+  description: []
   damage: 15
   attackSpeed: 0.75
   angle: 90

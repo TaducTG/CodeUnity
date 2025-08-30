@@ -19,7 +19,7 @@ public class Boss_skill_atk : MonoBehaviour
         {
             Player p = collision.GetComponent<Player>();
 
-                p.health -= damage;
+                p.playerStat.health -= damage;
 
         }
     }
