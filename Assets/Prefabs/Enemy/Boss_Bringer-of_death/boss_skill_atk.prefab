@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7816245671667573319}
   - component: {fileID: 4955867100166435270}
-  - component: {fileID: 7971049500297796930}
+  - component: {fileID: 3531549574514112858}
   m_Layer: 0
   m_Name: hit_range
   m_TagString: Untagged
@@ -79,7 +79,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.8497963, y: 1.340725}
   m_EdgeRadius: 0
---- !u!114 &7971049500297796930
+--- !u!114 &3531549574514112858
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -88,10 +88,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1994529668642953681}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11e85e9603e45804eb026cce66e7ea5b, type: 3}
+  m_Script: {fileID: 11500000, guid: 21bd9827ce1525c47adb945c21cfc289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 15
+  damagePopupPrefab: {fileID: 0}
+  canvas: {fileID: 0}
+  damage: 20
+  taggetPlayer: 1
+  onHitEffects: []
 --- !u!1 &6202250541279735876
 GameObject:
   m_ObjectHideFlags: 0

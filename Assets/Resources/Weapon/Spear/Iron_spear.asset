@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620a5b835b9cfd4458934e013d2b7193, type: 3}
+  m_Name: Iron_spear
+  m_EditorClassIdentifier: 
+  itemName: Iron_spear
+  icon: {fileID: -6232406379286473353, guid: f9c7291f1428c2140a2a72d6bf79d620, type: 3}
+  prefabs: {fileID: 7382019766555274227, guid: c145047fdf9b0b4468ead3f7fab49c7e, type: 3}
+  itemType: 1
+  isStackable: 0
+  maxStack: 99
+  description: []
+  abilities:
+  - triggerKey: 0
+    ability: {fileID: 11400000, guid: 8d0b2e8fb0f550d4088fe280acb14cb8, type: 2}
+    config:
+      manaUsed: 0
+      healthUsed: 0
+      damage: 12
+      attackSpeed: 0.5
+      angle: -180
+      projectileSpeed: 0
+      projectilePrefab: {fileID: 0}
+      maxDistance: 0
+      hookSpeed: 0
+      effects: []
+  - triggerKey: 1
+    ability: {fileID: 11400000, guid: 146c7e5d6f2956f4f98aa23070457510, type: 2}
+    config:
+      manaUsed: 0
+      healthUsed: 0
+      damage: 20
+      attackSpeed: 1
+      angle: 0
+      projectileSpeed: 0
+      projectilePrefab: {fileID: 0}
+      maxDistance: 0
+      hookSpeed: 0
+      effects: []

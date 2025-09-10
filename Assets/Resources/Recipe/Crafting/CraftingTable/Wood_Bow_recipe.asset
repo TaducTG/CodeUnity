@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38d373fb537f3f49bd4d297974e2567, type: 3}
   m_Name: Wood_Bow_recipe
   m_EditorClassIdentifier: 
-  outputItem: {fileID: 11400000, guid: f73bc5b54ca2783449c44fd93ff7fa50, type: 2}
+  outputItem: {fileID: 11400000, guid: 89b1847fa08a21a449b17cb9a28273cf, type: 2}
   outputAmount: 1
   ingredients:
   - item: {fileID: 11400000, guid: 159601043c95cf04ea24542bfd54f23d, type: 2}

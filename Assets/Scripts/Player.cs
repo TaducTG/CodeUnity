@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using static Weapon;
 
 
 public class Player : MonoBehaviour
@@ -82,7 +83,7 @@ public class Player : MonoBehaviour
             if (mainHand is Tools farmTool && MainHand.tag == "FarmTools")
             {
                 Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                farmTool.UseFarmTool(mouseWorldPos,map);
+                farmTool.UseFarmTool(mouseWorldPos, map);
             }
         }
 
@@ -105,11 +106,11 @@ public class Player : MonoBehaviour
             {
                 if (mainHand is Tools)
                 {
-                    if(Input.GetMouseButtonDown(0))
+                    if (Input.GetMouseButton(0))
                     {
                         Tools hold = (Tools)mainHand;
                         atkSpeedTime = hold.speed;
-                        StartCoroutine(SwingTool(hold.speed / 2f, hold.speed / 2f));
+                        StartCoroutine(SwingTool(hold.speed / 2f - 0.1f, hold.speed / 2f - 0.1f));
                     }
                 }
                 if (mainHand is WeaponItem weapon)
@@ -132,7 +133,47 @@ public class Player : MonoBehaviour
 
                     }
                 }
-                if (mainHand is ConsumableItem consumable)
+
+                if (mainHand is Weapon weapons)
+                {
+                    // --- Kiểm tra input ---
+                    // Lặp qua tất cả abilities trong weapon
+                    foreach (var slot in weapons.abilities)
+                    {
+                        if (IsTriggered(slot.triggerKey)
+                            && slot.config.manaUsed <= playerStat.mana
+                            && slot.config.healthUsed <= playerStat.health
+                            && Time.time >= slot.nextAvailableTime
+                            )
+                        {
+                            atkSpeedTime = 0.2f;
+
+                            playerStat.mana -= slot.config.manaUsed;
+                            playerStat.health -= slot.config.healthUsed;
+                            // truyền baseDamage để tính damage cuối
+                            playerStat.baseDamage = slot.config.damage;
+
+                            // set tốc độ đánh riêng cho ability này
+                            slot.nextAvailableTime = Time.time + slot.config.attackSpeed;
+
+                            // truyền damage vào hitbox (với vũ khí cận chiến)
+                            if (MainHand.tag == "Weapon")
+                            {
+                                Transform hitbox = MainHand.transform.Find("hitbox");
+                                if (hitbox != null)
+                                {
+
+                                    WeaponHitbox hb = hitbox.GetComponent<WeaponHitbox>();
+                                    hb.damage = playerStat.damage;
+                                }
+                            }
+
+                            // Gọi ability (logic mới)
+                            slot.ability.Activate(gameObject, MainHand, slot.config);
+                        }
+                    }
+                }
+                if (mainHand is ConsumableItem consumable && Input.GetMouseButtonDown(0))
                 {
                     consumable.ApplyEffect(gameObject);
                     inventory.RemoveItem(mainHand, 1);
@@ -149,54 +190,55 @@ public class Player : MonoBehaviour
                         mainHand = null;
                     }
                 }
+                
             }
         }
     }
     IEnumerator SwingTool(float duration, float returnDuration)
-    {
-        // Lấy vị trí chuột
-        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mouseWorldPos.z = 0f;
-
-        GameObject tempHitbox = null;
-
-        // Nếu trong phạm vi cho phép → tạo hitbox
-        if (Vector2.Distance(transform.position, mouseWorldPos) <= maxDistance)
         {
-            tempHitbox = Instantiate(hitboxPrefab, mouseWorldPos, Quaternion.identity);
-            Tools t = (Tools)MainHand.GetComponent<PickUpItem>().itemData;
-            tempHitbox.GetComponent<Hitbox>().damage = t.damage;
-            tempHitbox.GetComponent<Hitbox>().tier = t.tier;
+            // Lấy vị trí chuột
+            Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mouseWorldPos.z = 0f;
+
+            GameObject tempHitbox = null;
+
+            // Nếu trong phạm vi cho phép → tạo hitbox
+            if (Vector2.Distance(transform.position, mouseWorldPos) <= maxDistance)
+            {
+                tempHitbox = Instantiate(hitboxPrefab, mouseWorldPos, Quaternion.identity);
+                Tools t = (Tools)MainHand.GetComponent<PickUpItem>().itemData;
+                tempHitbox.GetComponent<Hitbox>().damage = t.damage;
+                tempHitbox.GetComponent<Hitbox>().tier = t.tier;
+            }
+
+            // Lưu rotation ban đầu và target
+            Quaternion originalRotation = MainHand.transform.localRotation;
+            Quaternion targetRotation = Quaternion.Euler(MainHand.transform.localEulerAngles + new Vector3(0f, 0f, -angle));
+
+            // Xoay xuống
+            float time = 0f;
+            while (time < duration)
+            {
+                MainHand.transform.localRotation = Quaternion.Lerp(originalRotation, targetRotation, time / duration);
+                time += Time.deltaTime;
+                yield return null;
+            }
+            MainHand.transform.localRotation = targetRotation;
+
+            // Quay về vị trí ban đầu
+            time = 0f;
+            while (time < returnDuration)
+            {
+                MainHand.transform.localRotation = Quaternion.Lerp(targetRotation, originalRotation, time / returnDuration);
+                time += Time.deltaTime;
+                yield return null;
+            }
+            MainHand.transform.localRotation = originalRotation;
+
+            // Xóa hitbox khi kết thúc swing
+            if (tempHitbox != null)
+                Destroy(tempHitbox);
         }
-
-        // Lưu rotation ban đầu và target
-        Quaternion originalRotation = MainHand.transform.localRotation;
-        Quaternion targetRotation = Quaternion.Euler(MainHand.transform.localEulerAngles + new Vector3(0f, 0f, -angle));
-
-        // Xoay xuống
-        float time = 0f;
-        while (time < duration)
-        {
-            MainHand.transform.localRotation = Quaternion.Lerp(originalRotation, targetRotation, time / duration);
-            time += Time.deltaTime;
-            yield return null;
-        }
-        MainHand.transform.localRotation = targetRotation;
-
-        // Quay về vị trí ban đầu
-        time = 0f;
-        while (time < returnDuration)
-        {
-            MainHand.transform.localRotation = Quaternion.Lerp(targetRotation, originalRotation, time / returnDuration);
-            time += Time.deltaTime;
-            yield return null;
-        }
-        MainHand.transform.localRotation = originalRotation;
-
-        // Xóa hitbox khi kết thúc swing
-        if (tempHitbox != null)
-            Destroy(tempHitbox);
-    }
     public void ChangeItem(int index)
     {
         List<InventoryItem> inventoryPlayer = new List<InventoryItem>();
@@ -241,6 +283,7 @@ public class Player : MonoBehaviour
         //Nếu là Tools thì có thể swing
         if (inventoryPlayer[index - 1].itemData is Tools
             || inventoryPlayer[index - 1].itemData is WeaponItem
+            || inventoryPlayer[index - 1].itemData is Weapon
             || inventoryPlayer[index - 1].itemData is Placeable
             || inventoryPlayer[index - 1].itemData is ConsumableItem
             || inventoryPlayer[index - 1].itemData is Crops)
@@ -289,9 +332,12 @@ public class Player : MonoBehaviour
             //{
             //    spawned.GetComponent<ItemInstance>().Setup((Placeable)mainHand);
             //}
-
-            spawned.GetComponent<DropItem>().dropItem = false;
-            spawned.GetComponent<PickUpItem>().block = true;
+            if (spawned.GetComponent<DropItem>() && spawned.GetComponent<PickUpItem>())
+            {
+                spawned.GetComponent<DropItem>().dropItem = false;
+                spawned.GetComponent<PickUpItem>().block = true;
+            }
+            
         }
         else
         {
@@ -341,6 +387,19 @@ public class Player : MonoBehaviour
                 }
             }
             mainHand = null;
+        }
+    }
+
+    bool IsTriggered(InputKey key)
+    {
+        switch (key)
+        {
+            case InputKey.LeftClick: return Input.GetMouseButton(0);
+            case InputKey.RightClick: return Input.GetMouseButton(1);
+            case InputKey.Q: return Input.GetKeyDown(KeyCode.Q);
+            case InputKey.E: return Input.GetKeyDown(KeyCode.E);
+            case InputKey.R: return Input.GetKeyDown(KeyCode.R);
+            default: return false;
         }
     }
     bool CanPlaceAt(Vector2 position)

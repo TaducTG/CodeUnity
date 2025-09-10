@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66d45a0079b8db64f98ad3801bb87698, type: 3}
+  m_Name: Bone_necklace
+  m_EditorClassIdentifier: 
+  itemName: Bone_necklace
+  icon: {fileID: -6338949446219725912, guid: d116af855cc348e4baa6068fa607517e, type: 3}
+  prefabs: {fileID: 2370438181927338187, guid: 4e65456938f30d7479e799b5b33c7761, type: 3}
+  itemType: 0
+  isStackable: 0
+  maxStack: 99
+  description:
+  - + 10% Damage
+  - + 5% Crit
+  - '- 20% MaxHealth'
+  slotType: 4
+  bonusHealth: 0
+  bonusDefense: 0
+  bonusMana: 0
+  bonusMoveSpeed: 0
+  bonusDamage: 0
+  bonusHealthRegenerate: 0
+  bonusManaRegenerate: 0
+  bonusPercentHealth: -0.2
+  bonusPercentDefense: 0
+  bonusPercentMana: 0
+  bonusPercentDamage: 0.1
+  bonusPercentMoveSpeed: 0

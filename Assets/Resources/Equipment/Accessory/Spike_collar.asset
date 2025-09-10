@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66d45a0079b8db64f98ad3801bb87698, type: 3}
+  m_Name: Spike_collar
+  m_EditorClassIdentifier: 
+  itemName: Spike_collar
+  icon: {fileID: 2813325583637706474, guid: 09785c7ecba4b3e4790eb29c3cc01242, type: 3}
+  prefabs: {fileID: 1172936099851422013, guid: 5b5760d9c26153545bb709c62cf0837a, type: 3}
+  itemType: 0
+  isStackable: 0
+  maxStack: 99
+  description: []
+  slotType: 4
+  bonusHealth: 0
+  bonusDefense: 0
+  bonusMana: 0
+  bonusMoveSpeed: 0
+  bonusDamage: 0
+  bonusHealthRegenerate: 0
+  bonusManaRegenerate: 0
+  bonusPercentHealth: 0
+  bonusPercentDefense: -0.1
+  bonusPercentMana: 0
+  bonusPercentDamage: 0.15
+  bonusPercentMoveSpeed: 0

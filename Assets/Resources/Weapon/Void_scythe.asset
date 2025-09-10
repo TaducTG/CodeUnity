@@ -9,16 +9,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ea6135f98d7d8444a4538507dd721fc, type: 3}
+  m_Script: {fileID: 11500000, guid: 620a5b835b9cfd4458934e013d2b7193, type: 3}
   m_Name: Void_scythe
   m_EditorClassIdentifier: 
   itemName: Void_scythe
   icon: {fileID: -8702967748025807226, guid: c69ca532c60dfd24885edea456cf5bef, type: 3}
   prefabs: {fileID: 1741318339150071673, guid: 65d145f1532c70f4da81d1b96c44b390, type: 3}
-  itemType: 1
+  itemType: 0
   isStackable: 0
   maxStack: 99
   description: []
-  damage: 40
-  attackSpeed: 1
-  angle: -180
+  abilities:
+  - triggerKey: 0
+    ability: {fileID: 11400000, guid: 8d0b2e8fb0f550d4088fe280acb14cb8, type: 2}
+    config:
+      manaUsed: 0
+      healthUsed: 0
+      damage: 40
+      attackSpeed: 1
+      angle: -180
+      projectileSpeed: 0
+      projectilePrefab: {fileID: 0}
+      maxDistance: 0
+      hookSpeed: 0
+      effects: []

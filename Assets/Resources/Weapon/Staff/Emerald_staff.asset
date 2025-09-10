@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620a5b835b9cfd4458934e013d2b7193, type: 3}
+  m_Name: Emerald_staff
+  m_EditorClassIdentifier: 
+  itemName: Emerald_staff
+  icon: {fileID: -392789525872930389, guid: 81257b9079a78334c9e1bb4ff74d0cf7, type: 3}
+  prefabs: {fileID: 5865272216616677053, guid: 44bfcc55e2fb8014d882f502fb623f85, type: 3}
+  itemType: 0
+  isStackable: 0
+  maxStack: 99
+  description: []
+  abilities:
+  - triggerKey: 0
+    ability: {fileID: 11400000, guid: a879bd15a8071a046958b687de20ee98, type: 2}
+    config:
+      manaUsed: 15
+      healthUsed: 0
+      damage: 25
+      attackSpeed: 1
+      angle: 0
+      projectileSpeed: 10
+      projectilePrefab: {fileID: 7214592810882666287, guid: b349dcc62fbe0254cb6d82dc45a3c071, type: 3}
+      maxDistance: 0
+      hookSpeed: 0
+      effects: []

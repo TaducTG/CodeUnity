@@ -8,6 +8,20 @@ public class MapGenerator : MonoBehaviour
 {
     public enum BiomeType { Grassland, Desert, Swamp, Snow }
 
+    [System.Serializable]
+    public class TileVariant
+    {
+        public TileBase tile;
+        [Range(0f, 1f)] public float chance;
+    }
+    [System.Serializable]
+    public class SpawnableObject
+    {
+        public GameObject prefab;
+        [Range(0f, 1f)] public float spawnChance;
+        public TileBase[] allowedTiles; // chỉ spawn trên các tile này
+    }
+
     [Header("Map Size & Noise")]
     public float noiseScale = 20f;
 
@@ -15,18 +29,18 @@ public class MapGenerator : MonoBehaviour
     public BiomeType biomeTilemap;
     public Tilemap grasslandTilemap;
 
-    public TileBase[] grassTiles;
+    public TileVariant[] grassTiles;
+    public TileVariant[] riverTiles;
+    public TileVariant[] dirtTiles;
+    public TileVariant[] stoneTiles;
+
     public float grassChance;
-    public TileBase[] dirtTiles;
+    public float riverChance;
     public float dirtChance;
-    public TileBase[] stoneTiles;
     public float stoneChance;
 
-    [Header("Object Prefabs")]
-    public GameObject[] treePrefabs;
-    public GameObject[] rockPrefabs;
-    public GameObject[] bushPrefabs;
-    public GameObject[] flowerPrefabs;
+    [Header("Small Object")]
+    public SpawnableObject[] spawnablePrefabs;
 
     [Header("Large Objects")]
     public GameObject[] largeObjectPrefabs; // VD: Nhà
@@ -34,11 +48,6 @@ public class MapGenerator : MonoBehaviour
     public TileBase requiredTileForLargeObject; // VD: grassTile
     public int maxAttemptsPerLargeObject = 50;
 
-    [Header("Spawn Chance (0–1)")]
-    public float flowerSpawnChance = 0.08f;
-    public float treeSpawnChance = 0.05f;  // 5%
-    public float rockSpawnChance = 0.03f;  // 3%
-    public float bushSpawnChance = 0.15f;  // 15%
 
     // Internal
     private bool[,] occupied;
@@ -51,6 +60,9 @@ public class MapGenerator : MonoBehaviour
     public Transform player;
     public int viewDistance = 2; // số chunk hiển thị xung quanh player
     private Dictionary<Vector2Int, GameObject> chunkObjects = new();
+
+    [Header("Farming Settings")]
+    public TileBase[] farmableTiles;
 
     void Start()
     {
@@ -67,6 +79,8 @@ public class MapGenerator : MonoBehaviour
             grasslandTilemap = biomeMapGenerator.desertTilemap;
         else if (biomeTilemap == BiomeType.Snow)
             grasslandTilemap = biomeMapGenerator.snowTilemap;
+        else if (biomeTilemap == BiomeType.Swamp)
+            grasslandTilemap = biomeMapGenerator.swampTilemap;
         if (grasslandTilemap == null) yield break;
 
         ApplyNoiseToTiles(grasslandTilemap);
@@ -118,11 +132,23 @@ public class MapGenerator : MonoBehaviour
     }
 
     // ================== TILE GENERATION ==================
+    private TileBase GetRandomTile(TileVariant[] variants)
+    {
+        float roll = Random.value;
+        float cumulative = 0f;
+
+        foreach (var v in variants)
+        {
+            cumulative += v.chance;
+            if (roll <= cumulative)
+                return v.tile;
+        }
+        return null;
+    }
+
     private void ApplyNoiseToTiles(Tilemap targetTilemap)
     {
         if (targetTilemap == null) return;
-
-        float noiseScale = 10f;
         BoundsInt bounds = targetTilemap.cellBounds;
 
         for (int x = bounds.xMin; x < bounds.xMax; x++)
@@ -132,15 +158,16 @@ public class MapGenerator : MonoBehaviour
                 Vector3Int tilePos = new Vector3Int(x, y, 0);
                 TileBase currentTile = targetTilemap.GetTile(tilePos);
                 if (currentTile == null) continue;
-
                 float noiseValue = Mathf.PerlinNoise(x / noiseScale, y / noiseScale);
                 TileBase selectedTile = null;
                 if (noiseValue < stoneChance && stoneTiles.Length > 0)
-                    selectedTile = stoneTiles[Random.Range(0, stoneTiles.Length)];
+                    selectedTile = GetRandomTile(stoneTiles);
                 else if (noiseValue < dirtChance && dirtTiles.Length > 0)
-                    selectedTile = dirtTiles[Random.Range(0, dirtTiles.Length)];
+                    selectedTile = GetRandomTile(dirtTiles);
+                else if (noiseValue < riverChance && riverTiles.Length > 0)
+                    selectedTile = GetRandomTile(riverTiles);
                 else if (grassTiles.Length > 0)
-                    selectedTile = grassTiles[Random.Range(0, grassTiles.Length)];
+                    selectedTile = GetRandomTile(grassTiles);
 
                 if (selectedTile != null)
                     targetTilemap.SetTile(tilePos, selectedTile);
@@ -226,49 +253,33 @@ public class MapGenerator : MonoBehaviour
                 Vector2Int chunkCoord = WorldToChunk(worldPos);
                 GameObject parentChunk = GetOrCreateChunk(chunkCoord);
 
-                // TREE & FLOWER — chỉ spawn trên grass tiles
-                if (IsTileInList(currentTile, grassTiles))
+                // duyệt toàn bộ danh sách spawnablePrefabs
+                foreach (var s in spawnablePrefabs)
                 {
-                    if (treePrefabs.Length > 0 && Random.value < treeSpawnChance)
-                    {
-                        Instantiate(treePrefabs[Random.Range(0, treePrefabs.Length)], worldPos, Quaternion.identity, parentChunk.transform);
-                        occupied[localX, localY] = true;
-                        continue;
-                    }
-                    else if (flowerPrefabs.Length > 0 && Random.value < flowerSpawnChance)
-                    {
-                        Instantiate(flowerPrefabs[Random.Range(0, flowerPrefabs.Length)], worldPos, Quaternion.identity, parentChunk.transform);
-                        occupied[localX, localY] = true;
-                        continue;
-                    }
-                }
+                    if (s.prefab == null) continue;
 
-                // ROCK — chỉ spawn trên stone tiles
-                else if (IsTileInList(currentTile, stoneTiles))
-                {
-                    if (rockPrefabs.Length > 0 && Random.value < rockSpawnChance)
+                    // chỉ spawn nếu tile hợp lệ
+                    if (s.allowedTiles != null && s.allowedTiles.Length > 0)
                     {
-                        Instantiate(rockPrefabs[Random.Range(0, rockPrefabs.Length)], worldPos, Quaternion.identity, parentChunk.transform);
-                        occupied[localX, localY] = true;
-                        continue;
+                        if (!System.Array.Exists(s.allowedTiles, t => t == currentTile))
+                            continue;
                     }
-                }
 
-                // BUSH — chỉ spawn trên grass hoặc dirt
-                if (IsTileInList(currentTile, dirtTiles) || IsTileInList(currentTile, grassTiles))
-                {
-                    if (bushPrefabs.Length > 0 && Random.value < bushSpawnChance)
+                    // check tỉ lệ spawn
+                    if (Random.value < s.spawnChance)
                     {
-                        Instantiate(bushPrefabs[Random.Range(0, bushPrefabs.Length)], worldPos, Quaternion.identity, parentChunk.transform);
+                        Instantiate(s.prefab, worldPos, Quaternion.identity, parentChunk.transform);
                         occupied[localX, localY] = true;
-                        continue;
+                        break; // chỉ spawn 1 prefab tại 1 ô
                     }
                 }
             }
         }
     }
 
+
     // ================== HELPERS ==================
+
     private bool IsTileInList(TileBase tile, TileBase[] tileList)
     {
         foreach (TileBase t in tileList)
@@ -288,16 +299,18 @@ public class MapGenerator : MonoBehaviour
 
     public bool CanFarmAt(Vector3Int cellPos)
     {
-        // Kiểm tra trong grassLandTilemap
-        TileBase grassTile = grasslandTilemap.GetTile(cellPos);
-        if (grassTile != null && IsTileInList(grassTile, grassTiles))
-            return true;
+        if (grasslandTilemap == null) return false;
 
-        // Kiểm tra trong dirtLandTilemap
-        TileBase dirtTile = grasslandTilemap.GetTile(cellPos);
-        if (dirtTile != null && IsTileInList(dirtTile, dirtTiles))
-            return true;
+        TileBase currentTile = grasslandTilemap.GetTile(cellPos);
+        if (currentTile == null) return false;
+
+        // chỉ farm nếu currentTile nằm trong farmableTiles
+        if (farmableTiles != null && farmableTiles.Length > 0)
+        {
+            return System.Array.Exists(farmableTiles, t => t == currentTile);
+        }
 
         return false;
     }
+
 }

@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 4325099529988242730}
   - component: {fileID: 4117595744969863977}
   - component: {fileID: 700611348170866559}
+  - component: {fileID: -846398612044953296}
   m_Layer: 0
   m_Name: Bringer-of-Death
   m_TagString: Untagged
@@ -278,10 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1e6a76f192b419459d8ba2e33c12282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  maxHealth: 1500
-  moveSpeed: 2.5
-  damage: 15
+  enemyStat: {fileID: 0}
   idle: 10
   idleTime: 0
   normalATK: 6
@@ -297,6 +295,50 @@ MonoBehaviour:
   skill_projectile: {fileID: 6202250541279735876, guid: 0cbfa88dcfed10b469e1bc0e5b9b2b14, type: 3}
   rage: 20
   rageTime: 0
+--- !u!114 &-846398612044953296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3659012799481141160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eff68ab685be900418443c6ced65e03b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseHealth: 1500
+  baseMana: 0
+  baseDamage: 20
+  baseDefense: 5
+  baseSpeed: 4
+  atackSpeed: 0
+  equipHealth: 0
+  equipMana: 0
+  equipDamage: 0
+  equipDefense: 0
+  equipSpeed: 0
+  equipPercentSpeed: 0
+  buffHealth: 0
+  buffMana: 0
+  buffDamage: 0
+  buffPercentDamage: 0
+  buffDefense: 0
+  buffSpeed: 0
+  buffPercentSpeed: 0
+  stun: 0
+  speedReducePercent: 0
+  resistBurn: 0
+  resistPoison: 0
+  resistStun: 0
+  resistDefenseReduce: 0
+  maxHealth: 0
+  health: 0
+  maxMana: 0
+  mana: 0
+  damage: 0
+  defense: 0
+  speed: 0
 --- !u!1 &4138941017247288081
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,14 +349,14 @@ GameObject:
   m_Component:
   - component: {fileID: 6249809765134137969}
   - component: {fileID: 7970200491374788831}
-  - component: {fileID: 9078143698924909476}
+  - component: {fileID: 4919772138678693392}
   m_Layer: 0
   m_Name: Atk_range
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6249809765134137969
 Transform:
   m_ObjectHideFlags: 0
@@ -367,10 +409,17 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -7.113552, y: -3.599005}
+  - {x: -3.6185856, y: 4.378211}
+  - {x: -2.4859924, y: 3.7250435}
+  - {x: -5.2989044, y: 3.2854903}
+  - {x: -4.719589, y: 1.9059274}
+  - {x: -7.047962, y: 1.9062862}
+  - {x: -5.5235653, y: 0.04842615}
+  - {x: -8.679144, y: -0.0653795}
+  - {x: -6.5788307, y: -2.3903418}
   - {x: -9.262304, y: -2.7758725}
   - {x: -10.656837, y: -0.9750228}
-  - {x: -8.466808, y: 2.1159413}
+  - {x: -8.289097, y: 2.7872908}
   - {x: -3.4080677, y: 4.7165384}
   - {x: 0.6704712, y: 4.0137215}
   - {x: 1.4654465, y: 3.1289294}
@@ -378,12 +427,13 @@ EdgeCollider2D:
   - {x: -4.1025753, y: 1.9843442}
   - {x: -4.733162, y: -1.5718565}
   - {x: -5.2803593, y: -2.7896214}
-  - {x: -6.8210506, y: -3.7220466}
+  - {x: -6.668169, y: -3.3820124}
+  - {x: -8.380953, y: -3.2678976}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!114 &9078143698924909476
+--- !u!114 &4919772138678693392
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -392,7 +442,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4138941017247288081}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e5d537a6540e5144870a63a9eb0922f, type: 3}
+  m_Script: {fileID: 11500000, guid: 21bd9827ce1525c47adb945c21cfc289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 12
+  damagePopupPrefab: {fileID: 0}
+  canvas: {fileID: 0}
+  damage: 15
+  taggetPlayer: 1
+  onHitEffects: []

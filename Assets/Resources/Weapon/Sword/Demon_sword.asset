@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620a5b835b9cfd4458934e013d2b7193, type: 3}
+  m_Name: Demon_sword
+  m_EditorClassIdentifier: 
+  itemName: Demon_sword
+  icon: {fileID: 8116839787166423889, guid: 7f0214cc4ff1cfb42886d6688056cb8e, type: 3}
+  prefabs: {fileID: 2377722822739979391, guid: edac5d708e583004c8f592cf2c81cca0, type: 3}
+  itemType: 1
+  isStackable: 0
+  maxStack: 99
+  description: []
+  abilities:
+  - triggerKey: 0
+    ability: {fileID: 11400000, guid: 8d0b2e8fb0f550d4088fe280acb14cb8, type: 2}
+    config:
+      manaUsed: 0
+      healthUsed: 0
+      damage: 20
+      attackSpeed: 0.8
+      angle: 80
+      projectileSpeed: 0
+      projectilePrefab: {fileID: 0}
+      maxDistance: 0
+      hookSpeed: 0
+      effects: []
+  - triggerKey: 3
+    ability: {fileID: 11400000, guid: 8d0b2e8fb0f550d4088fe280acb14cb8, type: 2}
+    config:
+      manaUsed: 0
+      healthUsed: 0
+      damage: 0
+      attackSpeed: 0.05
+      angle: 0
+      projectileSpeed: 0
+      projectilePrefab: {fileID: 0}
+      maxDistance: 0
+      hookSpeed: 0
+      effects:
+      - {fileID: 11400000, guid: ace6a8346b2914940b6218fa788112dc, type: 2}

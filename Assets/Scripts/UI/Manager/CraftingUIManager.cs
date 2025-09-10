@@ -42,7 +42,10 @@ public class CraftingUIManager : MonoBehaviour
         Craftbutton = craftingRoot.Find("Crafting_detail/Craftbutton")?.gameObject;
         closeButton = craftingRoot.Find("Crafting_detail/exit")?.gameObject;
         ingredientPanel = craftingRoot.Find("Crafting_detail")?.gameObject;
-        recipeListParent = craftingRoot.Find("Crafting_recipe_panel/Show_recipe_panel");
+
+        recipeListParent = craftingRoot.Find("Crafting_recipe_panel/Scroll_view/Viewport/Content");
+
+
         ingredientListParent = craftingRoot.Find("Crafting_detail/Show_ingredient_panel");
 
         // Load recipe theo thư mục dựa trên tên bàn chế tạo

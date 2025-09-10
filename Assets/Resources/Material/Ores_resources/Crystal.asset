@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d74d08d395d1d4696d5dbac7dc0f91, type: 3}
+  m_Name: Crystal
+  m_EditorClassIdentifier: 
+  itemName: Crystal
+  icon: {fileID: 5293031974318352618, guid: 8fb84779ebb5fae47a24791fc2861316, type: 3}
+  prefabs: {fileID: 4853531926566832604, guid: 616a2956e6573494ab3a41e296099a72, type: 3}
+  itemType: 2
+  isStackable: 1
+  maxStack: 99
+  description: []
+  price: 0

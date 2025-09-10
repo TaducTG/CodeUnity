@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 8704521487964651610}
   - component: {fileID: 5879083805683532559}
   - component: {fileID: 1131723743596560515}
-  - component: {fileID: 5520564511183258123}
-  - component: {fileID: 5922150956105433332}
   - component: {fileID: 1434482491747290809}
+  - component: {fileID: 5520564511183258123}
+  - component: {fileID: -193338465023354535}
   m_Layer: 0
   m_Name: desert_tree
-  m_TagString: Untagged
+  m_TagString: MapObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118,34 +118,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &5520564511183258123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4734890184062901140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e9b7a3072007d34f92922e6a93d9c7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &5922150956105433332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4734890184062901140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa12f0eda1998fd4dbf396fa60266290, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 40
-  tier: 1
-  treeTrunk: {fileID: 3741034408308395099, guid: ec0b33f8e13e76948b466b2b648d2126, type: 3}
-  dropItems: []
 --- !u!61 &1434482491747290809
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -192,3 +164,36 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.9184017, y: 0.81630754}
   m_EdgeRadius: 0
+--- !u!114 &5520564511183258123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4734890184062901140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e9b7a3072007d34f92922e6a93d9c7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-193338465023354535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4734890184062901140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 808c2ebacfc6d52448aab9559b75ad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 60
+  maxHealth: 60
+  tier: 0
+  spawnPrefabs: {fileID: 3741034408308395099, guid: ec0b33f8e13e76948b466b2b648d2126, type: 3}
+  dropItem: 0
+  dropTable:
+  - itemPrefab: {fileID: 7543239524795441271, guid: 0e1da6f1362f9a14ba376f806dbcb36d, type: 3}
+    quantity: 4
+    dropChance: 100

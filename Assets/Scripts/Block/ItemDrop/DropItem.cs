@@ -9,6 +9,9 @@ public class DropItem : MonoBehaviour
     public float maxHealth;
     public float tier; // Độ cứng của block/enemy
 
+    [Header("SpawnObject")]
+    public GameObject spawnPrefabs;
+
     [Header("Drop Config")]
     public bool dropItem; // Dùng để đánh dấu item rơi ra, tránh bị phá tiếp khi spawn
 
@@ -37,7 +40,21 @@ public class DropItem : MonoBehaviour
         {
             isDead = true;
             DropAllItems();
-            Destroy(gameObject);
+
+            if (gameObject.GetComponent<ConnectableBlock>())
+            {
+                ConnectableBlock cn = gameObject.GetComponent<ConnectableBlock>();
+                PickUpItem item = gameObject.GetComponent<PickUpItem>();
+                cn.UpdateNeighbors(transform.position, item.itemData, true);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+            if(spawnPrefabs != null)
+            {
+                Instantiate(spawnPrefabs, transform.position, Quaternion.identity);
+            }
         }
     }
 
@@ -96,7 +113,7 @@ public class DropItem : MonoBehaviour
             Hitbox h = collision.GetComponent<Hitbox>();
             if (h != null && h.tier >= tier) // Chỉ bị phá nếu tool tier >= tier của block
             {
-                health -= h.damage;
+                health -= h.damage * (1 + (tier - h.tier)*0.2f);
                 Shake(0.1f, 0.05f);
             }
         }

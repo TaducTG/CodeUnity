@@ -168,7 +168,18 @@ public class OrcRogue : MonoBehaviour
             animator.SetBool("Death", true);
             die = true;
             StartCoroutine(Die());
+        }
+    }
 
+    public void TakeDamage(float damage)
+    {
+        animator.SetBool("Hurt", true);
+        enemyStat.health -= Mathf.Max(1, damage - enemyStat.defense);
+        if (enemyStat.health <= 0 && !die)
+        {
+            animator.SetBool("Death", true);
+            die = true;
+            StartCoroutine(Die());
         }
     }
     IEnumerator Die()

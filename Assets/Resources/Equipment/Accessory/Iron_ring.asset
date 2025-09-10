@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66d45a0079b8db64f98ad3801bb87698, type: 3}
+  m_Name: Iron_ring
+  m_EditorClassIdentifier: 
+  itemName: Iron_ring
+  icon: {fileID: 3763498135504731476, guid: 09785c7ecba4b3e4790eb29c3cc01242, type: 3}
+  prefabs: {fileID: 4886673487578250993, guid: c61e2905870c7174f97c56165c2498eb, type: 3}
+  itemType: 1
+  isStackable: 0
+  maxStack: 99
+  description:
+  - + 3% Damage
+  slotType: 4
+  bonusHealth: 0
+  bonusDefense: 0
+  bonusMana: 0
+  bonusMoveSpeed: 0
+  bonusDamage: 0
+  bonusHealthRegenerate: 0
+  bonusManaRegenerate: 0
+  bonusPercentHealth: 0
+  bonusPercentDefense: 0
+  bonusPercentMana: 0
+  bonusPercentDamage: 0.03
+  bonusPercentMoveSpeed: 0

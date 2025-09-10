@@ -46,6 +46,7 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     public Inventory inventory;
     public List<InventoryItem> externalItemList; // null nếu là slot inventory
     public int slotIndex;
+
     private void Awake()
     {
         uiManager = FindAnyObjectByType<InventoryUIManager>();
@@ -145,6 +146,26 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     public virtual void OnDrop(PointerEventData eventData)
     {
         InventorySlotUI draggedSlot = eventData.pointerDrag?.GetComponent<InventorySlotUI>();
+
+        EquipmentSlotUI draggedEquipSlot = eventData.pointerDrag?.GetComponent<EquipmentSlotUI>();
+
+        if (draggedEquipSlot != null && draggedEquipSlot.CurrentItem != null)
+        {
+            // 👉 xử lý move từ Equipment về Inventory
+            InventoryItem draggedEquipment = draggedEquipSlot.CurrentItem;
+
+            // Bỏ stat nếu là equipment
+            if (draggedEquipment.itemData is EquipmentItem oldEquip)
+            {
+                oldEquip.RemoveStats(draggedEquipSlot.player);
+            }
+
+            // Cho item vào inventory slot
+            SetItem(draggedEquipment);
+            draggedEquipSlot.ClearSlot();
+            uiManager.SyncEquipmentToInventory();
+        }
+
         if (draggedSlot == null || draggedSlot == this) return;
 
         InventoryItem draggedItem = draggedSlot.CurrentItem;

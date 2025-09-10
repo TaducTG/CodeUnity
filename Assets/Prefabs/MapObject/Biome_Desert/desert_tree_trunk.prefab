@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5904547539046528860}
   m_Layer: 0
   m_Name: desert_tree_trunk
-  m_TagString: Untagged
+  m_TagString: MapObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,6 +145,7 @@ MonoBehaviour:
   health: 0
   maxHealth: 25
   tier: 1
+  spawnPrefabs: {fileID: 0}
   dropItem: 0
   dropTable: []
 --- !u!61 &5904547539046528860

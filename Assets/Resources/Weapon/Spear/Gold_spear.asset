@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620a5b835b9cfd4458934e013d2b7193, type: 3}
+  m_Name: Gold_spear
+  m_EditorClassIdentifier: 
+  itemName: Gold_spear
+  icon: {fileID: 8038543316451925152, guid: 407b652516992004eb16125ff6954b0d, type: 3}
+  prefabs: {fileID: 8857962481379115537, guid: 0ab4655e987a9ca46958997cc1df49e1, type: 3}
+  itemType: 1
+  isStackable: 0
+  maxStack: 99
+  description: []
+  abilities:
+  - triggerKey: 0
+    ability: {fileID: 11400000, guid: 8d0b2e8fb0f550d4088fe280acb14cb8, type: 2}
+    config:
+      manaUsed: 0
+      healthUsed: 0
+      damage: 16
+      attackSpeed: 0.5
+      angle: -180
+      projectileSpeed: 0
+      projectilePrefab: {fileID: 0}
+      effects: []
+    nextAvailableTime: 0
+  - triggerKey: 1
+    ability: {fileID: 11400000, guid: 146c7e5d6f2956f4f98aa23070457510, type: 2}
+    config:
+      manaUsed: 0
+      healthUsed: 0
+      damage: 25
+      attackSpeed: 1
+      angle: 0
+      projectileSpeed: 0
+      projectilePrefab: {fileID: 0}
+      effects: []
+    nextAvailableTime: 0

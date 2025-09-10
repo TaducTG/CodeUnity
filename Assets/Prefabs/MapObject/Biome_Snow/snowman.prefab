@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7545486335466171701}
   m_Layer: 0
   m_Name: snowman
-  m_TagString: Untagged
+  m_TagString: MapObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -191,5 +191,6 @@ MonoBehaviour:
   health: 0
   maxHealth: 30
   tier: 0
+  spawnPrefabs: {fileID: 0}
   dropItem: 0
-  dropItems: []
+  dropTable: []

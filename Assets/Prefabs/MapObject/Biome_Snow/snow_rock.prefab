@@ -191,6 +191,7 @@ MonoBehaviour:
   health: 0
   maxHealth: 60
   tier: 1
+  spawnPrefabs: {fileID: 0}
   dropItem: 0
   dropTable:
   - itemPrefab: {fileID: 1719797737436252560, guid: a022eee5103ee6340b9937d454bed4e2, type: 3}

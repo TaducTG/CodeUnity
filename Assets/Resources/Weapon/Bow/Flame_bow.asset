@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620a5b835b9cfd4458934e013d2b7193, type: 3}
+  m_Name: Flame_bow
+  m_EditorClassIdentifier: 
+  itemName: Flame_bow
+  icon: {fileID: -4570319719078681119, guid: 3daa4ca6b67d02c4aadd2822301c1045, type: 3}
+  prefabs: {fileID: 2700227361703117464, guid: 9db5337766b9331498ff86e9e6245727, type: 3}
+  itemType: 1
+  isStackable: 0
+  maxStack: 99
+  description: []
+  abilities:
+  - triggerKey: 0
+    ability: {fileID: 11400000, guid: a879bd15a8071a046958b687de20ee98, type: 2}
+    config:
+      manaUsed: 0
+      healthUsed: 0
+      damage: 18
+      attackSpeed: 1
+      angle: 0
+      projectileSpeed: 14
+      projectilePrefab: {fileID: 0}
+      maxDistance: 0
+      hookSpeed: 0
+      effects: []
+  - triggerKey: 1
+    ability: {fileID: 11400000, guid: a879bd15a8071a046958b687de20ee98, type: 2}
+    config:
+      manaUsed: 20
+      healthUsed: 0
+      damage: 25
+      attackSpeed: 5
+      angle: 0
+      projectileSpeed: 20
+      projectilePrefab: {fileID: 4985789198942894169, guid: 526316d4923d0cc41a7a30da94a54b53, type: 3}
+      maxDistance: 0
+      hookSpeed: 0
+      effects:
+      - {fileID: 11400000, guid: 986606243717a934ba535645e40963a9, type: 2}

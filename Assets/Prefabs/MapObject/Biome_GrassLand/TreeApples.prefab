@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2014635323989325685}
   - component: {fileID: 1733453710289799878}
   - component: {fileID: 3192147478944476699}
-  - component: {fileID: 4825215600870854820}
+  - component: {fileID: -6973502253130641509}
   m_Layer: 0
   m_Name: TreeApples
   m_TagString: MapObject
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e9b7a3072007d34f92922e6a93d9c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4825215600870854820
+--- !u!114 &-6973502253130641509
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -185,13 +185,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 5723346931305563725}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa12f0eda1998fd4dbf396fa60266290, type: 3}
+  m_Script: {fileID: 11500000, guid: 808c2ebacfc6d52448aab9559b75ad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 40
+  health: 0
+  maxHealth: 50
   tier: 0
-  treeTrunk: {fileID: 5432157853780138638, guid: 455a98a3bfe244a499415a0aa79c006f, type: 3}
-  dropItems:
-  - {fileID: 7543239524795441271, guid: 0e1da6f1362f9a14ba376f806dbcb36d, type: 3}
-  - {fileID: 7543239524795441271, guid: 0e1da6f1362f9a14ba376f806dbcb36d, type: 3}
-  - {fileID: 7543239524795441271, guid: 0e1da6f1362f9a14ba376f806dbcb36d, type: 3}
+  spawnPrefabs: {fileID: 5432157853780138638, guid: 455a98a3bfe244a499415a0aa79c006f, type: 3}
+  dropItem: 0
+  dropTable:
+  - itemPrefab: {fileID: 7543239524795441271, guid: 0e1da6f1362f9a14ba376f806dbcb36d, type: 3}
+    quantity: 3
+    dropChance: 100

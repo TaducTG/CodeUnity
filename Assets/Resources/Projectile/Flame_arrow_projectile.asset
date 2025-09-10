@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cab26f35c7d0c4e49994010e33f4f7b9, type: 3}
+  m_Name: Flame_arrow_projectile
+  m_EditorClassIdentifier: 
+  itemName: Flame_arrow
+  icon: {fileID: -8502233373861256146, guid: aa8dfdd294e759143960286a70ca3118, type: 3}
+  prefabs: {fileID: 4985789198942894169, guid: 526316d4923d0cc41a7a30da94a54b53, type: 3}
+  itemType: 2
+  isStackable: 1
+  maxStack: 999
+  description:
+  - 'Damage: 4'
+  - 'Speed: 20'
+  - Chance to cause Burn
+  damage: 4
+  speed: 20

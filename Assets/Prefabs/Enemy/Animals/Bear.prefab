@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4475572534406827944}
   - component: {fileID: 6795401162852260435}
   - component: {fileID: 9203347684288657061}
+  - component: {fileID: -2202372613893065477}
   m_Layer: 0
   m_Name: Bear
   m_TagString: Enemy
@@ -211,13 +212,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32e957f9a07cd86458ad3aea0cb921ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemtStat: {fileID: 0}
   walkSpeed: 1.5
   runSpeed: 4
   idleTime: 2
   walkTime: 3
   changeRunDirTime: 1.5
-  maxHealth: 160
-  health: 0
   isScared: 0
   fleeDuration: 5
   hitTime: 0
@@ -231,3 +231,48 @@ MonoBehaviour:
   - itemPrefab: {fileID: 7704230190875788924, guid: 1deb0dd34bc1b0c48b1cf9b1feeb599f, type: 3}
     quantity: 5
     dropChance: 100
+--- !u!114 &-2202372613893065477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2878386328530951105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eff68ab685be900418443c6ced65e03b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseHealth: 140
+  baseMana: 0
+  baseDamage: 0
+  baseDefense: 5
+  baseSpeed: 0
+  atackSpeed: 0
+  equipHealth: 0
+  equipMana: 0
+  equipDamage: 0
+  equipDefense: 0
+  equipSpeed: 0
+  equipPercentSpeed: 0
+  buffHealth: 0
+  buffMana: 0
+  buffDamage: 0
+  buffPercentDamage: 0
+  buffDefense: 0
+  buffSpeed: 0
+  buffPercentSpeed: 0
+  rage: 0
+  stun: 0
+  speedReducePercent: 0
+  resistBurn: 0
+  resistPoison: 0
+  resistStun: 0
+  resistDefenseReduce: 0
+  maxHealth: 0
+  health: 0
+  maxMana: 0
+  mana: 0
+  damage: 0
+  defense: 0
+  speed: 0

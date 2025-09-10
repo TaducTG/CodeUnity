@@ -85,6 +85,7 @@ MonoBehaviour:
   canvas: {fileID: 0}
   damage: 0
   taggetPlayer: 1
+  onHitEffects: []
 --- !u!1 &8229958402720849833
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,11 +280,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eff68ab685be900418443c6ced65e03b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseHealth: 120
+  baseHealth: 200
   baseMana: 0
   baseDamage: 10
   baseDefense: 3
   baseSpeed: 0
+  atackSpeed: 0
   equipHealth: 0
   equipMana: 0
   equipDamage: 0
@@ -297,6 +299,15 @@ MonoBehaviour:
   buffDefense: 0
   buffSpeed: 0
   buffPercentSpeed: 0
+  rage: 0
+  stun: 0
+  speedReducePercent: 0
+  resistBurn: 0
+  resistPoison: 0
+  resistStun: 0
+  resistDefenseReduce: 0
+  resistFreeze: 0
+  resistSpeedReduce: 0
   maxHealth: 0
   health: 0
   maxMana: 0

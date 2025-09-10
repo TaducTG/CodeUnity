@@ -1,12 +1,16 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
+using static AbilityEffect;
 
 public class WeaponHitbox : MonoBehaviour
 {
     public GameObject damagePopupPrefab;
     [SerializeField] private Canvas canvas;
     public float damage;
-
     public bool taggetPlayer;
+
+    public List<AbilityEffect> onHitEffects = new List<AbilityEffect>();
+
     void Start()
     {
         // Tìm Canvas
@@ -26,41 +30,61 @@ public class WeaponHitbox : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        bool hitSomething = false;
+
         if (collision.CompareTag("Player") && taggetPlayer)
         {
             Player p = collision.GetComponent<Player>();
-            p.playerStat.health -= Mathf.Max(damage - p.playerStat.defense, 0);
+            if (p != null)
+            {
+                float finalDmg = Mathf.Max(damage - p.playerStat.defense, 0);
+                p.playerStat.health -= finalDmg;
+                hitSomething = true;
+            }
         }
 
-        if (collision.CompareTag("Enemy") && !taggetPlayer)
+        else if (collision.CompareTag("Enemy") && !taggetPlayer)
         {
             Stat enemyStat = collision.GetComponent<Stat>();
             if (enemyStat != null)
             {
-                enemyStat.health -= Mathf.Max(damage - enemyStat.defense, 1);
-                ShowDamagePopup((int)Mathf.Max(damage - enemyStat.defense, 1), transform.position);
+                float finalDmg = Mathf.Max(damage - enemyStat.defense, 1);
+                enemyStat.health -= finalDmg;
+                ShowDamagePopup((int)finalDmg, transform.position);
+                hitSomething = true;
             }
 
             Animal animal = collision.GetComponent<Animal>();
             if (animal != null)
             {
-                animal.TakeDamage(damage);
-                ShowDamagePopup((int)damage, transform.position);
+                animal.TakeDamage();
+                hitSomething = true;
             }
+
             Slime enemy3 = collision.GetComponent<Slime>();
             if (enemy3 != null)
             {
                 enemy3.isHurt = 0.2f;
-            }
-
-
-            Boss boss = collision.GetComponentInParent<Boss>();
-            if (boss != null)
-            {
-                boss.health -= damage;
-                ShowDamagePopup((int)damage, transform.position);
+                hitSomething = true;
             }
         }
+
+        // 👇 Sau khi gây damage xong, apply thêm effect
+        if (hitSomething)
+        {
+            foreach (var effect in onHitEffects)
+            {
+                if (effect.targetType == EffectTargetType.OnHit)
+                {
+                    effect.Apply(collision.gameObject, null);
+                    // ⚠️ chỗ config có thể truyền null hoặc ref nếu bạn muốn giữ damage/attackSpeed
+                }
+            }
+        }
+    }
+    public void SetEffects(List<AbilityEffect> effects)
+    {
+        onHitEffects = effects;
     }
     public void ShowDamagePopup(int amount, Vector3 worldPosition)
     {

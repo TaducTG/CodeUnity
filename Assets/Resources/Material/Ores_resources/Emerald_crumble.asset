@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d74d08d395d1d4696d5dbac7dc0f91, type: 3}
+  m_Name: Emerald_crumble
+  m_EditorClassIdentifier: 
+  itemName: Emerald_crumble
+  icon: {fileID: 3727377951426780150, guid: 3515da145fd72c24fa73b33b4cea1c1b, type: 3}
+  prefabs: {fileID: 4292977611131348606, guid: 15ea2e53b2c266742bb8937a40e9ffd7, type: 3}
+  itemType: 2
+  isStackable: 1
+  maxStack: 99
+  description: []
+  price: 0

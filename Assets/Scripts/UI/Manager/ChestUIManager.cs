@@ -27,9 +27,9 @@ public class ChestUIManager : MonoBehaviour
 
         // Tìm root Crafting trong Canvas
         GameObject chestRoot = canvas.Find("Chest").gameObject;
-
+        Transform cr = chestRoot.transform;
         chestUI = chestRoot;
-
+        chestSlotParent = cr.Find("Show_chest_items");
 
         Instance = this;
         chestUI.SetActive(false);

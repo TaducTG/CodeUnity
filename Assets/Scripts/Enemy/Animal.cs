@@ -7,15 +7,14 @@ using static DropItem;
 public class Animal : MonoBehaviour
 {
     [Header("General Settings")]
+    public Stat enemtStat;
+
     public float walkSpeed = 2f;              // tốc độ đi bộ bình thường
     public float runSpeed = 5f;               // tốc độ khi bỏ chạy
     public float idleTime = 2f;               // thời gian đứng chờ
     public float walkTime = 3f;               // thời gian đi bộ
     public float changeRunDirTime = 1.5f;     // đổi hướng chạy sau mỗi khoảng thời gian
 
-    [Header("Health Settings")]
-    public float maxHealth = 5;
-    public float health;
 
     [Header("Flee Settings")]
     public bool isScared = false;             // bật khi bị đánh
@@ -47,10 +46,11 @@ public class Animal : MonoBehaviour
     void Awake()
     {
         hitTime = 0;
+        enemtStat = GetComponent<Stat>();
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        health = maxHealth;
+        enemtStat.health = enemtStat.maxHealth;
     }
 
     void Start()
@@ -124,12 +124,11 @@ public class Animal : MonoBehaviour
     }
 
     // Hàm gây sát thương cho Animal
-    public void TakeDamage(float damage)
+    public void TakeDamage()
     {
         animator.SetBool("Hurt", true);
         hitTime = hit;
-        health -= damage;
-        if (health <= 0 && !die)
+        if (enemtStat.health <= 0 && !die)
         {
             animator.SetBool("Death", true);
             die = true;
@@ -145,7 +144,7 @@ public class Animal : MonoBehaviour
     {
         // TODO: Thêm animation chết hoặc rơi item
         yield return new WaitForSeconds(death);
-        health = maxHealth;
+        enemtStat.health = enemtStat.maxHealth;
         die = false;
         DropAllItems();
         EnemyPoolManager.Instance.ReturnToPool(gameObject);

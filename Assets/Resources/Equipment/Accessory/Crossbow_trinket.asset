@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66d45a0079b8db64f98ad3801bb87698, type: 3}
+  m_Name: Crossbow_trinket
+  m_EditorClassIdentifier: 
+  itemName: Crossbow_trinket
+  icon: {fileID: -6504220713341012227, guid: d116af855cc348e4baa6068fa607517e, type: 3}
+  prefabs: {fileID: 5299227666173404981, guid: fb2f85311e40f6846ab99ea31c5cb28f, type: 3}
+  itemType: 0
+  isStackable: 0
+  maxStack: 99
+  description:
+  - +20% Crit Damage
+  - + 1 Damage
+  slotType: 4
+  bonusHealth: 0
+  bonusDefense: 0
+  bonusMana: 0
+  bonusMoveSpeed: 0
+  bonusDamage: 1
+  bonusHealthRegenerate: 0
+  bonusManaRegenerate: 0
+  bonusPercentHealth: 0
+  bonusPercentDefense: 0
+  bonusPercentMana: 0
+  bonusPercentDamage: 0
+  bonusPercentMoveSpeed: 0

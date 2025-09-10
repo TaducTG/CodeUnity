@@ -3,16 +3,15 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour
 {
-    public float health;
-    public float maxHealth;
+    public Stat enemyStat;
 
-    public float moveSpeed;
-    public float damage;
+
 
     public float idle = 10f;
     public float idleTime;
 
     public float normalATK = 12f;
+    private float normalATKBase;
     public float normalATKTime;
     private bool atk;
     public float atkTime = 0.9f;
@@ -20,10 +19,15 @@ public class Boss : MonoBehaviour
 
     public float skillATK_1 = 20f;
     public float skillATK_1Time;
+
     public float skill_duration;
+    private float skill_durationBase;
     public float skill_durationTime;
+
     public float skill_reactive;
+    private float skill_reactiveBase;
     public float skill_reactiveTime;
+
     public GameObject skill_projectile;
     private bool skill;
     private bool die;
@@ -37,16 +41,23 @@ public class Boss : MonoBehaviour
     SpriteRenderer sr;
     void Start()
     {
+        enemyStat = GetComponent<Stat>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
-        health = maxHealth;
+        enemyStat.health = enemyStat.maxHealth;
 
         idleTime = idle;
         normalATKTime = normalATK;
+        normalATKBase = normalATK;
+
         skillATK_1Time = skillATK_1;
         skill_durationTime = skill_duration;
+        skill_durationBase = skill_duration;
+
         skill_reactiveTime = skill_reactive;
+        skill_reactiveBase = skill_reactive;
+
         loc = (Vector2)transform.position;
         rageTime = rage;
     }
@@ -54,7 +65,7 @@ public class Boss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(health / maxHealth < 0.5f)
+        if(enemyStat.health / enemyStat.maxHealth < 0.5f)
         {
             rageTime -= Time.deltaTime;
             if (!raged)
@@ -68,9 +79,9 @@ public class Boss : MonoBehaviour
         }
         if(rageTime < 0)
         {
-            skill_duration /= 2;
-            skill_reactive *= 1.5f;
-            normalATK *= 2;
+            skill_duration = skill_durationBase;
+            skill_reactive = skill_reactiveBase;
+            normalATK = normalATKBase;
             rageTime = 1000 * rage;
         }
         if (die)
@@ -134,7 +145,7 @@ public class Boss : MonoBehaviour
             direction.Normalize();
 
             // Di chuyển về phía player
-            transform.position += direction * moveSpeed * Time.deltaTime;
+            transform.position += direction * enemyStat.speed * Time.deltaTime;
         }
 
         // idle
@@ -165,7 +176,7 @@ public class Boss : MonoBehaviour
         }
 
         //Die
-        if(health <= 0)
+        if(enemyStat.health <= 0)
         {
             animator.SetBool("Death", true);
             die = true;
@@ -210,7 +221,10 @@ public class Boss : MonoBehaviour
     public void ResetStat()
     {
         die = false;
-        health = maxHealth;
+        enemyStat.health = enemyStat.maxHealth;
+        skill_duration = skill_durationBase;
+        skill_reactive = skill_reactiveBase;
+        normalATK = normalATKBase;
         rage = 20;
         raged = false;
         gameObject.SetActive(false);

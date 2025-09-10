@@ -11,7 +11,7 @@ public class Slime : MonoBehaviour
     [Header("Jump Settings")]
     public float jumpCooldown = 1.5f;          // Thời gian nghỉ giữa các lần nhảy
     public float jumpDuration = 0.5f;          // Thời gian thực hiện cú nhảy
-    public float speed = 5f;                   // Vận tốc nhảy (distance/time)
+
     public float jumpHeight = 0.5f;            // Độ cao tối đa (parabol giả)
 
     [Header("Stat")]
@@ -47,6 +47,7 @@ public class Slime : MonoBehaviour
     void Start()
     {
         enemyStat.health = enemyStat.maxHealth;
+
         player = GameObject.FindGameObjectWithTag("Player").transform;
         StartCoroutine(BehaviorLoop());
     }
@@ -67,10 +68,10 @@ public class Slime : MonoBehaviour
             animator.SetBool("Hurt", false);
         }
 
-        if(enemyStat.health <= 0)
+        if (enemyStat.health <= 0 && !die)
         {
-            die = true;
             animator.SetBool("Death", true);
+            die = true;
             StartCoroutine(Die());
         }
     }
@@ -86,7 +87,7 @@ public class Slime : MonoBehaviour
             if (!isJumping)
             {
                 float distToPlayer = Vector2.Distance(transform.position, player.position);
-                float maxJumpDistance = speed * jumpDuration;
+                float maxJumpDistance = enemyStat.speed * jumpDuration;
 
                 if (distToPlayer <= detectionRange)
                 {
@@ -152,6 +153,17 @@ public class Slime : MonoBehaviour
         isJumping = false;
     }
 
+    public void TakeDamage(float damage)
+    {
+        animator.SetBool("Hurt", true);
+        enemyStat.health -= Mathf.Max(1, damage - enemyStat.defense);
+        if (enemyStat.health <= 0 && !die)
+        {
+            animator.SetBool("Death", true);
+            die = true;
+            StartCoroutine(Die());
+        }
+    }
     IEnumerator Die()
     {
         yield return new WaitForSeconds(1f);
@@ -212,6 +224,10 @@ public class Slime : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, detectionRange);
 
         Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position, speed * jumpDuration);
+        if (enemyStat != null)
+        {
+            Gizmos.DrawWireSphere(transform.position, enemyStat.speed * jumpDuration);
+        }
+        
     }
 }

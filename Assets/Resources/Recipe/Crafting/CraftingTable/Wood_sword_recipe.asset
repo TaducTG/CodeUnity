@@ -12,10 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38d373fb537f3f49bd4d297974e2567, type: 3}
   m_Name: Wood_sword_recipe
   m_EditorClassIdentifier: 
-  outputItem: {fileID: 11400000, guid: 1f7cb56e0c317e042ac61f8472ff722b, type: 2}
+  outputItem: {fileID: 11400000, guid: e8d27dc1bddad7842b9b605106f1d9d1, type: 2}
   outputAmount: 1
-  price: 100
-  coinImg: {fileID: -7345674265001259628, guid: a55d08c118c78734898f6edeefa6a473, type: 3}
   ingredients:
   - item: {fileID: 11400000, guid: 69488cbe403efd04aabe1c471a0b490c, type: 2}
     quantity: 5

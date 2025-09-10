@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be8aa59a8c9dc0746b238645a22644b4, type: 3}
+  m_Name: Grappling_hook
+  m_EditorClassIdentifier: 
+  abilityName: 
+  hookSpeed: 15
+  pullSpeed: 10
+  maxDistance: 12
+  hookPrefab: {fileID: 5086770148577157562, guid: 882dbcb62135a2b49bb0562ea963747b, type: 3}

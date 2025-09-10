@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 4063721346267545786}
   - component: {fileID: 4728884435818154369}
   - component: {fileID: 7335351616625495485}
+  - component: {fileID: 1858408816018190453}
   m_Layer: 0
   m_Name: Boss_golem
   m_TagString: Enemy
@@ -287,10 +288,9 @@ MonoBehaviour:
   idleTime: 3
   walkTime: 4
   walkSpeed: 2.5
-  maxHealth: 2000
-  health: 100
-  damage: 10
-  defend: 8
+  enemyStat: {fileID: 0}
+  rageTime: 20
+  rageStatBuff: 1.5
   meleeRange: 2
   meleeCooldown: 2
   meleeHitbox: {fileID: 6174442412669477561}
@@ -305,3 +305,47 @@ MonoBehaviour:
   laserPrefab: {fileID: 4809787985233896279, guid: 9655661ae2cbd3e4ebf470539cc21959, type: 3}
   laserDuration: 2
   laserDamage: 5
+--- !u!114 &1858408816018190453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7409256613783202461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eff68ab685be900418443c6ced65e03b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseHealth: 1000
+  baseMana: 0
+  baseDamage: 15
+  baseDefense: 10
+  baseSpeed: 0
+  atackSpeed: 0
+  equipHealth: 0
+  equipMana: 0
+  equipDamage: 0
+  equipDefense: 0
+  equipSpeed: 0
+  equipPercentSpeed: 0
+  buffHealth: 0
+  buffMana: 0
+  buffDamage: 0
+  buffPercentDamage: 0
+  buffDefense: 0
+  buffSpeed: 0
+  buffPercentSpeed: 0
+  stun: 0
+  burn: 0
+  burnTime: 0
+  posion: 0
+  defenseReducePercent: 0
+  speedReducePercent: 0
+  maxHealth: 0
+  health: 0
+  maxMana: 0
+  mana: 0
+  damage: 0
+  defense: 0
+  speed: 0

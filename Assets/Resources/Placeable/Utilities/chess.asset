@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 646945da8797ac94fb753f11389fbed1, type: 3}
-  m_Name: chess
+  m_Name: Chess
   m_EditorClassIdentifier: 
   itemName: chess
   icon: {fileID: -1607882866, guid: b631ed305dfd43c488e0f8edf5c829bc, type: 3}

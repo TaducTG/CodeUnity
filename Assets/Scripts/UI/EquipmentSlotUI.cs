@@ -1,52 +1,95 @@
-﻿using UnityEngine;
-using UnityEngine.EventSystems;
+﻿using UnityEngine.EventSystems;
+using UnityEngine;
+using UnityEngine.UI;
+using System.Collections.Generic;
 
-public class EquipmentSlotUI : InventorySlotUI
+public class EquipmentSlotUI : MonoBehaviour, IDropHandler, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     public EquipmentSlotType slotType;
-    private Player player;
+    public InventoryItem CurrentItem;
+    public Image iconImage;
+    public Player player;
 
-    private void Start()
+    public InventoryUIManager uiManager;
+
+    // 👉 Danh sách các Equipment đang được trang bị
+    public static Dictionary<EquipmentSlotType, EquipmentItem> equippedItems
+        = new Dictionary<EquipmentSlotType, EquipmentItem>();
+
+    void Awake()
     {
         player = FindAnyObjectByType<Player>();
+        uiManager = FindAnyObjectByType<InventoryUIManager>();
     }
 
-    public override void OnDrop(PointerEventData eventData)
+    public void SetItem(InventoryItem newItem)
+    {
+        CurrentItem = newItem;
+        iconImage.sprite = (newItem != null) ? newItem.itemData.icon : null;
+        iconImage.enabled = (newItem != null);
+
+        // Cập nhật vào danh sách
+        if (newItem != null && newItem.itemData is EquipmentItem equip)
+        {
+            equippedItems[slotType] = equip;
+        }
+        else
+        {
+            equippedItems.Remove(slotType);
+        }
+    }
+
+    public void ClearSlot()
+    {
+        CurrentItem = null;
+        iconImage.sprite = null;
+        iconImage.enabled = false;
+
+        // Xoá khỏi danh sách
+        if (equippedItems.ContainsKey(slotType))
+        {
+            equippedItems.Remove(slotType);
+        }
+    }
+
+    public void OnBeginDrag(PointerEventData eventData)
+    {
+        if (CurrentItem == null) return;
+        DragItemUI.Instance.Show(CurrentItem.itemData.icon);
+    }
+
+    public void OnDrag(PointerEventData eventData) { }
+
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        DragItemUI.Instance.Hide();
+    }
+
+    public void OnDrop(PointerEventData eventData)
     {
         InventorySlotUI draggedSlot = eventData.pointerDrag?.GetComponent<InventorySlotUI>();
-        if (draggedSlot == null || draggedSlot == this) return;
+        if (draggedSlot == null) return;
 
         InventoryItem draggedItem = draggedSlot.CurrentItem;
-        if (draggedItem == null || draggedItem.itemData == null) return;
+        if (draggedItem == null) return;
 
-        // Chỉ nhận item là EquipmentItem và slotType khớp
         EquipmentItem equip = draggedItem.itemData as EquipmentItem;
         if (equip == null || equip.slotType != slotType)
-        {
-            Debug.Log("Item không phù hợp với ô trang bị này!");
             return;
-        }
 
-        // Nếu slot đang có trang bị → bỏ chỉ số cũ
+        // Nếu đang có đồ → remove stat
         if (CurrentItem != null && CurrentItem.itemData is EquipmentItem oldEquip)
         {
             oldEquip.RemoveStats(player);
         }
 
-        // Đặt item mới → cộng chỉ số
+        // Equip mới
         SetItem(draggedItem);
         equip.ApplyStats(player);
 
-        // Xóa slot gốc
+        // Xoá khỏi inventory slot
         draggedSlot.ClearSlot();
-    }
 
-    public override void ClearSlot()
-    {
-        if (CurrentItem != null && CurrentItem.itemData is EquipmentItem equip)
-        {
-            equip.RemoveStats(player);
-        }
-        base.ClearSlot();
+        uiManager.SyncEquipmentToInventory();
     }
 }

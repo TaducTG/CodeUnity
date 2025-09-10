@@ -4,13 +4,23 @@ using System.Collections.Generic;
 
 public class CaveGenerator : MonoBehaviour
 {
+    [System.Serializable]
+    public class SmallObjectData
+    {
+        public GameObject prefab;
+        [Range(0f, 1f)] public float spawnChance = 0.1f; // Xác suất spawn
+        public int minSpawnDistance = 0; // Khoảng cách tối thiểu từ startPosition
+    }
+
+
     [Header("Prefabs & Tile")]
     public Tilemap floorTilemap;
     public TileBase[] floorTiles;
-    public List<WallRule> wallRules;
+    public GameObject caveWall;
 
     [Header("Map Settings")]
-    public int width = 50, height = 50;
+    public int width = 50;
+    public int height = 50;
     [Range(0, 100)] public int fillPercent = 45;
     public int smoothIterations = 5;
     public Vector2Int startPosition = Vector2Int.zero;
@@ -28,8 +38,7 @@ public class CaveGenerator : MonoBehaviour
     public List<Vector2Int> fixedBiomePositions;
 
     [Header("Small Objects")]
-    public List<GameObject> smallObjects;
-    [Range(0f, 1f)] public float smallObjectChance = 0.05f;
+    public List<SmallObjectData> smallObjects;
 
     private int[,] map;
     private Dictionary<WallType, GameObject> wallDict;
@@ -39,8 +48,6 @@ public class CaveGenerator : MonoBehaviour
 
     void Start()
     {
-        BuildWallDict();
-
         GenerateMap();
 
         SpawnFixedPrefabs();
@@ -51,13 +58,6 @@ public class CaveGenerator : MonoBehaviour
     void Update()
     {
         UpdateChunks();
-    }
-
-    void BuildWallDict()
-    {
-        wallDict = new Dictionary<WallType, GameObject>();
-        foreach (var rule in wallRules)
-            wallDict[rule.type] = rule.prefab;
     }
 
     void GenerateMap()
@@ -132,14 +132,14 @@ public class CaveGenerator : MonoBehaviour
 
                         // Floor
                         if (floorTiles.Length > 0)
+                        {
                             floorTilemap.SetTile(cellPos, floorTiles[rand.Next(floorTiles.Length)]);
+                        }
 
                         // Wall or Object
                         if (map[x, y] == 1)
                         {
-                            WallType type = GetWallType(x, y);
-                            if (wallDict.TryGetValue(type, out GameObject prefab))
-                                Instantiate(prefab, worldPos, Quaternion.identity, chunkGO.transform);
+                            Instantiate(caveWall, worldPos, Quaternion.identity, chunkGO.transform);
                         }
                         else
                         {
@@ -153,19 +153,30 @@ public class CaveGenerator : MonoBehaviour
     // ===== Spawn Small Objects vào trong chunk =====
     private void SpawnSmallObject(int x, int y, Vector3 worldPos)
     {
-        // Chỉ spawn ở floor
-        if (map[x, y] == 0)
-        {
-            GameObject prefab = smallObjects[Random.Range(0, smallObjects.Count)];
+        if (map[x, y] != 0) return; // chỉ spawn ở floor
+        if (smallObjects == null) return;
+        // Tính khoảng cách Manhattan từ startPosition
+        int distance = Mathf.Abs(x - startPosition.x) + Mathf.Abs(y - startPosition.y);
 
-            GameObject obj = Instantiate(
-                prefab,
-                worldPos,
-                Quaternion.identity,
-                gameObject.transform
-            );
+        foreach (var objData in smallObjects)
+        {
+            // Nếu chưa đủ khoảng cách thì bỏ qua
+            if (distance < objData.minSpawnDistance) continue;
+
+            // Xác suất spawn
+            if (Random.value <= objData.spawnChance)
+            {
+                Instantiate(
+                    objData.prefab,
+                    worldPos,
+                    Quaternion.identity,
+                    gameObject.transform
+                );
+                return; // chỉ spawn 1 object tại ô này
+            }
         }
     }
+
 
     // ===== Spawn Fixed Prefabs (không thuộc chunk) =====
     void SpawnFixedPrefabs()
@@ -179,7 +190,7 @@ public class CaveGenerator : MonoBehaviour
             Instantiate(prefab, worldPos, Quaternion.identity);
         }
     }
-
+    // ===== Hàm liên quan đến chunk =====
     void UpdateChunks(bool force = false)
     {
         if (player == null) return;
@@ -197,10 +208,39 @@ public class CaveGenerator : MonoBehaviour
                 float dist = Vector2Int.Distance(coord, currentChunk);
                 kvp.Value.SetActive(dist <= viewDistance);
             }
+            UpdateVisibleWalls();
+
             lastPlayerChunk = currentChunk;
         }
     }
+    void UpdateVisibleWalls()
+    {
+        foreach (var kvp in chunkObjects)
+        {
+            GameObject chunk = kvp.Value;
+            if (chunk.activeSelf) // chỉ update chunk đang bật
+            {
+                foreach (Transform child in chunk.transform)
+                {
+                    ConnectableBlock cn = child.GetComponent<ConnectableBlock>();
+                    PickUpItem pickup = child.GetComponent<PickUpItem>();
 
+                    if (cn != null && pickup != null)
+                    {
+                        Vector3 pos = child.position;
+                        // convert về grid (bỏ offset 0.5f nếu có)
+                        int gridX = Mathf.RoundToInt(pos.x - startPosition.x - 0.5f);
+                        int gridY = Mathf.RoundToInt(pos.y - startPosition.y - 0.5f);
+
+                        if (gridX >= 0 && gridX < width && gridY >= 0 && gridY < height)
+                        {
+                            cn.UpdateConnection(pickup.itemData, new Vector2Int(gridX, gridY), map);
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     void ClearAreaAround(ref int[,] map, Vector2Int center)
     {
@@ -225,64 +265,6 @@ public class CaveGenerator : MonoBehaviour
     }
 
     bool InMap(int x, int y) => x >= 0 && x < width && y >= 0 && y < height;
-
-    WallType GetWallType(int x, int y)
-    {
-        // Kiểm tra 8 hướng xung quanh
-        bool n = InMap(x, y + 1) && map[x, y + 1] == 1;
-        bool s = InMap(x, y - 1) && map[x, y - 1] == 1;
-        bool e = InMap(x + 1, y) && map[x + 1, y] == 1;
-        bool w = InMap(x - 1, y) && map[x - 1, y] == 1;
-
-        bool ne = InMap(x + 1, y + 1) && map[x + 1, y + 1] == 1;
-        bool nw = InMap(x - 1, y + 1) && map[x - 1, y + 1] == 1;
-        bool se = InMap(x + 1, y - 1) && map[x + 1, y - 1] == 1;
-        bool sw = InMap(x - 1, y - 1) && map[x - 1, y - 1] == 1;
-
-        int count = 0;
-        if (n) count++;
-        if (s) count++;
-        if (e) count++;
-        if (w) count++;
-        if (ne) count++;
-        if (nw) count++;
-        if (se) count++;
-        if (sw) count++;
-
-        if (count == 0)
-            return WallType.Isolated;
-        if (n && s && e && w && ne && nw && se && sw)
-            return WallType.Center;
-
-        if (!n && s && e && w) return WallType.North;
-        if (!s && n && e && w) return WallType.South;
-        if (!e && n && s && w) return WallType.East;
-        if (!w && n && s && e) return WallType.West;
-
-        if (n && s && e && w && ne && nw && se && !sw) return WallType.SouthWestM;
-        if (n && s && e && w && ne && nw && !se && sw) return WallType.SouthEastM;
-        if (n && s && e && w && ne && !nw && se && sw) return WallType.NorthWestM;
-        if (n && s && e && w && !ne && nw && se && sw) return WallType.NorthEastM;
-
-        if (!n && !e && w && s) return WallType.NorthEast;
-        if (!n && e && w && s && !se) return WallType.NorthEast;
-        if (n && !e && w && s && !nw) return WallType.NorthEast;
-
-        if (!n && !w && e && s) return WallType.NorthWest;
-        if (!n && e && w && s && !sw) return WallType.NorthWest;
-        if (n && e && !w && s && !ne) return WallType.NorthWest;
-
-        if (!s && !e && n && w) return WallType.SouthEast;
-        if (n && e && w && !s && !ne) return WallType.SouthEast;
-        if (n && !e && w && s && !sw) return WallType.SouthEast;
-
-        if (!s && !w && e && n) return WallType.SouthWest;
-        if (n && e && w && !s && !nw) return WallType.SouthWest;
-        if (n && e && !w && s && !se) return WallType.SouthWest;
-
-        // Mặc định nếu không khớp các rule đặc biệt
-        return WallType.Center;
-    }
 
     //================= A* Pathfinding ===================
     class Node

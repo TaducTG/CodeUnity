@@ -20,5 +20,7 @@ public class Items : ScriptableObject
     public bool isStackable;
     public int maxStack = 99;
 
+    public float price;
+
     public string[] description;
 }

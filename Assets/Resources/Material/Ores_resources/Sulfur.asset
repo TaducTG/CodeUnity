@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d74d08d395d1d4696d5dbac7dc0f91, type: 3}
+  m_Name: Sulfur
+  m_EditorClassIdentifier: 
+  itemName: Sulfur
+  icon: {fileID: -6943539554766238405, guid: dab3f5585e5b13c4c89f2930fe64a84c, type: 3}
+  prefabs: {fileID: 4530531786880967602, guid: eee313623c79f6d4fb9ca2344015ae5c, type: 3}
+  itemType: 2
+  isStackable: 1
+  maxStack: 99
+  description: []
+  price: 0

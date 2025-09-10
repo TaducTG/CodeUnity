@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66d45a0079b8db64f98ad3801bb87698, type: 3}
+  m_Name: Emerald_helmet
+  m_EditorClassIdentifier: 
+  itemName: Emerald_helmet
+  icon: {fileID: -205387539, guid: f980798aa3238054cbe413ce80892dbc, type: 3}
+  prefabs: {fileID: 2714149128699494654, guid: a66ece1f54cc70b46ba759d618f0f488, type: 3}
+  itemType: 1
+  isStackable: 0
+  maxStack: 99
+  description:
+  - + 30 MaxHealth
+  slotType: 1
+  bonusHealth: 30
+  bonusDefense: 9
+  bonusMana: 25
+  bonusMoveSpeed: 0
+  bonusDamage: 0

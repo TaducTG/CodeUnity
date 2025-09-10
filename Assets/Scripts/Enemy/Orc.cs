@@ -80,6 +80,12 @@ public class Orc : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (enemyStat.health <= 0 && !die)
+        {
+            animator.SetBool("Death", true);
+            die = true;
+            StartCoroutine(Die());
+        }
         atkSpeedTime -= Time.deltaTime;
         if (aiPath == null)
         {
@@ -141,16 +147,19 @@ public class Orc : MonoBehaviour
                 transform.localScale = ls;
             }
         }
+    }
 
-        if(enemyStat.health <= 0 && !die)
+    public void TakeDamage(float damage)
+    {
+        animator.SetBool("Hurt", true);
+        enemyStat.health -= Mathf.Max(1,damage - enemyStat.defense);
+        if (enemyStat.health <= 0 && !die)
         {
             animator.SetBool("Death", true);
             die = true;
             StartCoroutine(Die());
-
         }
     }
-
     IEnumerator Die()
     {
         yield return new WaitForSeconds(0.6f);

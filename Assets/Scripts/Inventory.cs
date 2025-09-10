@@ -7,16 +7,29 @@ public class Inventory : MonoBehaviour
     public List<InventoryItem> items;
     public int maxSlots = 21;
 
-    public InventorySlotUI[] slotUIs; // các slot hiển thị trên UI (kéo vào Inspector)
+    public List<EquipmentItem> equipment;
+
+    //public InventorySlotUI[] slotUIs; // các slot hiển thị trên UI (kéo vào Inspector)
 
     void Start()
     {
+        if (items == null)
+            items = new List<InventoryItem>();
 
-        for (int i = 0; i < maxSlots; i++)
+        // Đảm bảo đủ số slot
+        while (items.Count < maxSlots)
         {
             items.Add(null);
         }
-        RefreshUI();
+
+        // Tương tự cho equipment
+        if (equipment == null)
+            equipment = new List<EquipmentItem>();
+
+        while (equipment.Count < 9)
+        {
+            equipment.Add(null);
+        }
     }
 
     public bool AddItems(Items itemData, int amount = 1)
@@ -34,7 +47,6 @@ public class Inventory : MonoBehaviour
                     amount -= amountToAdd;
                     if (amount <= 0)
                     {
-                        RefreshUI();
                         return true;// đã thêm hết
                     }
                 }
@@ -51,7 +63,6 @@ public class Inventory : MonoBehaviour
                 amount -= amountToAdd;
             }
         }
-        RefreshUI();
         return amount <= 0;
 
     }
@@ -77,7 +88,6 @@ public class Inventory : MonoBehaviour
                 if (items[i].quantity > amount)
                 {
                     items[i].quantity -= amount;
-                    RefreshUI();
                     return;
                 }
                 else
@@ -87,42 +97,6 @@ public class Inventory : MonoBehaviour
                     items[i] = null;
                 }
             }
-        }
-        RefreshUI();
-    }
-    public void RefreshUI()
-    {
-        for (int i = 0; i < slotUIs.Length; i++)
-        {
-            if (i < items.Count && items[i] != null)
-            {
-                slotUIs[i].SetItem(items[i]);
-            }
-            else
-            {
-                slotUIs[i].ClearSlot();
-            }
-        }
-    }
-    // Khi drag drop đổi chỗ 2 slot
-    public void SwapItems(int fromIndex, int toIndex)
-    {
-        InventoryItem temp = items[fromIndex];
-        items[fromIndex] = items[toIndex];
-        items[toIndex] = temp;
-
-        RefreshUI();
-    }
-
-    // Gọi khi UI bị thay đổi do người dùng kéo thả hoặc craft
-    public void UpdateFromSlots()
-    {
-        for (int i = 0; i < slotUIs.Length; i++)
-        {
-            InventoryItem uiItem = slotUIs[i].CurrentItem;
-            items[i] = uiItem != null
-                ? new InventoryItem(uiItem.itemData, uiItem.quantity)
-                : null;
         }
     }
 }

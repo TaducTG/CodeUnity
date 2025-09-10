@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620a5b835b9cfd4458934e013d2b7193, type: 3}
+  m_Name: Grappling_hook
+  m_EditorClassIdentifier: 
+  itemName: Grappling_hook
+  icon: {fileID: -2127191914306887624, guid: 8f408dce4b7fdfe43895dd3fbbc3cc43, type: 3}
+  prefabs: {fileID: 1737372350301523191, guid: b7561c3cb7a7648488363f65bf2f1d75, type: 3}
+  itemType: 1
+  isStackable: 0
+  maxStack: 99
+  description: []
+  abilities:
+  - triggerKey: 0
+    ability: {fileID: 11400000, guid: 82ddf6b6a7eeea644a1af9bfed633a80, type: 2}
+    config:
+      manaUsed: 0
+      healthUsed: 0
+      damage: 0
+      attackSpeed: 3
+      angle: 0
+      projectileSpeed: 0
+      projectilePrefab: {fileID: 0}
+      maxDistance: 0
+      hookSpeed: 0
+      effects: []
